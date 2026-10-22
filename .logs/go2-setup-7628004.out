@@ -1,0 +1,3283 @@
+GPU 0: NVIDIA GH200 120GB (UUID: GPU-4ca4dfa1-8824-34cf-4e57-481fc9691fc4)
+[11:01:59] Creating conda env at /projects/b6ac/go2-sumo/env
+Retrieving notices: - \ done
+Channels:
+ - conda-forge
+Platform: linux-aarch64
+Collecting package metadata (repodata.json): / - \ | / - \ | / - \ | / - \ | / done
+Solving environment: \ done
+
+## Package Plan ##
+
+  environment location: /projects/b6ac/go2-sumo/env
+
+  added / updated specs:
+    - pip
+    - python=3.11
+
+
+The following packages will be downloaded:
+
+    package                    |            build
+    ---------------------------|-----------------
+    _openmp_mutex-4.5          |           20_gnu          28 KB  conda-forge
+    bzip2-1.0.8                |      h4777abc_10         190 KB  conda-forge
+    ca-certificates-2026.10.19 |       hbd8a1cb_0         128 KB  conda-forge
+    ld_impl_linux-aarch64-2.46.1|default_h1979696_103         884 KB  conda-forge
+    libexpat-2.8.5             |       h4154aff_0          78 KB  conda-forge
+    libffi-3.7.0               |       hdaad0be_1          62 KB  conda-forge
+    libgcc-16.2.0              |       h205dda4_7         613 KB  conda-forge
+    libgomp-16.2.0             |       h8acb6b2_7         603 KB  conda-forge
+    liblzma-5.8.3              |       he30d5cf_1         123 KB  conda-forge
+    libnsl-2.0.1               |       h86ecc28_1          34 KB  conda-forge
+    libpython-3.11.17          |h3cfa5a6_2_cpython         6.9 MB  conda-forge
+    libsqlite-3.54.1           |     hd26f1b6_100         955 KB  conda-forge
+    libuuid-2.42.4             |       hd6fdeab_0          35 KB  conda-forge
+    libxcrypt-4.4.38           |       h80f16a2_0         131 KB  conda-forge
+    libzlib-1.3.2              |       hdc9db2a_3          68 KB  conda-forge
+    ncurses-6.6                |       h2b6f883_1         933 KB  conda-forge
+    openssl-3.6.5              |       he6ad1d5_0         3.5 MB  conda-forge
+    packaging-26.3             |     pyhc364b38_0         114 KB  conda-forge
+    pip-26.2.2                 |     pyh8b19718_0         1.1 MB  conda-forge
+    python-3.11.17             |h94ad73b_2_cpython        21.6 MB  conda-forge
+    readline-8.3               |       ha7194a6_1         356 KB  conda-forge
+    setuptools-84.2.1          |     pyhe730653_0         554 KB  conda-forge
+    tk-8.6.13                  | noxft_hf03c496_4         3.5 MB  conda-forge
+    tzdata-2026c               |       h151e31d_0         116 KB  conda-forge
+    wheel-0.48.0               |     pyhd8ed1ab_0          34 KB  conda-forge
+    zstd-1.5.7                 |       h9d15635_7         601 KB  conda-forge
+    ------------------------------------------------------------
+                                           Total:        43.2 MB
+
+The following NEW packages will be INSTALLED:
+
+  _openmp_mutex      conda-forge/linux-aarch64::_openmp_mutex-4.5-20_gnu 
+  bzip2              conda-forge/linux-aarch64::bzip2-1.0.8-h4777abc_10 
+  ca-certificates    conda-forge/noarch::ca-certificates-2026.10.19-hbd8a1cb_0 
+  ld_impl_linux-aar~ conda-forge/linux-aarch64::ld_impl_linux-aarch64-2.46.1-default_h1979696_103 
+  libexpat           conda-forge/linux-aarch64::libexpat-2.8.5-h4154aff_0 
+  libffi             conda-forge/linux-aarch64::libffi-3.7.0-hdaad0be_1 
+  libgcc             conda-forge/linux-aarch64::libgcc-16.2.0-h205dda4_7 
+  libgomp            conda-forge/linux-aarch64::libgomp-16.2.0-h8acb6b2_7 
+  liblzma            conda-forge/linux-aarch64::liblzma-5.8.3-he30d5cf_1 
+  libnsl             conda-forge/linux-aarch64::libnsl-2.0.1-h86ecc28_1 
+  libpython          conda-forge/linux-aarch64::libpython-3.11.17-h3cfa5a6_2_cpython 
+  libsqlite          conda-forge/linux-aarch64::libsqlite-3.54.1-hd26f1b6_100 
+  libuuid            conda-forge/linux-aarch64::libuuid-2.42.4-hd6fdeab_0 
+  libxcrypt          conda-forge/linux-aarch64::libxcrypt-4.4.38-h80f16a2_0 
+  libzlib            conda-forge/linux-aarch64::libzlib-1.3.2-hdc9db2a_3 
+  ncurses            conda-forge/linux-aarch64::ncurses-6.6-h2b6f883_1 
+  openssl            conda-forge/linux-aarch64::openssl-3.6.5-he6ad1d5_0 
+  packaging          conda-forge/noarch::packaging-26.3-pyhc364b38_0 
+  pip                conda-forge/noarch::pip-26.2.2-pyh8b19718_0 
+  python             conda-forge/linux-aarch64::python-3.11.17-h94ad73b_2_cpython 
+  readline           conda-forge/linux-aarch64::readline-8.3-ha7194a6_1 
+  setuptools         conda-forge/noarch::setuptools-84.2.1-pyhe730653_0 
+  tk                 conda-forge/linux-aarch64::tk-8.6.13-noxft_hf03c496_4 
+  tzdata             conda-forge/noarch::tzdata-2026c-h151e31d_0 
+  wheel              conda-forge/noarch::wheel-0.48.0-pyhd8ed1ab_0 
+  zstd               conda-forge/linux-aarch64::zstd-1.5.7-h9d15635_7 
+
+
+
+Downloading and Extracting Packages: ...working...python-3.11.17       | 21.6 MB   |            |   0% 
+libpython-3.11.17    | 6.9 MB    |            |   0% [A
+
+openssl-3.6.5        | 3.5 MB    |            |   0% [A[A
+
+
+tk-8.6.13            | 3.5 MB    |            |   0% [A[A[A
+
+
+
+pip-26.2.2           | 1.1 MB    |            |   0% [A[A[A[A
+
+
+
+
+libsqlite-3.54.1     | 955 KB    |            |   0% [A[A[A[A[A
+
+
+
+
+
+ncurses-6.6          | 933 KB    |            |   0% [A[A[A[A[A[A
+
+
+
+
+
+
+ld_impl_linux-aarch6 | 884 KB    |            |   0% [A[A[A[A[A[A[A
+
+
+
+
+
+
+
+libgcc-16.2.0        | 613 KB    |            |   0% [A[A[A[A[A[A[A[A
+
+
+
+
+
+
+
+
+libgomp-16.2.0       | 603 KB    |            |   0% [A[A[A[A[A[A[A[A[A
+
+
+
+
+
+
+
+
+
+zstd-1.5.7           | 601 KB    |            |   0% [A[A[A[A[A[A[A[A[A[A
+
+
+
+
+
+
+
+
+
+
+setuptools-84.2.1    | 554 KB    |            |   0% [A[A[A[A[A[A[A[A[A[A[A
+
+
+
+
+
+
+
+
+
+
+
+readline-8.3         | 356 KB    |            |   0% [A[A[A[A[A[A[A[A[A[A[A[A
+
+
+
+
+
+
+
+
+
+
+
+
+bzip2-1.0.8          | 190 KB    |            |   0% [A[A[A[A[A[A[A[A[A[A[A[A[A
+
+
+
+
+
+
+
+
+
+
+
+
+
+libxcrypt-4.4.38     | 131 KB    |            |   0% [A[A[A[A[A[A[A[A[A[A[A[A[A[A
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ca-certificates-2026 | 128 KB    |            |   0% [A[A[A[A[A[A[A[A[A[A[A[A[A[A[A
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+liblzma-5.8.3        | 123 KB    |            |   0% [A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+tzdata-2026c         | 116 KB    |            |   0% [A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+packaging-26.3       | 114 KB    |            |   0% [A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ ... (more hidden) ...[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[Apython-3.11.17       | 21.6 MB   |            |   0% 
+libpython-3.11.17    | 6.9 MB    | 1          |   1% [A
+
+openssl-3.6.5        | 3.5 MB    | 4          |   4% [A[A
+
+openssl-3.6.5        | 3.5 MB    | ########## | 100% [A[A
+
+
+
+
+libsqlite-3.54.1     | 955 KB    | 1          |   2% [A[A[A[A[A
+
+
+
+
+libsqlite-3.54.1     | 955 KB    | ########## | 100% [A[A[A[A[Apython-3.11.17       | 21.6 MB   | 8          |   9% 
+libpython-3.11.17    | 6.9 MB    | ##3        |  23% [A
+
+
+
+
+
+ncurses-6.6          | 933 KB    | 1          |   2% [A[A[A[A[A[A
+
+
+
+
+
+ncurses-6.6          | 933 KB    | ########## | 100% [A[A[A[A[A[A
+
+
+
+
+libsqlite-3.54.1     | 955 KB    | ########## | 100% [A[A[A[A[A
+
+
+
+
+
+
+ld_impl_linux-aarch6 | 884 KB    | 1          |   2% [A[A[A[A[A[A[A
+
+
+
+
+
+
+ld_impl_linux-aarch6 | 884 KB    | ########## | 100% [A[A[A[A[A[A[Apython-3.11.17       | 21.6 MB   | ####6      |  46% 
+libpython-3.11.17    | 6.9 MB    | ######4    |  64% [A
+
+
+
+
+
+
+
+libgcc-16.2.0        | 613 KB    | 2          |   3% [A[A[A[A[A[A[A[A
+
+
+
+
+
+
+
+libgcc-16.2.0        | 613 KB    | ########## | 100% [A[A[A[A[A[A[A[A
+
+
+
+
+
+
+
+
+libgomp-16.2.0       | 603 KB    | 2          |   3% [A[A[A[A[A[A[A[A[A
+libpython-3.11.17    | 6.9 MB    | ########## | 100% [A
+
+
+
+
+
+
+
+
+libgomp-16.2.0       | 603 KB    | ########## | 100% [A[A[A[A[A[A[A[A[A
+
+
+
+
+
+
+
+
+
+zstd-1.5.7           | 601 KB    | 2          |   3% [A[A[A[A[A[A[A[A[A[A
+
+
+
+
+
+
+
+
+
+
+setuptools-84.2.1    | 554 KB    | 2          |   3% [A[A[A[A[A[A[A[A[A[A[Apython-3.11.17       | 21.6 MB   | #########1 |  91% 
+
+
+tk-8.6.13            | 3.5 MB    |            |   0% [A[A[A
+
+
+
+
+
+
+
+
+
+
+setuptools-84.2.1    | 554 KB    | ########## | 100% [A[A[A[A[A[A[A[A[A[A[A
+
+
+
+
+
+
+ld_impl_linux-aarch6 | 884 KB    | ########## | 100% [A[A[A[A[A[A[A
+
+
+
+
+
+
+ld_impl_linux-aarch6 | 884 KB    | ########## | 100% [A[A[A[A[A[A[A
+
+
+
+
+
+
+
+
+
+zstd-1.5.7           | 601 KB    | ########## | 100% [A[A[A[A[A[A[A[A[A[A
+
+
+
+
+
+
+
+
+
+
+
+readline-8.3         | 356 KB    | 4          |   4% [A[A[A[A[A[A[A[A[A[A[A[A
+
+
+
+
+
+
+
+
+
+
+
+readline-8.3         | 356 KB    | ########## | 100% [A[A[A[A[A[A[A[A[A[A[A[A
+
+
+
+
+
+
+
+
+
+
+
+
+bzip2-1.0.8          | 190 KB    | 8          |   8% [A[A[A[A[A[A[A[A[A[A[A[A[A
+
+
+
+
+
+
+
+
+
+
+
+
+bzip2-1.0.8          | 190 KB    | ########## | 100% [A[A[A[A[A[A[A[A[A[A[A[A[A
+
+
+tk-8.6.13            | 3.5 MB    | ########## | 100% [A[A[A
+
+
+
+
+
+
+
+
+
+
+
+
+
+libxcrypt-4.4.38     | 131 KB    | #2         |  12% [A[A[A[A[A[A[A[A[A[A[A[A[A[Apython-3.11.17       | 21.6 MB   | ########## | 100% 
+
+
+
+
+
+
+
+
+
+
+
+
+
+libxcrypt-4.4.38     | 131 KB    | ########## | 100% [A[A[A[A[A[A[A[A[A[A[A[A[A[A
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ca-certificates-2026 | 128 KB    | #2         |  12% [A[A[A[A[A[A[A[A[A[A[A[A[A[A[A
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ca-certificates-2026 | 128 KB    | ########## | 100% [A[A[A[A[A[A[A[A[A[A[A[A[A[A[A
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+packaging-26.3       | 114 KB    | #4         |  14% [A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ ... (more hidden) ...[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+packaging-26.3       | 114 KB    | ########## | 100% [A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ ... (more hidden) ...[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+liblzma-5.8.3        | 123 KB    | #3         |  13% [A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+liblzma-5.8.3        | 123 KB    | ########## | 100% [A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A
+
+
+
+
+
+
+
+libgcc-16.2.0        | 613 KB    | ########## | 100% [A[A[A[A[A[A[A[A
+
+
+
+
+
+
+
+libgcc-16.2.0        | 613 KB    | ########## | 100% [A[A[A[A[A[A[A[A
+
+openssl-3.6.5        | 3.5 MB    | ########## | 100% [A[A
+
+openssl-3.6.5        | 3.5 MB    | ########## | 100% [A[A
+
+
+
+pip-26.2.2           | 1.1 MB    | 1          |   1% [A[A[A[A
+
+
+
+pip-26.2.2           | 1.1 MB    | ########## | 100% [A[A[A[A
+libpython-3.11.17    | 6.9 MB    | ########## | 100% [A
+libpython-3.11.17    | 6.9 MB    | ########## | 100% [A
+
+
+
+
+
+
+
+
+libgomp-16.2.0       | 603 KB    | ########## | 100% [A[A[A[A[A[A[A[A[A
+
+
+
+
+
+
+
+
+libgomp-16.2.0       | 603 KB    | ########## | 100% [A[A[A[A[A[A[A[A[A
+
+
+
+
+
+
+
+
+
+zstd-1.5.7           | 601 KB    | ########## | 100% [A[A[A[A[A[A[A[A[A[A
+
+
+
+
+
+
+
+
+
+zstd-1.5.7           | 601 KB    | ########## | 100% [A[A[A[A[A[A[A[A[A[A
+
+
+
+
+
+
+
+
+
+
+
+readline-8.3         | 356 KB    | ########## | 100% [A[A[A[A[A[A[A[A[A[A[A[A
+
+
+
+
+
+
+
+
+
+
+
+readline-8.3         | 356 KB    | ########## | 100% [A[A[A[A[A[A[A[A[A[A[A[A
+
+
+
+
+
+
+
+
+
+
+
+
+bzip2-1.0.8          | 190 KB    | ########## | 100% [A[A[A[A[A[A[A[A[A[A[A[A[A
+
+
+
+
+
+
+
+
+
+
+
+
+bzip2-1.0.8          | 190 KB    | ########## | 100% [A[A[A[A[A[A[A[A[A[A[A[A[A
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+tzdata-2026c         | 116 KB    | #3         |  14% [A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+tzdata-2026c         | 116 KB    | ########## | 100% [A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A
+
+
+
+
+
+
+
+
+
+
+setuptools-84.2.1    | 554 KB    | ########## | 100% [A[A[A[A[A[A[A[A[A[A[A
+
+
+
+
+
+
+
+
+
+
+setuptools-84.2.1    | 554 KB    | ########## | 100% [A[A[A[A[A[A[A[A[A[A[A
+
+
+tk-8.6.13            | 3.5 MB    | ########## | 100% [A[A[A
+
+
+tk-8.6.13            | 3.5 MB    | ########## | 100% [A[A[A
+
+
+
+
+
+
+
+
+
+
+
+
+
+libxcrypt-4.4.38     | 131 KB    | ########## | 100% [A[A[A[A[A[A[A[A[A[A[A[A[A[A
+
+
+
+
+
+
+
+
+
+
+
+
+
+libxcrypt-4.4.38     | 131 KB    | ########## | 100% [A[A[A[A[A[A[A[A[A[A[A[A[A[A
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ca-certificates-2026 | 128 KB    | ########## | 100% [A[A[A[A[A[A[A[A[A[A[A[A[A[A[A
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ca-certificates-2026 | 128 KB    | ########## | 100% [A[A[A[A[A[A[A[A[A[A[A[A[A[A[A
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+packaging-26.3       | 114 KB    | ########## | 100% [A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+packaging-26.3       | 114 KB    | ########## | 100% [A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ ... (more hidden) ...[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ ... (more hidden) ...[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+liblzma-5.8.3        | 123 KB    | ########## | 100% [A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+liblzma-5.8.3        | 123 KB    | ########## | 100% [A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A
+
+
+
+pip-26.2.2           | 1.1 MB    | ########## | 100% [A[A[A[A
+
+
+
+pip-26.2.2           | 1.1 MB    | ########## | 100% [A[A[A[A
+
+
+
+
+
+ncurses-6.6          | 933 KB    | ########## | 100% [A[A[A[A[A[A
+
+
+
+
+
+ncurses-6.6          | 933 KB    | ########## | 100% [A[A[A[A[A[A
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+tzdata-2026c         | 116 KB    | ########## | 100% [A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+tzdata-2026c         | 116 KB    | ########## | 100% [A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[Apython-3.11.17       | 21.6 MB   | ########## | 100% 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                      [A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A                                                     
+                                                     [A
+
+                                                     [A[A
+
+
+                                                     [A[A[A
+
+
+
+                                                     [A[A[A[A
+
+
+
+
+                                                     [A[A[A[A[A
+
+
+
+
+
+                                                     [A[A[A[A[A[A
+
+
+
+
+
+
+                                                     [A[A[A[A[A[A[A
+
+
+
+
+
+
+
+                                                     [A[A[A[A[A[A[A[A
+
+
+
+
+
+
+
+
+                                                     [A[A[A[A[A[A[A[A[A
+
+
+
+
+
+
+
+
+
+                                                     [A[A[A[A[A[A[A[A[A[A
+
+
+
+
+
+
+
+
+
+
+                                                     [A[A[A[A[A[A[A[A[A[A[A
+
+
+
+
+
+
+
+
+
+
+
+                                                     [A[A[A[A[A[A[A[A[A[A[A[A
+
+
+
+
+
+
+
+
+
+
+
+
+                                                     [A[A[A[A[A[A[A[A[A[A[A[A[A
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                                     [A[A[A[A[A[A[A[A[A[A[A[A[A[A
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                                     [A[A[A[A[A[A[A[A[A[A[A[A[A[A[A
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                                     [A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                                     [A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                                     [A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A
+[A
+
+[A[A
+
+
+[A[A[A
+
+
+
+[A[A[A[A
+
+
+
+
+[A[A[A[A[A
+
+
+
+
+
+[A[A[A[A[A[A done
+Preparing transaction: / - \ done
+Verifying transaction: / - \ | / - \ | / - \ | / - \ | / - \ | / - \ | / - \ | / - \ | / - \ | done
+Executing transaction: - \ | / - \ | / - \ | / - \ | / - \ | / - \ | / - \ | / - \ | / - \ | / - \ | / - \ | / - \ | / - \ | / - \ | / - \ | / - \ | / - \ | / - \ | / - \ | / - \ | / - \ | / - \ | done
+#
+# To activate this environment, use
+#
+#     $ conda activate /projects/b6ac/go2-sumo/env
+#
+# To deactivate an active environment, use
+#
+#     $ conda deactivate
+
+[11:02:33] Installing ffmpeg from conda-forge
+Channels:
+ - conda-forge
+Platform: linux-aarch64
+Collecting package metadata (repodata.json): - \ | done
+Solving environment: - done
+
+## Package Plan ##
+
+  environment location: /projects/b6ac/go2-sumo/env
+
+  added / updated specs:
+    - ffmpeg
+
+
+The following packages will be downloaded:
+
+    package                    |            build
+    ---------------------------|-----------------
+    aom-3.4.0                  |       headf329_1         3.2 MB  conda-forge
+    ffmpeg-5.1.0               | gpl_h7bca69d_101        10.1 MB  conda-forge
+    font-ttf-dejavu-sans-mono-2.37|       hab24e00_0         388 KB  conda-forge
+    font-ttf-inconsolata-3.000 |       h77eed37_0          94 KB  conda-forge
+    font-ttf-source-code-pro-2.038|       h77eed37_0         684 KB  conda-forge
+    font-ttf-ubuntu-0.83       |       h77eed37_3         1.5 MB  conda-forge
+    fontconfig-2.18.3          |       ha4b22b4_1         297 KB  conda-forge
+    fonts-conda-ecosystem-1    |                0           4 KB  conda-forge
+    fonts-conda-forge-1        |       hc364b38_1           4 KB  conda-forge
+    freetype-2.14.3            |       h8af1aa0_2         171 KB  conda-forge
+    gmp-6.3.0                  |       h4d6b352_3         447 KB  conda-forge
+    gnutls-3.7.6               |       h4c3207e_3         2.1 MB  conda-forge
+    lame-3.100                 |    h4e544f5_1003         591 KB  conda-forge
+    libfreetype-2.14.3         |       h8af1aa0_2           8 KB  conda-forge
+    libfreetype6-2.14.3        |       h9cc7050_2         435 KB  conda-forge
+    libgcc-ng-16.2.0           |       he9431aa_7          28 KB  conda-forge
+    libiconv-1.18              |       h1ea5142_3         768 KB  conda-forge
+    libidn2-2.3.8              |       h99ff5a0_1         144 KB  conda-forge
+    libpng-1.6.59              |       hf9b7768_0         325 KB  conda-forge
+    libstdcxx-16.2.0           |       hef695bb_7         5.9 MB  conda-forge
+    libstdcxx-ng-16.2.0        |       hdbbeba8_7          28 KB  conda-forge
+    libtasn1-4.21.0            |       he30d5cf_1         124 KB  conda-forge
+    libunistring-0.9.10        |       hf897c2e_0         1.3 MB  conda-forge
+    libvpx-1.11.0              |       h01db608_3         1.5 MB  conda-forge
+    libxml2-2.13.9             |       h72433aa_0         719 KB  conda-forge
+    nettle-3.8.1               |       hcc5b78b_1         1.2 MB  conda-forge
+    openh264-2.3.0             |       h4de3ea5_0         1.8 MB  conda-forge
+    svt-av1-1.2.0              |       h4de3ea5_0         2.1 MB  conda-forge
+    x264-1!164.3095            | pl5321hac29afa_3         835 KB  conda-forge
+    x265-3.5                   |       hfb1330e_4         821 KB  conda-forge
+    ------------------------------------------------------------
+                                           Total:        37.6 MB
+
+The following NEW packages will be INSTALLED:
+
+  aom                conda-forge/linux-aarch64::aom-3.4.0-headf329_1 
+  ffmpeg             conda-forge/linux-aarch64::ffmpeg-5.1.0-gpl_h7bca69d_101 
+  font-ttf-dejavu-s~ conda-forge/noarch::font-ttf-dejavu-sans-mono-2.37-hab24e00_0 
+  font-ttf-inconsol~ conda-forge/noarch::font-ttf-inconsolata-3.000-h77eed37_0 
+  font-ttf-source-c~ conda-forge/noarch::font-ttf-source-code-pro-2.038-h77eed37_0 
+  font-ttf-ubuntu    conda-forge/noarch::font-ttf-ubuntu-0.83-h77eed37_3 
+  fontconfig         conda-forge/linux-aarch64::fontconfig-2.18.3-ha4b22b4_1 
+  fonts-conda-ecosy~ conda-forge/noarch::fonts-conda-ecosystem-1-0 
+  fonts-conda-forge  conda-forge/noarch::fonts-conda-forge-1-hc364b38_1 
+  freetype           conda-forge/linux-aarch64::freetype-2.14.3-h8af1aa0_2 
+  gmp                conda-forge/linux-aarch64::gmp-6.3.0-h4d6b352_3 
+  gnutls             conda-forge/linux-aarch64::gnutls-3.7.6-h4c3207e_3 
+  lame               conda-forge/linux-aarch64::lame-3.100-h4e544f5_1003 
+  libfreetype        conda-forge/linux-aarch64::libfreetype-2.14.3-h8af1aa0_2 
+  libfreetype6       conda-forge/linux-aarch64::libfreetype6-2.14.3-h9cc7050_2 
+  libgcc-ng          conda-forge/linux-aarch64::libgcc-ng-16.2.0-he9431aa_7 
+  libiconv           conda-forge/linux-aarch64::libiconv-1.18-h1ea5142_3 
+  libidn2            conda-forge/linux-aarch64::libidn2-2.3.8-h99ff5a0_1 
+  libpng             conda-forge/linux-aarch64::libpng-1.6.59-hf9b7768_0 
+  libstdcxx          conda-forge/linux-aarch64::libstdcxx-16.2.0-hef695bb_7 
+  libstdcxx-ng       conda-forge/linux-aarch64::libstdcxx-ng-16.2.0-hdbbeba8_7 
+  libtasn1           conda-forge/linux-aarch64::libtasn1-4.21.0-he30d5cf_1 
+  libunistring       conda-forge/linux-aarch64::libunistring-0.9.10-hf897c2e_0 
+  libvpx             conda-forge/linux-aarch64::libvpx-1.11.0-h01db608_3 
+  libxml2            conda-forge/linux-aarch64::libxml2-2.13.9-h72433aa_0 
+  nettle             conda-forge/linux-aarch64::nettle-3.8.1-hcc5b78b_1 
+  openh264           conda-forge/linux-aarch64::openh264-2.3.0-h4de3ea5_0 
+  svt-av1            conda-forge/linux-aarch64::svt-av1-1.2.0-h4de3ea5_0 
+  x264               conda-forge/linux-aarch64::x264-1!164.3095-pl5321hac29afa_3 
+  x265               conda-forge/linux-aarch64::x265-3.5-hfb1330e_4 
+
+
+
+Downloading and Extracting Packages: ...working...ffmpeg-5.1.0         | 10.1 MB   |            |   0% 
+libstdcxx-16.2.0     | 5.9 MB    |            |   0% [A
+
+aom-3.4.0            | 3.2 MB    |            |   0% [A[A
+
+
+svt-av1-1.2.0        | 2.1 MB    |            |   0% [A[A[A
+
+
+
+gnutls-3.7.6         | 2.1 MB    |            |   0% [A[A[A[A
+
+
+
+
+openh264-2.3.0       | 1.8 MB    |            |   0% [A[A[A[A[A
+
+
+
+
+
+font-ttf-ubuntu-0.83 | 1.5 MB    |            |   0% [A[A[A[A[A[A
+
+
+
+
+
+
+libvpx-1.11.0        | 1.5 MB    |            |   0% [A[A[A[A[A[A[A
+
+
+
+
+
+
+
+libunistring-0.9.10  | 1.3 MB    |            |   0% [A[A[A[A[A[A[A[A
+
+
+
+
+
+
+
+
+nettle-3.8.1         | 1.2 MB    |            |   0% [A[A[A[A[A[A[A[A[A
+
+
+
+
+
+
+
+
+
+x264-1!164.3095      | 835 KB    |            |   0% [A[A[A[A[A[A[A[A[A[A
+
+
+
+
+
+
+
+
+
+
+x265-3.5             | 821 KB    |            |   0% [A[A[A[A[A[A[A[A[A[A[A
+
+
+
+
+
+
+
+
+
+
+
+libiconv-1.18        | 768 KB    |            |   0% [A[A[A[A[A[A[A[A[A[A[A[A
+
+
+
+
+
+
+
+
+
+
+
+
+libxml2-2.13.9       | 719 KB    |            |   0% [A[A[A[A[A[A[A[A[A[A[A[A[A
+
+
+
+
+
+
+
+
+
+
+
+
+
+font-ttf-source-code | 684 KB    |            |   0% [A[A[A[A[A[A[A[A[A[A[A[A[A[A
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+lame-3.100           | 591 KB    |            |   0% [A[A[A[A[A[A[A[A[A[A[A[A[A[A[A
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+gmp-6.3.0            | 447 KB    |            |   0% [A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+libfreetype6-2.14.3  | 435 KB    |            |   0% [A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+font-ttf-dejavu-sans | 388 KB    |            |   0% [A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ ... (more hidden) ...[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[Affmpeg-5.1.0         | 10.1 MB   |            |   0% 
+
+
+svt-av1-1.2.0        | 2.1 MB    |            |   1% [A[A[Affmpeg-5.1.0         | 10.1 MB   | 2          |   2% 
+
+
+svt-av1-1.2.0        | 2.1 MB    | 8          |   9% [A[A[Affmpeg-5.1.0         | 10.1 MB   | #          |  10% 
+
+
+svt-av1-1.2.0        | 2.1 MB    | ####7      |  47% [A[A[Affmpeg-5.1.0         | 10.1 MB   | ###2       |  32% 
+
+
+svt-av1-1.2.0        | 2.1 MB    | ########7  |  87% [A[A[A
+
+
+svt-av1-1.2.0        | 2.1 MB    | ########## | 100% [A[A[A
+
+aom-3.4.0            | 3.2 MB    |            |   0% [A[A
+
+
+
+
+openh264-2.3.0       | 1.8 MB    |            |   1% [A[A[A[A[Affmpeg-5.1.0         | 10.1 MB   | #####4     |  54% 
+
+
+
+gnutls-3.7.6         | 2.1 MB    |            |   1% [A[A[A[A
+
+
+
+
+openh264-2.3.0       | 1.8 MB    | #######7   |  77% [A[A[A[A[A
+
+aom-3.4.0            | 3.2 MB    | 3          |   3% [A[A
+
+
+
+
+openh264-2.3.0       | 1.8 MB    | ########## | 100% [A[A[A[A[Affmpeg-5.1.0         | 10.1 MB   | ########2  |  83% 
+
+
+
+gnutls-3.7.6         | 2.1 MB    | ##3        |  24% [A[A[A[A
+
+
+
+
+
+font-ttf-ubuntu-0.83 | 1.5 MB    | 1          |   1% [A[A[A[A[A[Affmpeg-5.1.0         | 10.1 MB   | ########## | 100% 
+
+
+svt-av1-1.2.0        | 2.1 MB    | ########## | 100% [A[A[A
+
+aom-3.4.0            | 3.2 MB    | ##2        |  22% [A[A
+
+
+
+
+
+
+libvpx-1.11.0        | 1.5 MB    | 1          |   1% [A[A[A[A[A[A[A
+
+
+
+gnutls-3.7.6         | 2.1 MB    | ########## | 100% [A[A[A[A
+
+
+
+
+
+font-ttf-ubuntu-0.83 | 1.5 MB    | ########## | 100% [A[A[A[A[A[A
+
+
+
+
+
+
+libvpx-1.11.0        | 1.5 MB    | ########## | 100% [A[A[A[A[A[A[A
+
+aom-3.4.0            | 3.2 MB    | ########## | 100% [A[A
+
+
+
+
+
+
+
+libunistring-0.9.10  | 1.3 MB    | 1          |   1% [A[A[A[A[A[A[A[A
+
+
+
+
+
+
+
+
+
+
+x265-3.5             | 821 KB    | 1          |   2% [A[A[A[A[A[A[A[A[A[A[A
+
+
+
+
+
+
+
+
+
+x264-1!164.3095      | 835 KB    | 1          |   2% [A[A[A[A[A[A[A[A[A[A
+
+
+
+
+
+
+
+libunistring-0.9.10  | 1.3 MB    | ########## | 100% [A[A[A[A[A[A[A[A
+
+
+
+
+
+
+
+
+
+
+x265-3.5             | 821 KB    | ########## | 100% [A[A[A[A[A[A[A[A[A[A[A
+
+
+
+
+
+
+
+
+
+x264-1!164.3095      | 835 KB    | ########## | 100% [A[A[A[A[A[A[A[A[A[A
+
+
+
+
+
+
+
+
+nettle-3.8.1         | 1.2 MB    | 1          |   1% [A[A[A[A[A[A[A[A[A
+
+
+
+
+openh264-2.3.0       | 1.8 MB    | ########## | 100% [A[A[A[A[A
+
+
+
+
+
+
+
+
+
+
+
+
+libxml2-2.13.9       | 719 KB    | 2          |   2% [A[A[A[A[A[A[A[A[A[A[A[A[A
+
+
+
+
+
+
+
+
+
+
+
+
+libxml2-2.13.9       | 719 KB    | ########## | 100% [A[A[A[A[A[A[A[A[A[A[A[A[A
+
+
+
+
+
+
+
+
+
+
+
+libiconv-1.18        | 768 KB    | 2          |   2% [A[A[A[A[A[A[A[A[A[A[A[A
+
+
+
+
+
+
+
+
+
+
+
+
+
+font-ttf-source-code | 684 KB    | 2          |   2% [A[A[A[A[A[A[A[A[A[A[A[A[A[A
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+lame-3.100           | 591 KB    | 2          |   3% [A[A[A[A[A[A[A[A[A[A[A[A[A[A[A
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+lame-3.100           | 591 KB    | ########## | 100% [A[A[A[A[A[A[A[A[A[A[A[A[A[A[A
+
+
+
+
+
+
+
+
+
+
+
+
+
+font-ttf-source-code | 684 KB    | ########## | 100% [A[A[A[A[A[A[A[A[A[A[A[A[A[A
+
+
+
+
+
+
+
+
+nettle-3.8.1         | 1.2 MB    | ########## | 100% [A[A[A[A[A[A[A[A[A
+
+
+
+
+
+font-ttf-ubuntu-0.83 | 1.5 MB    | ########## | 100% [A[A[A[A[A[A
+
+
+
+
+
+font-ttf-ubuntu-0.83 | 1.5 MB    | ########## | 100% [A[A[A[A[A[A
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+gmp-6.3.0            | 447 KB    | 3          |   4% [A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+gmp-6.3.0            | 447 KB    | ########## | 100% [A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+font-ttf-dejavu-sans | 388 KB    | 4          |   4% [A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+libfreetype6-2.14.3  | 435 KB    | 3          |   4% [A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+libfreetype6-2.14.3  | 435 KB    | ########## | 100% [A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+font-ttf-dejavu-sans | 388 KB    | ########## | 100% [A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ ... (more hidden) ...[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ ... (more hidden) ...[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A
+libstdcxx-16.2.0     | 5.9 MB    |            |   0% [A
+
+
+
+
+
+
+libvpx-1.11.0        | 1.5 MB    | ########## | 100% [A[A[A[A[A[A[A
+
+
+
+
+
+
+libvpx-1.11.0        | 1.5 MB    | ########## | 100% [A[A[A[A[A[A[A
+libstdcxx-16.2.0     | 5.9 MB    | ####9      |  49% [A
+
+
+
+
+
+
+
+
+
+
+
+libiconv-1.18        | 768 KB    | ########1  |  81% [A[A[A[A[A[A[A[A[A[A[A[A
+
+
+
+
+
+
+
+
+
+
+
+libiconv-1.18        | 768 KB    | ########## | 100% [A[A[A[A[A[A[A[A[A[A[A[A
+libstdcxx-16.2.0     | 5.9 MB    | ########## | 100% [A
+
+aom-3.4.0            | 3.2 MB    | ########## | 100% [A[A
+
+aom-3.4.0            | 3.2 MB    | ########## | 100% [A[A
+
+
+
+
+
+
+
+libunistring-0.9.10  | 1.3 MB    | ########## | 100% [A[A[A[A[A[A[A[A
+
+
+
+
+
+
+
+libunistring-0.9.10  | 1.3 MB    | ########## | 100% [A[A[A[A[A[A[A[A
+
+
+
+
+
+
+
+
+
+
+x265-3.5             | 821 KB    | ########## | 100% [A[A[A[A[A[A[A[A[A[A[A
+
+
+
+
+
+
+
+
+
+
+x265-3.5             | 821 KB    | ########## | 100% [A[A[A[A[A[A[A[A[A[A[A
+
+
+
+
+
+
+
+
+
+x264-1!164.3095      | 835 KB    | ########## | 100% [A[A[A[A[A[A[A[A[A[A
+
+
+
+
+
+
+
+
+
+x264-1!164.3095      | 835 KB    | ########## | 100% [A[A[A[A[A[A[A[A[A[Affmpeg-5.1.0         | 10.1 MB   | ########## | 100% 
+
+
+
+
+
+
+
+
+
+
+
+
+libxml2-2.13.9       | 719 KB    | ########## | 100% [A[A[A[A[A[A[A[A[A[A[A[A[A
+
+
+
+
+
+
+
+
+
+
+
+
+libxml2-2.13.9       | 719 KB    | ########## | 100% [A[A[A[A[A[A[A[A[A[A[A[A[A
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+lame-3.100           | 591 KB    | ########## | 100% [A[A[A[A[A[A[A[A[A[A[A[A[A[A[A
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+lame-3.100           | 591 KB    | ########## | 100% [A[A[A[A[A[A[A[A[A[A[A[A[A[A[A
+
+
+
+
+
+
+
+
+
+
+
+
+
+font-ttf-source-code | 684 KB    | ########## | 100% [A[A[A[A[A[A[A[A[A[A[A[A[A[A
+
+
+
+
+
+
+
+
+
+
+
+
+
+font-ttf-source-code | 684 KB    | ########## | 100% [A[A[A[A[A[A[A[A[A[A[A[A[A[A
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+gmp-6.3.0            | 447 KB    | ########## | 100% [A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+gmp-6.3.0            | 447 KB    | ########## | 100% [A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+libfreetype6-2.14.3  | 435 KB    | ########## | 100% [A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+libfreetype6-2.14.3  | 435 KB    | ########## | 100% [A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+font-ttf-dejavu-sans | 388 KB    | ########## | 100% [A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+font-ttf-dejavu-sans | 388 KB    | ########## | 100% [A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ ... (more hidden) ...[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ ... (more hidden) ...[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A
+
+
+
+
+
+
+
+
+nettle-3.8.1         | 1.2 MB    | ########## | 100% [A[A[A[A[A[A[A[A[A
+
+
+
+
+
+
+
+
+nettle-3.8.1         | 1.2 MB    | ########## | 100% [A[A[A[A[A[A[A[A[A
+libstdcxx-16.2.0     | 5.9 MB    | ########## | 100% [A
+libstdcxx-16.2.0     | 5.9 MB    | ########## | 100% [A
+
+
+
+
+
+
+
+
+
+
+
+libiconv-1.18        | 768 KB    | ########## | 100% [A[A[A[A[A[A[A[A[A[A[A[A
+
+
+
+
+
+
+
+
+
+
+
+libiconv-1.18        | 768 KB    | ########## | 100% [A[A[A[A[A[A[A[A[A[A[A[A
+
+
+
+gnutls-3.7.6         | 2.1 MB    | ########## | 100% [A[A[A[A
+
+
+
+gnutls-3.7.6         | 2.1 MB    | ########## | 100% [A[A[A[A
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                      [A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A                                                     
+                                                     [A
+
+                                                     [A[A
+
+
+                                                     [A[A[A
+
+
+
+                                                     [A[A[A[A
+
+
+
+
+                                                     [A[A[A[A[A
+
+
+
+
+
+                                                     [A[A[A[A[A[A
+
+
+
+
+
+
+                                                     [A[A[A[A[A[A[A
+
+
+
+
+
+
+
+                                                     [A[A[A[A[A[A[A[A
+
+
+
+
+
+
+
+
+                                                     [A[A[A[A[A[A[A[A[A
+
+
+
+
+
+
+
+
+
+                                                     [A[A[A[A[A[A[A[A[A[A
+
+
+
+
+
+
+
+
+
+
+                                                     [A[A[A[A[A[A[A[A[A[A[A
+
+
+
+
+
+
+
+
+
+
+
+                                                     [A[A[A[A[A[A[A[A[A[A[A[A
+
+
+
+
+
+
+
+
+
+
+
+
+                                                     [A[A[A[A[A[A[A[A[A[A[A[A[A
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                                     [A[A[A[A[A[A[A[A[A[A[A[A[A[A
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                                     [A[A[A[A[A[A[A[A[A[A[A[A[A[A[A
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                                     [A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                                     [A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                                     [A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A
+[A
+
+[A[A
+
+
+[A[A[A
+
+
+
+[A[A[A[A
+
+
+
+
+[A[A[A[A[A
+
+
+
+
+
+[A[A[A[A[A[A
+
+
+
+
+
+
+[A[A[A[A[A[A[A
+
+
+
+
+
+
+
+[A[A[A[A[A[A[A[A
+
+
+
+
+
+
+
+
+[A[A[A[A[A[A[A[A[A
+
+
+
+
+
+
+
+
+
+[A[A[A[A[A[A[A[A[A[A done
+Preparing transaction: | done
+Verifying transaction: - \ | / - \ | / - \ | / - \ done
+Executing transaction: / - \ | / - \ | / done
+Requirement already satisfied: pip in /projects/b6ac/go2-sumo/env/lib/python3.11/site-packages (26.2.2)
+Collecting setuptools==69.5.1
+  Downloading setuptools-69.5.1-py3-none-any.whl.metadata (6.2 kB)
+Requirement already satisfied: wheel in /projects/b6ac/go2-sumo/env/lib/python3.11/site-packages (0.48.0)
+Collecting toml
+  Downloading toml-0.10.2-py2.py3-none-any.whl.metadata (7.1 kB)
+Requirement already satisfied: packaging>=24.0 in /projects/b6ac/go2-sumo/env/lib/python3.11/site-packages (from wheel) (26.3)
+Downloading setuptools-69.5.1-py3-none-any.whl (894 kB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 894.6/894.6 kB 26.0 MB/s  0:00:00
+
+Downloading toml-0.10.2-py2.py3-none-any.whl (16 kB)
+Installing collected packages: toml, setuptools
+  Attempting uninstall: setuptools
+    Found existing installation: setuptools 84.2.1
+    Uninstalling setuptools-84.2.1:
+      Successfully uninstalled setuptools-84.2.1
+
+
+Successfully installed setuptools-69.5.1 toml-0.10.2
+[11:02:52] Installing Isaac Sim 5.1 aarch64
+Looking in indexes: https://pypi.org/simple, https://pypi.nvidia.com
+Collecting isaacsim==5.1.0.0 (from isaacsim[all,extscache]==5.1.0.0)
+  Downloading isaacsim-5.1.0.0-cp311-none-manylinux_2_35_aarch64.whl (33 kB)
+Collecting isaacsim-kernel==5.1.0.0 (from isaacsim==5.1.0.0->isaacsim[all,extscache]==5.1.0.0)
+  Downloading isaacsim_kernel-5.1.0.0-cp311-none-manylinux_2_35_aarch64.whl (65.6 MB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 65.6/65.6 MB 8.8 MB/s  0:00:07
+
+Collecting aiohttp==3.11.11 (from isaacsim-kernel==5.1.0.0->isaacsim==5.1.0.0->isaacsim[all,extscache]==5.1.0.0)
+  Downloading aiohttp-3.11.11-cp311-cp311-manylinux_2_17_aarch64.manylinux2014_aarch64.whl.metadata (7.7 kB)
+Collecting pycares==4.8.0 (from isaacsim-kernel==5.1.0.0->isaacsim==5.1.0.0->isaacsim[all,extscache]==5.1.0.0)
+  Downloading pycares-4.8.0-cp311-cp311-manylinux_2_17_aarch64.manylinux2014_aarch64.whl.metadata (4.3 kB)
+Collecting aiodns==3.1.1 (from isaacsim-kernel==5.1.0.0->isaacsim==5.1.0.0->isaacsim[all,extscache]==5.1.0.0)
+  Downloading aiodns-3.1.1-py3-none-any.whl.metadata (4.0 kB)
+Collecting Pillow==11.3.0 (from isaacsim-kernel==5.1.0.0->isaacsim==5.1.0.0->isaacsim[all,extscache]==5.1.0.0)
+  Downloading pillow-11.3.0-cp311-cp311-manylinux_2_27_aarch64.manylinux_2_28_aarch64.whl.metadata (9.0 kB)
+Requirement already satisfied: toml==0.10.2 in /projects/b6ac/go2-sumo/env/lib/python3.11/site-packages (from isaacsim-kernel==5.1.0.0->isaacsim==5.1.0.0->isaacsim[all,extscache]==5.1.0.0) (0.10.2)
+Collecting numpy==1.26.0 (from isaacsim-kernel==5.1.0.0->isaacsim==5.1.0.0->isaacsim[all,extscache]==5.1.0.0)
+  Downloading numpy-1.26.0-cp311-cp311-manylinux_2_17_aarch64.manylinux2014_aarch64.whl.metadata (58 kB)
+Collecting click==8.1.7 (from isaacsim-kernel==5.1.0.0->isaacsim==5.1.0.0->isaacsim[all,extscache]==5.1.0.0)
+  Downloading click-8.1.7-py3-none-any.whl.metadata (3.0 kB)
+Collecting websockets==12.0 (from isaacsim-kernel==5.1.0.0->isaacsim==5.1.0.0->isaacsim[all,extscache]==5.1.0.0)
+  Downloading websockets-12.0-cp311-cp311-manylinux_2_17_aarch64.manylinux2014_aarch64.whl.metadata (6.6 kB)
+Collecting fastapi==0.115.7 (from isaacsim-kernel==5.1.0.0->isaacsim==5.1.0.0->isaacsim[all,extscache]==5.1.0.0)
+  Downloading fastapi-0.115.7-py3-none-any.whl.metadata (27 kB)
+Collecting attrs==25.1.0 (from isaacsim-kernel==5.1.0.0->isaacsim==5.1.0.0->isaacsim[all,extscache]==5.1.0.0)
+  Downloading attrs-25.1.0-py3-none-any.whl.metadata (10 kB)
+Collecting multidict==6.1.0 (from isaacsim-kernel==5.1.0.0->isaacsim==5.1.0.0->isaacsim[all,extscache]==5.1.0.0)
+  Downloading multidict-6.1.0-cp311-cp311-manylinux_2_17_aarch64.manylinux2014_aarch64.whl.metadata (5.0 kB)
+Collecting async_timeout==5.0.1 (from isaacsim-kernel==5.1.0.0->isaacsim==5.1.0.0->isaacsim[all,extscache]==5.1.0.0)
+  Downloading async_timeout-5.0.1-py3-none-any.whl.metadata (5.1 kB)
+Collecting yarl==1.18.3 (from isaacsim-kernel==5.1.0.0->isaacsim==5.1.0.0->isaacsim[all,extscache]==5.1.0.0)
+  Downloading yarl-1.18.3-cp311-cp311-manylinux_2_17_aarch64.manylinux2014_aarch64.whl.metadata (69 kB)
+Collecting idna==3.10 (from isaacsim-kernel==5.1.0.0->isaacsim==5.1.0.0->isaacsim[all,extscache]==5.1.0.0)
+  Downloading idna-3.10-py3-none-any.whl.metadata (10 kB)
+Collecting idna-ssl==1.1.0 (from isaacsim-kernel==5.1.0.0->isaacsim==5.1.0.0->isaacsim[all,extscache]==5.1.0.0)
+  Downloading idna-ssl-1.1.0.tar.gz (3.4 kB)
+  Installing build dependencies: started
+  Installing build dependencies: finished with status 'done'
+  Getting requirements to build wheel: started
+  Getting requirements to build wheel: finished with status 'done'
+  Preparing metadata (pyproject.toml): started
+  Preparing metadata (pyproject.toml): finished with status 'done'
+Collecting typing_extensions==4.12.2 (from isaacsim-kernel==5.1.0.0->isaacsim==5.1.0.0->isaacsim[all,extscache]==5.1.0.0)
+  Downloading typing_extensions-4.12.2-py3-none-any.whl.metadata (3.0 kB)
+Collecting aiofiles==23.2.1 (from isaacsim-kernel==5.1.0.0->isaacsim==5.1.0.0->isaacsim[all,extscache]==5.1.0.0)
+  Downloading aiofiles-23.2.1-py3-none-any.whl.metadata (9.7 kB)
+Collecting aiosignal==1.3.2 (from isaacsim-kernel==5.1.0.0->isaacsim==5.1.0.0->isaacsim[all,extscache]==5.1.0.0)
+  Downloading aiosignal-1.3.2-py2.py3-none-any.whl.metadata (3.8 kB)
+Collecting uvicorn==0.29.0 (from isaacsim-kernel==5.1.0.0->isaacsim==5.1.0.0->isaacsim[all,extscache]==5.1.0.0)
+  Downloading uvicorn-0.29.0-py3-none-any.whl.metadata (6.3 kB)
+Collecting httptools==0.6.1 (from isaacsim-kernel==5.1.0.0->isaacsim==5.1.0.0->isaacsim[all,extscache]==5.1.0.0)
+  Downloading httptools-0.6.1-cp311-cp311-manylinux_2_17_aarch64.manylinux2014_aarch64.whl.metadata (3.6 kB)
+Collecting asteval==1.0.6 (from isaacsim-kernel==5.1.0.0->isaacsim==5.1.0.0->isaacsim[all,extscache]==5.1.0.0)
+  Downloading asteval-1.0.6-py3-none-any.whl.metadata (6.2 kB)
+Collecting python-multipart==0.0.20 (from isaacsim-kernel==5.1.0.0->isaacsim==5.1.0.0->isaacsim[all,extscache]==5.1.0.0)
+  Downloading python_multipart-0.0.20-py3-none-any.whl.metadata (1.8 kB)
+Collecting wrapt==1.16.0 (from isaacsim-kernel==5.1.0.0->isaacsim==5.1.0.0->isaacsim[all,extscache]==5.1.0.0)
+  Downloading wrapt-1.16.0-cp311-cp311-manylinux_2_17_aarch64.manylinux2014_aarch64.whl.metadata (6.6 kB)
+Collecting aioitertools==0.11.0 (from isaacsim-kernel==5.1.0.0->isaacsim==5.1.0.0->isaacsim[all,extscache]==5.1.0.0)
+  Downloading aioitertools-0.11.0-py3-none-any.whl.metadata (3.3 kB)
+Collecting coverage==7.4.4 (from isaacsim-kernel==5.1.0.0->isaacsim==5.1.0.0->isaacsim[all,extscache]==5.1.0.0)
+  Downloading coverage-7.4.4-cp311-cp311-manylinux_2_17_aarch64.manylinux2014_aarch64.whl.metadata (8.2 kB)
+Collecting watchdog==4.0.0 (from isaacsim-kernel==5.1.0.0->isaacsim==5.1.0.0->isaacsim[all,extscache]==5.1.0.0)
+  Downloading watchdog-4.0.0-py3-none-manylinux2014_aarch64.whl.metadata (37 kB)
+Collecting sentry-sdk==2.29.1 (from isaacsim-kernel==5.1.0.0->isaacsim==5.1.0.0->isaacsim[all,extscache]==5.1.0.0)
+  Downloading sentry_sdk-2.29.1-py2.py3-none-any.whl.metadata (10 kB)
+Collecting charset_normalizer==3.3.2 (from isaacsim-kernel==5.1.0.0->isaacsim==5.1.0.0->isaacsim[all,extscache]==5.1.0.0)
+  Downloading charset_normalizer-3.3.2-cp311-cp311-manylinux_2_17_aarch64.manylinux2014_aarch64.whl.metadata (33 kB)
+Collecting frozenlist==1.5.0 (from isaacsim-kernel==5.1.0.0->isaacsim==5.1.0.0->isaacsim[all,extscache]==5.1.0.0)
+  Downloading frozenlist-1.5.0-cp311-cp311-manylinux_2_17_aarch64.manylinux2014_aarch64.whl.metadata (13 kB)
+Collecting pytz==2024.1 (from isaacsim-kernel==5.1.0.0->isaacsim==5.1.0.0->isaacsim[all,extscache]==5.1.0.0)
+  Downloading pytz-2024.1-py2.py3-none-any.whl.metadata (22 kB)
+Collecting qrcode==7.4.2 (from isaacsim-kernel==5.1.0.0->isaacsim==5.1.0.0->isaacsim[all,extscache]==5.1.0.0)
+  Downloading qrcode-7.4.2-py3-none-any.whl.metadata (17 kB)
+Collecting Jinja2==3.1.6 (from isaacsim-kernel==5.1.0.0->isaacsim==5.1.0.0->isaacsim[all,extscache]==5.1.0.0)
+  Downloading jinja2-3.1.6-py3-none-any.whl.metadata (2.9 kB)
+Collecting aiohappyeyeballs==2.4.4 (from isaacsim-kernel==5.1.0.0->isaacsim==5.1.0.0->isaacsim[all,extscache]==5.1.0.0)
+  Downloading aiohappyeyeballs-2.4.4-py3-none-any.whl.metadata (6.1 kB)
+Collecting propcache==0.2.1 (from isaacsim-kernel==5.1.0.0->isaacsim==5.1.0.0->isaacsim[all,extscache]==5.1.0.0)
+  Downloading propcache-0.2.1-cp311-cp311-manylinux_2_17_aarch64.manylinux2014_aarch64.whl.metadata (9.2 kB)
+Collecting psutil==5.9.8 (from isaacsim-kernel==5.1.0.0->isaacsim==5.1.0.0->isaacsim[all,extscache]==5.1.0.0)
+  Downloading psutil-5.9.8.tar.gz (503 kB)
+  Installing build dependencies: started
+  Installing build dependencies: finished with status 'done'
+  Getting requirements to build wheel: started
+  Getting requirements to build wheel: finished with status 'done'
+  Preparing metadata (pyproject.toml): started
+  Preparing metadata (pyproject.toml): finished with status 'done'
+Collecting requests==2.32.3 (from isaacsim-kernel==5.1.0.0->isaacsim==5.1.0.0->isaacsim[all,extscache]==5.1.0.0)
+  Downloading requests-2.32.3-py3-none-any.whl.metadata (4.6 kB)
+Collecting starlette<0.46.0,>=0.40.0 (from fastapi==0.115.7->isaacsim-kernel==5.1.0.0->isaacsim==5.1.0.0->isaacsim[all,extscache]==5.1.0.0)
+  Downloading starlette-0.45.3-py3-none-any.whl.metadata (6.3 kB)
+Collecting pydantic!=1.8,!=1.8.1,!=2.0.0,!=2.0.1,!=2.1.0,<3.0.0,>=1.7.4 (from fastapi==0.115.7->isaacsim-kernel==5.1.0.0->isaacsim==5.1.0.0->isaacsim[all,extscache]==5.1.0.0)
+  Downloading pydantic-2.14.1-py3-none-any.whl.metadata (133 kB)
+Collecting isaacsim-extscache-kit==5.1.0.0 (from isaacsim[all,extscache]==5.1.0.0)
+  Downloading isaacsim_extscache_kit-5.1.0.0-cp311-none-manylinux_2_35_aarch64.whl (3957.0 MB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 4.0/4.0 GB 11.9 MB/s  0:05:39
+
+Collecting isaacsim-extscache-kit-sdk==5.1.0.0 (from isaacsim[all,extscache]==5.1.0.0)
+  Downloading isaacsim_extscache_kit_sdk-5.1.0.0-cp311-none-manylinux_2_35_aarch64.whl (660.0 MB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 660.0/660.0 MB 9.5 MB/s  0:01:06
+
+Collecting isaacsim-extscache-physics==5.1.0.0 (from isaacsim[all,extscache]==5.1.0.0)
+  Downloading isaacsim_extscache_physics-5.1.0.0-cp311-none-manylinux_2_35_aarch64.whl (17 kB)
+Collecting isaacsim-app==5.1.0.0 (from isaacsim[all,extscache]==5.1.0.0)
+  Downloading isaacsim_app-5.1.0.0-cp311-none-manylinux_2_35_aarch64.whl (4.0 MB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 4.0/4.0 MB 92.2 MB/s  0:00:00
+
+Collecting isaacsim-asset==5.1.0.0 (from isaacsim[all,extscache]==5.1.0.0)
+  Downloading isaacsim_asset-5.1.0.0-cp311-none-manylinux_2_35_aarch64.whl (53.4 MB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 53.4/53.4 MB 9.5 MB/s  0:00:05
+
+Collecting isaacsim-benchmark==5.1.0.0 (from isaacsim[all,extscache]==5.1.0.0)
+  Downloading isaacsim_benchmark-5.1.0.0-cp311-none-manylinux_2_35_aarch64.whl (130 kB)
+Collecting isaacsim-code-editor==5.1.0.0 (from isaacsim[all,extscache]==5.1.0.0)
+  Downloading isaacsim_code_editor-5.1.0.0-cp311-none-manylinux_2_35_aarch64.whl (165 kB)
+Collecting isaacsim-core==5.1.0.0 (from isaacsim[all,extscache]==5.1.0.0)
+  Downloading isaacsim_core-5.1.0.0-cp311-none-manylinux_2_35_aarch64.whl (80.5 MB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 80.5/80.5 MB 8.4 MB/s  0:00:09
+
+Collecting isaacsim-cortex==5.1.0.0 (from isaacsim[all,extscache]==5.1.0.0)
+  Downloading isaacsim_cortex-5.1.0.0-cp311-none-manylinux_2_35_aarch64.whl (164 kB)
+Collecting isaacsim-example==5.1.0.0 (from isaacsim[all,extscache]==5.1.0.0)
+  Downloading isaacsim_example-5.1.0.0-cp311-none-manylinux_2_35_aarch64.whl (728 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 728.5/728.5 kB 168.8 MB/s  0:00:00
+
+Collecting isaacsim-gui==5.1.0.0 (from isaacsim[all,extscache]==5.1.0.0)
+  Downloading isaacsim_gui-5.1.0.0-cp311-none-manylinux_2_35_aarch64.whl (14.8 MB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 14.8/14.8 MB 6.4 MB/s  0:00:02
+
+Collecting isaacsim-replicator==5.1.0.0 (from isaacsim[all,extscache]==5.1.0.0)
+  Downloading isaacsim_replicator-5.1.0.0-cp311-none-manylinux_2_35_aarch64.whl (17.3 MB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 17.3/17.3 MB 10.5 MB/s  0:00:01
+
+Collecting isaacsim-rl==5.1.0.0 (from isaacsim[all,extscache]==5.1.0.0)
+  Downloading isaacsim_rl-5.1.0.0-cp311-none-manylinux_2_35_aarch64.whl (17 kB)
+Collecting isaacsim-robot==5.1.0.0 (from isaacsim[all,extscache]==5.1.0.0)
+  Downloading isaacsim_robot-5.1.0.0-cp311-none-manylinux_2_35_aarch64.whl (23.3 MB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 23.3/23.3 MB 9.8 MB/s  0:00:02
+
+Collecting isaacsim-robot-motion==5.1.0.0 (from isaacsim[all,extscache]==5.1.0.0)
+  Downloading isaacsim_robot_motion-5.1.0.0-cp311-none-manylinux_2_35_aarch64.whl (4.4 MB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 4.4/4.4 MB 137.0 MB/s  0:00:00
+
+Collecting isaacsim-robot-setup==5.1.0.0 (from isaacsim[all,extscache]==5.1.0.0)
+  Downloading isaacsim_robot_setup-5.1.0.0-cp311-none-manylinux_2_35_aarch64.whl (2.3 MB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 2.3/2.3 MB 125.6 MB/s  0:00:00
+
+Collecting isaacsim-ros1==5.1.0.0 (from isaacsim[all,extscache]==5.1.0.0)
+  Downloading isaacsim_ros1-5.1.0.0-cp311-none-manylinux_2_35_aarch64.whl (17 kB)
+Collecting isaacsim-ros2==5.1.0.0 (from isaacsim[all,extscache]==5.1.0.0)
+  Downloading isaacsim_ros2-5.1.0.0-cp311-none-manylinux_2_35_aarch64.whl (187.7 MB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 187.7/187.7 MB 10.5 MB/s  0:00:17
+
+Collecting isaacsim-sensor==5.1.0.0 (from isaacsim[all,extscache]==5.1.0.0)
+  Downloading isaacsim_sensor-5.1.0.0-cp311-none-manylinux_2_35_aarch64.whl (28.7 MB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 28.7/28.7 MB 9.4 MB/s  0:00:03
+
+Collecting isaacsim-storage==5.1.0.0 (from isaacsim[all,extscache]==5.1.0.0)
+  Downloading isaacsim_storage-5.1.0.0-cp311-none-manylinux_2_35_aarch64.whl (66 kB)
+Collecting isaacsim-template==5.1.0.0 (from isaacsim[all,extscache]==5.1.0.0)
+  Downloading isaacsim_template-5.1.0.0-cp311-none-manylinux_2_35_aarch64.whl (49 kB)
+Collecting isaacsim-test==5.1.0.0 (from isaacsim[all,extscache]==5.1.0.0)
+  Downloading isaacsim_test-5.1.0.0-cp311-none-manylinux_2_35_aarch64.whl (4.8 MB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 4.8/4.8 MB 86.8 MB/s  0:00:00
+
+Collecting isaacsim-utils==5.1.0.0 (from isaacsim[all,extscache]==5.1.0.0)
+  Downloading isaacsim_utils-5.1.0.0-cp311-none-manylinux_2_35_aarch64.whl (205 kB)
+Collecting numba==0.59.1 (from isaacsim-core==5.1.0.0->isaacsim[all,extscache]==5.1.0.0)
+  Downloading numba-0.59.1-cp311-cp311-manylinux2014_aarch64.manylinux_2_17_aarch64.whl.metadata (2.7 kB)
+Collecting llvmlite==0.42.0 (from isaacsim-core==5.1.0.0->isaacsim[all,extscache]==5.1.0.0)
+  Downloading llvmlite-0.42.0-cp311-cp311-manylinux_2_17_aarch64.manylinux2014_aarch64.whl.metadata (4.8 kB)
+Collecting nest_asyncio==1.5.6 (from isaacsim-core==5.1.0.0->isaacsim[all,extscache]==5.1.0.0)
+  Downloading nest_asyncio-1.5.6-py3-none-any.whl.metadata (2.7 kB)
+Collecting markupsafe==2.1.3 (from isaacsim-core==5.1.0.0->isaacsim[all,extscache]==5.1.0.0)
+  Downloading MarkupSafe-2.1.3-cp311-cp311-manylinux_2_17_aarch64.manylinux2014_aarch64.whl.metadata (3.0 kB)
+Collecting matplotlib==3.10.3 (from isaacsim-core==5.1.0.0->isaacsim[all,extscache]==5.1.0.0)
+  Downloading matplotlib-3.10.3-cp311-cp311-manylinux_2_17_aarch64.manylinux2014_aarch64.whl.metadata (11 kB)
+Collecting contourpy==1.3.1 (from isaacsim-core==5.1.0.0->isaacsim[all,extscache]==5.1.0.0)
+  Downloading contourpy-1.3.1-cp311-cp311-manylinux_2_17_aarch64.manylinux2014_aarch64.whl.metadata (5.4 kB)
+Collecting fonttools==4.55.3 (from isaacsim-core==5.1.0.0->isaacsim[all,extscache]==5.1.0.0)
+  Downloading fonttools-4.55.3-cp311-cp311-manylinux_2_17_aarch64.manylinux2014_aarch64.whl.metadata (165 kB)
+Collecting pyparsing==3.0.9 (from isaacsim-core==5.1.0.0->isaacsim[all,extscache]==5.1.0.0)
+  Downloading pyparsing-3.0.9-py3-none-any.whl.metadata (4.2 kB)
+Collecting cycler==0.11.0 (from isaacsim-core==5.1.0.0->isaacsim[all,extscache]==5.1.0.0)
+  Downloading cycler-0.11.0-py3-none-any.whl.metadata (785 bytes)
+Collecting kiwisolver==1.4.4 (from isaacsim-core==5.1.0.0->isaacsim[all,extscache]==5.1.0.0)
+  Downloading kiwisolver-1.4.4-cp311-cp311-manylinux_2_17_aarch64.manylinux2014_aarch64.whl.metadata (6.3 kB)
+Collecting pint==0.20.1 (from isaacsim-core==5.1.0.0->isaacsim[all,extscache]==5.1.0.0)
+  Downloading Pint-0.20.1-py3-none-any.whl.metadata (7.5 kB)
+Collecting packaging==23.0 (from isaacsim-core==5.1.0.0->isaacsim[all,extscache]==5.1.0.0)
+  Downloading packaging-23.0-py3-none-any.whl.metadata (3.1 kB)
+Collecting gunicorn==23.0.0 (from isaacsim-core==5.1.0.0->isaacsim[all,extscache]==5.1.0.0)
+  Downloading gunicorn-23.0.0-py3-none-any.whl.metadata (4.4 kB)
+Collecting osqp==0.6.7.post3 (from isaacsim-core==5.1.0.0->isaacsim[all,extscache]==5.1.0.0)
+  Downloading osqp-0.6.7.post3-cp311-cp311-manylinux_2_17_aarch64.manylinux2014_aarch64.whl.metadata (1.9 kB)
+Collecting qdldl==0.1.7.post5 (from isaacsim-core==5.1.0.0->isaacsim[all,extscache]==5.1.0.0)
+  Downloading qdldl-0.1.7.post5-cp311-cp311-manylinux_2_17_aarch64.manylinux2014_aarch64.whl.metadata (1.7 kB)
+Collecting tornado==6.5.1 (from isaacsim-core==5.1.0.0->isaacsim[all,extscache]==5.1.0.0)
+  Downloading tornado-6.5.1-cp39-abi3-manylinux_2_17_aarch64.manylinux2014_aarch64.whl.metadata (2.8 kB)
+Collecting pyperclip==1.8.0 (from isaacsim-core==5.1.0.0->isaacsim[all,extscache]==5.1.0.0)
+  Downloading pyperclip-1.8.0.tar.gz (16 kB)
+  Installing build dependencies: started
+  Installing build dependencies: finished with status 'done'
+  Getting requirements to build wheel: started
+  Getting requirements to build wheel: finished with status 'done'
+  Preparing metadata (pyproject.toml): started
+  Preparing metadata (pyproject.toml): finished with status 'done'
+Collecting python-dateutil==2.9.0.post0 (from isaacsim-core==5.1.0.0->isaacsim[all,extscache]==5.1.0.0)
+  Downloading python_dateutil-2.9.0.post0-py2.py3-none-any.whl.metadata (8.4 kB)
+Collecting six==1.17.0 (from isaacsim-core==5.1.0.0->isaacsim[all,extscache]==5.1.0.0)
+  Downloading six-1.17.0-py2.py3-none-any.whl.metadata (1.7 kB)
+Collecting imageio==2.37.0 (from isaacsim-core==5.1.0.0->isaacsim[all,extscache]==5.1.0.0)
+  Downloading imageio-2.37.0-py3-none-any.whl.metadata (5.2 kB)
+Collecting scipy==1.15.3 (from isaacsim-core==5.1.0.0->isaacsim[all,extscache]==5.1.0.0)
+  Downloading scipy-1.15.3-cp311-cp311-manylinux_2_17_aarch64.manylinux2014_aarch64.whl.metadata (61 kB)
+Collecting pyyaml==6.0.2 (from isaacsim-core==5.1.0.0->isaacsim[all,extscache]==5.1.0.0)
+  Downloading PyYAML-6.0.2-cp311-cp311-manylinux_2_17_aarch64.manylinux2014_aarch64.whl.metadata (2.1 kB)
+Collecting opencv-python-headless==4.11.0.86 (from isaacsim-core==5.1.0.0->isaacsim[all,extscache]==5.1.0.0)
+  Downloading opencv_python_headless-4.11.0.86-cp37-abi3-manylinux_2_17_aarch64.manylinux2014_aarch64.whl.metadata (20 kB)
+Collecting trimesh==4.5.1 (from isaacsim-core==5.1.0.0->isaacsim[all,extscache]==5.1.0.0)
+  Downloading trimesh-4.5.1-py3-none-any.whl.metadata (18 kB)
+Collecting rtree==1.3.0 (from isaacsim-core==5.1.0.0->isaacsim[all,extscache]==5.1.0.0)
+  Downloading Rtree-1.3.0-py3-none-manylinux2014_aarch64.manylinux_2_17_aarch64.whl.metadata (2.1 kB)
+Collecting aioboto3==15.1.0 (from isaacsim-core==5.1.0.0->isaacsim[all,extscache]==5.1.0.0)
+  Downloading aioboto3-15.1.0-py3-none-any.whl.metadata (8.9 kB)
+Collecting aiobotocore==2.24.0 (from isaacsim-core==5.1.0.0->isaacsim[all,extscache]==5.1.0.0)
+  Downloading aiobotocore-2.24.0-py3-none-any.whl.metadata (25 kB)
+Collecting boto3==1.39.11 (from isaacsim-core==5.1.0.0->isaacsim[all,extscache]==5.1.0.0)
+  Downloading boto3-1.39.11-py3-none-any.whl.metadata (6.7 kB)
+Collecting botocore==1.39.11 (from isaacsim-core==5.1.0.0->isaacsim[all,extscache]==5.1.0.0)
+  Downloading botocore-1.39.11-py3-none-any.whl.metadata (5.7 kB)
+Collecting awscrt==0.23.8 (from isaacsim-core==5.1.0.0->isaacsim[all,extscache]==5.1.0.0)
+  Downloading awscrt-0.23.8-cp311-abi3-manylinux_2_17_aarch64.manylinux2014_aarch64.whl.metadata (4.3 kB)
+Collecting s3transfer==0.13.1 (from isaacsim-core==5.1.0.0->isaacsim[all,extscache]==5.1.0.0)
+  Downloading s3transfer-0.13.1-py3-none-any.whl.metadata (1.7 kB)
+Collecting azure-storage-blob==12.17.0 (from isaacsim-core==5.1.0.0->isaacsim[all,extscache]==5.1.0.0)
+  Downloading azure_storage_blob-12.17.0-py3-none-any.whl.metadata (26 kB)
+Collecting azure-identity==1.13.0 (from isaacsim-core==5.1.0.0->isaacsim[all,extscache]==5.1.0.0)
+  Downloading azure_identity-1.13.0-py3-none-any.whl.metadata (67 kB)
+Collecting oauthlib==3.2.2 (from isaacsim-core==5.1.0.0->isaacsim[all,extscache]==5.1.0.0)
+  Downloading oauthlib-3.2.2-py3-none-any.whl.metadata (7.5 kB)
+Collecting requests-oauthlib==1.3.1 (from isaacsim-core==5.1.0.0->isaacsim[all,extscache]==5.1.0.0)
+  Downloading requests_oauthlib-1.3.1-py2.py3-none-any.whl.metadata (10 kB)
+Collecting isodate==0.6.1 (from isaacsim-core==5.1.0.0->isaacsim[all,extscache]==5.1.0.0)
+  Downloading isodate-0.6.1-py2.py3-none-any.whl.metadata (9.6 kB)
+Collecting cryptography==44.0.0 (from isaacsim-core==5.1.0.0->isaacsim[all,extscache]==5.1.0.0)
+  Downloading cryptography-44.0.0-cp39-abi3-manylinux_2_34_aarch64.whl.metadata (5.7 kB)
+Collecting azure-core==1.28.0 (from isaacsim-core==5.1.0.0->isaacsim[all,extscache]==5.1.0.0)
+  Downloading azure_core-1.28.0-py3-none-any.whl.metadata (34 kB)
+Collecting msal==1.27.0 (from isaacsim-core==5.1.0.0->isaacsim[all,extscache]==5.1.0.0)
+  Downloading msal-1.27.0-py2.py3-none-any.whl.metadata (11 kB)
+Collecting msal-extensions==1.0.0 (from isaacsim-core==5.1.0.0->isaacsim[all,extscache]==5.1.0.0)
+  Downloading msal_extensions-1.0.0-py2.py3-none-any.whl.metadata (7.3 kB)
+Collecting portalocker==2.7.0 (from isaacsim-core==5.1.0.0->isaacsim[all,extscache]==5.1.0.0)
+  Downloading portalocker-2.7.0-py2.py3-none-any.whl.metadata (6.8 kB)
+Collecting jmespath==1.0.1 (from isaacsim-core==5.1.0.0->isaacsim[all,extscache]==5.1.0.0)
+  Downloading jmespath-1.0.1-py3-none-any.whl.metadata (7.6 kB)
+Collecting torch==2.7.0 (from isaacsim-core==5.1.0.0->isaacsim[all,extscache]==5.1.0.0)
+  Downloading torch-2.7.0-cp311-cp311-manylinux_2_28_aarch64.whl.metadata (29 kB)
+Collecting torchvision==0.22.0 (from isaacsim-core==5.1.0.0->isaacsim[all,extscache]==5.1.0.0)
+  Downloading torchvision-0.22.0-cp311-cp311-manylinux_2_28_aarch64.whl.metadata (6.1 kB)
+Collecting torchaudio==2.7.0 (from isaacsim-core==5.1.0.0->isaacsim[all,extscache]==5.1.0.0)
+  Downloading torchaudio-2.7.0-cp311-cp311-manylinux_2_28_aarch64.whl.metadata (6.6 kB)
+Collecting filelock==3.15.4 (from isaacsim-core==5.1.0.0->isaacsim[all,extscache]==5.1.0.0)
+  Downloading filelock-3.15.4-py3-none-any.whl.metadata (2.9 kB)
+Collecting fsspec==2024.10.0 (from isaacsim-core==5.1.0.0->isaacsim[all,extscache]==5.1.0.0)
+  Downloading fsspec-2024.10.0-py3-none-any.whl.metadata (11 kB)
+Collecting mpmath==1.3.0 (from isaacsim-core==5.1.0.0->isaacsim[all,extscache]==5.1.0.0)
+  Downloading mpmath-1.3.0-py3-none-any.whl.metadata (8.6 kB)
+Collecting networkx==3.4.2 (from isaacsim-core==5.1.0.0->isaacsim[all,extscache]==5.1.0.0)
+  Downloading networkx-3.4.2-py3-none-any.whl.metadata (6.3 kB)
+Collecting sympy==1.13.3 (from isaacsim-core==5.1.0.0->isaacsim[all,extscache]==5.1.0.0)
+  Downloading sympy-1.13.3-py3-none-any.whl.metadata (12 kB)
+Collecting urllib3!=2.2.0,<3,>=1.25.4 (from botocore==1.39.11->isaacsim-core==5.1.0.0->isaacsim[all,extscache]==5.1.0.0)
+  Downloading urllib3-2.8.0-py3-none-any.whl.metadata (7.4 kB)
+Collecting PyJWT<3,>=1.0.0 (from PyJWT[crypto]<3,>=1.0.0->msal==1.27.0->isaacsim-core==5.1.0.0->isaacsim[all,extscache]==5.1.0.0)
+  Downloading pyjwt-2.15.1-py3-none-any.whl.metadata (3.5 kB)
+Collecting cffi>=1.12 (from cryptography==44.0.0->isaacsim-core==5.1.0.0->isaacsim[all,extscache]==5.1.0.0)
+  Downloading cffi-2.1.1-cp311-cp311-manylinux2014_aarch64.manylinux_2_17_aarch64.whl.metadata (2.5 kB)
+Collecting certifi>=2017.4.17 (from requests==2.32.3->isaacsim-kernel==5.1.0.0->isaacsim==5.1.0.0->isaacsim[all,extscache]==5.1.0.0)
+  Downloading certifi-2026.10.19-py3-none-any.whl.metadata (2.5 kB)
+Collecting pypng (from qrcode==7.4.2->isaacsim-kernel==5.1.0.0->isaacsim==5.1.0.0->isaacsim[all,extscache]==5.1.0.0)
+  Downloading pypng-0.20220715.0-py3-none-any.whl.metadata (13 kB)
+Collecting h11>=0.8 (from uvicorn==0.29.0->isaacsim-kernel==5.1.0.0->isaacsim==5.1.0.0->isaacsim[all,extscache]==5.1.0.0)
+  Downloading h11-0.16.0-py3-none-any.whl.metadata (8.3 kB)
+Collecting annotated-types>=0.6.0 (from pydantic!=1.8,!=1.8.1,!=2.0.0,!=2.0.1,!=2.1.0,<3.0.0,>=1.7.4->fastapi==0.115.7->isaacsim-kernel==5.1.0.0->isaacsim==5.1.0.0->isaacsim[all,extscache]==5.1.0.0)
+  Downloading annotated_types-0.8.0-py3-none-any.whl.metadata (15 kB)
+Collecting pydantic-core==2.50.1 (from pydantic!=1.8,!=1.8.1,!=2.0.0,!=2.0.1,!=2.1.0,<3.0.0,>=1.7.4->fastapi==0.115.7->isaacsim-kernel==5.1.0.0->isaacsim==5.1.0.0->isaacsim[all,extscache]==5.1.0.0)
+  Downloading pydantic_core-2.50.1-cp311-cp311-manylinux_2_17_aarch64.manylinux2014_aarch64.whl.metadata (6.5 kB)
+INFO: pip is looking at multiple versions of pydantic to determine which version is compatible with other requirements. This could take a while.
+Collecting pydantic!=1.8,!=1.8.1,!=2.0.0,!=2.0.1,!=2.1.0,<3.0.0,>=1.7.4 (from fastapi==0.115.7->isaacsim-kernel==5.1.0.0->isaacsim==5.1.0.0->isaacsim[all,extscache]==5.1.0.0)
+  Downloading pydantic-2.14.0-py3-none-any.whl.metadata (131 kB)
+Collecting pydantic-core==2.50.0 (from pydantic!=1.8,!=1.8.1,!=2.0.0,!=2.0.1,!=2.1.0,<3.0.0,>=1.7.4->fastapi==0.115.7->isaacsim-kernel==5.1.0.0->isaacsim==5.1.0.0->isaacsim[all,extscache]==5.1.0.0)
+  Downloading pydantic_core-2.50.0-cp311-cp311-manylinux_2_17_aarch64.manylinux2014_aarch64.whl.metadata (6.5 kB)
+Collecting pydantic!=1.8,!=1.8.1,!=2.0.0,!=2.0.1,!=2.1.0,<3.0.0,>=1.7.4 (from fastapi==0.115.7->isaacsim-kernel==5.1.0.0->isaacsim==5.1.0.0->isaacsim[all,extscache]==5.1.0.0)
+  Downloading pydantic-2.13.5-py3-none-any.whl.metadata (110 kB)
+Collecting pydantic-core==2.46.5 (from pydantic!=1.8,!=1.8.1,!=2.0.0,!=2.0.1,!=2.1.0,<3.0.0,>=1.7.4->fastapi==0.115.7->isaacsim-kernel==5.1.0.0->isaacsim==5.1.0.0->isaacsim[all,extscache]==5.1.0.0)
+  Downloading pydantic_core-2.46.5-cp311-cp311-manylinux_2_17_aarch64.manylinux2014_aarch64.whl.metadata (6.6 kB)
+Collecting pydantic!=1.8,!=1.8.1,!=2.0.0,!=2.0.1,!=2.1.0,<3.0.0,>=1.7.4 (from fastapi==0.115.7->isaacsim-kernel==5.1.0.0->isaacsim==5.1.0.0->isaacsim[all,extscache]==5.1.0.0)
+  Downloading pydantic-2.13.4-py3-none-any.whl.metadata (109 kB)
+Collecting pydantic-core==2.46.4 (from pydantic!=1.8,!=1.8.1,!=2.0.0,!=2.0.1,!=2.1.0,<3.0.0,>=1.7.4->fastapi==0.115.7->isaacsim-kernel==5.1.0.0->isaacsim==5.1.0.0->isaacsim[all,extscache]==5.1.0.0)
+  Downloading pydantic_core-2.46.4-cp311-cp311-manylinux_2_17_aarch64.manylinux2014_aarch64.whl.metadata (6.6 kB)
+Collecting pydantic!=1.8,!=1.8.1,!=2.0.0,!=2.0.1,!=2.1.0,<3.0.0,>=1.7.4 (from fastapi==0.115.7->isaacsim-kernel==5.1.0.0->isaacsim==5.1.0.0->isaacsim[all,extscache]==5.1.0.0)
+  Downloading pydantic-2.13.3-py3-none-any.whl.metadata (108 kB)
+Collecting pydantic-core==2.46.3 (from pydantic!=1.8,!=1.8.1,!=2.0.0,!=2.0.1,!=2.1.0,<3.0.0,>=1.7.4->fastapi==0.115.7->isaacsim-kernel==5.1.0.0->isaacsim==5.1.0.0->isaacsim[all,extscache]==5.1.0.0)
+  Downloading pydantic_core-2.46.3-cp311-cp311-manylinux_2_17_aarch64.manylinux2014_aarch64.whl.metadata (6.6 kB)
+Collecting pydantic!=1.8,!=1.8.1,!=2.0.0,!=2.0.1,!=2.1.0,<3.0.0,>=1.7.4 (from fastapi==0.115.7->isaacsim-kernel==5.1.0.0->isaacsim==5.1.0.0->isaacsim[all,extscache]==5.1.0.0)
+  Downloading pydantic-2.13.2-py3-none-any.whl.metadata (108 kB)
+Collecting pydantic-core==2.46.2 (from pydantic!=1.8,!=1.8.1,!=2.0.0,!=2.0.1,!=2.1.0,<3.0.0,>=1.7.4->fastapi==0.115.7->isaacsim-kernel==5.1.0.0->isaacsim==5.1.0.0->isaacsim[all,extscache]==5.1.0.0)
+  Downloading pydantic_core-2.46.2-cp311-cp311-manylinux_2_17_aarch64.manylinux2014_aarch64.whl.metadata (6.6 kB)
+Collecting pydantic!=1.8,!=1.8.1,!=2.0.0,!=2.0.1,!=2.1.0,<3.0.0,>=1.7.4 (from fastapi==0.115.7->isaacsim-kernel==5.1.0.0->isaacsim==5.1.0.0->isaacsim[all,extscache]==5.1.0.0)
+  Downloading pydantic-2.13.1-py3-none-any.whl.metadata (108 kB)
+Collecting pydantic-core==2.46.1 (from pydantic!=1.8,!=1.8.1,!=2.0.0,!=2.0.1,!=2.1.0,<3.0.0,>=1.7.4->fastapi==0.115.7->isaacsim-kernel==5.1.0.0->isaacsim==5.1.0.0->isaacsim[all,extscache]==5.1.0.0)
+  Downloading pydantic_core-2.46.1-cp311-cp311-manylinux_2_17_aarch64.manylinux2014_aarch64.whl.metadata (6.6 kB)
+Collecting pydantic!=1.8,!=1.8.1,!=2.0.0,!=2.0.1,!=2.1.0,<3.0.0,>=1.7.4 (from fastapi==0.115.7->isaacsim-kernel==5.1.0.0->isaacsim==5.1.0.0->isaacsim[all,extscache]==5.1.0.0)
+  Downloading pydantic-2.13.0-py3-none-any.whl.metadata (107 kB)
+Collecting pydantic-core==2.46.0 (from pydantic!=1.8,!=1.8.1,!=2.0.0,!=2.0.1,!=2.1.0,<3.0.0,>=1.7.4->fastapi==0.115.7->isaacsim-kernel==5.1.0.0->isaacsim==5.1.0.0->isaacsim[all,extscache]==5.1.0.0)
+  Downloading pydantic_core-2.46.0-cp311-cp311-manylinux_2_17_aarch64.manylinux2014_aarch64.whl.metadata (6.6 kB)
+INFO: pip is still looking at multiple versions of pydantic to determine which version is compatible with other requirements. This could take a while.
+Collecting pydantic!=1.8,!=1.8.1,!=2.0.0,!=2.0.1,!=2.1.0,<3.0.0,>=1.7.4 (from fastapi==0.115.7->isaacsim-kernel==5.1.0.0->isaacsim==5.1.0.0->isaacsim[all,extscache]==5.1.0.0)
+  Downloading pydantic-2.12.5-py3-none-any.whl.metadata (90 kB)
+Collecting pydantic-core==2.41.5 (from pydantic!=1.8,!=1.8.1,!=2.0.0,!=2.0.1,!=2.1.0,<3.0.0,>=1.7.4->fastapi==0.115.7->isaacsim-kernel==5.1.0.0->isaacsim==5.1.0.0->isaacsim[all,extscache]==5.1.0.0)
+  Downloading pydantic_core-2.41.5-cp311-cp311-manylinux_2_17_aarch64.manylinux2014_aarch64.whl.metadata (7.3 kB)
+Collecting pydantic!=1.8,!=1.8.1,!=2.0.0,!=2.0.1,!=2.1.0,<3.0.0,>=1.7.4 (from fastapi==0.115.7->isaacsim-kernel==5.1.0.0->isaacsim==5.1.0.0->isaacsim[all,extscache]==5.1.0.0)
+  Downloading pydantic-2.12.4-py3-none-any.whl.metadata (89 kB)
+  Downloading pydantic-2.12.3-py3-none-any.whl.metadata (87 kB)
+Collecting pydantic-core==2.41.4 (from pydantic!=1.8,!=1.8.1,!=2.0.0,!=2.0.1,!=2.1.0,<3.0.0,>=1.7.4->fastapi==0.115.7->isaacsim-kernel==5.1.0.0->isaacsim==5.1.0.0->isaacsim[all,extscache]==5.1.0.0)
+  Downloading pydantic_core-2.41.4-cp311-cp311-manylinux_2_17_aarch64.manylinux2014_aarch64.whl.metadata (7.3 kB)
+Collecting pydantic!=1.8,!=1.8.1,!=2.0.0,!=2.0.1,!=2.1.0,<3.0.0,>=1.7.4 (from fastapi==0.115.7->isaacsim-kernel==5.1.0.0->isaacsim==5.1.0.0->isaacsim[all,extscache]==5.1.0.0)
+  Downloading pydantic-2.12.2-py3-none-any.whl.metadata (85 kB)
+  Downloading pydantic-2.12.0-py3-none-any.whl.metadata (83 kB)
+Collecting pydantic-core==2.41.1 (from pydantic!=1.8,!=1.8.1,!=2.0.0,!=2.0.1,!=2.1.0,<3.0.0,>=1.7.4->fastapi==0.115.7->isaacsim-kernel==5.1.0.0->isaacsim==5.1.0.0->isaacsim[all,extscache]==5.1.0.0)
+  Downloading pydantic_core-2.41.1-cp311-cp311-manylinux_2_17_aarch64.manylinux2014_aarch64.whl.metadata (7.3 kB)
+INFO: This is taking longer than usual. You might need to provide the dependency resolver with stricter constraints to reduce runtime. See https://pip.pypa.io/warnings/backtracking for guidance. If you want to abort this run, press Ctrl + C.
+Collecting pydantic!=1.8,!=1.8.1,!=2.0.0,!=2.0.1,!=2.1.0,<3.0.0,>=1.7.4 (from fastapi==0.115.7->isaacsim-kernel==5.1.0.0->isaacsim==5.1.0.0->isaacsim[all,extscache]==5.1.0.0)
+  Downloading pydantic-2.11.10-py3-none-any.whl.metadata (68 kB)
+Collecting pydantic-core==2.33.2 (from pydantic!=1.8,!=1.8.1,!=2.0.0,!=2.0.1,!=2.1.0,<3.0.0,>=1.7.4->fastapi==0.115.7->isaacsim-kernel==5.1.0.0->isaacsim==5.1.0.0->isaacsim[all,extscache]==5.1.0.0)
+  Downloading pydantic_core-2.33.2-cp311-cp311-manylinux_2_17_aarch64.manylinux2014_aarch64.whl.metadata (6.8 kB)
+Collecting typing-inspection>=0.4.0 (from pydantic!=1.8,!=1.8.1,!=2.0.0,!=2.0.1,!=2.1.0,<3.0.0,>=1.7.4->fastapi==0.115.7->isaacsim-kernel==5.1.0.0->isaacsim==5.1.0.0->isaacsim[all,extscache]==5.1.0.0)
+  Downloading typing_inspection-0.4.4-py3-none-any.whl.metadata (2.6 kB)
+Collecting anyio<5,>=3.6.2 (from starlette<0.46.0,>=0.40.0->fastapi==0.115.7->isaacsim-kernel==5.1.0.0->isaacsim==5.1.0.0->isaacsim[all,extscache]==5.1.0.0)
+  Downloading anyio-4.15.1-py3-none-any.whl.metadata (4.7 kB)
+INFO: pip is looking at multiple versions of anyio to determine which version is compatible with other requirements. This could take a while.
+  Downloading anyio-4.15.0-py3-none-any.whl.metadata (4.7 kB)
+  Downloading anyio-4.14.2-py3-none-any.whl.metadata (4.6 kB)
+Collecting pycparser (from cffi>=1.12->cryptography==44.0.0->isaacsim-core==5.1.0.0->isaacsim[all,extscache]==5.1.0.0)
+  Downloading pycparser-3.11-py3-none-any.whl.metadata (8.2 kB)
+INFO: pip is looking at multiple versions of typing-inspection to determine which version is compatible with other requirements. This could take a while.
+Collecting typing-inspection>=0.4.0 (from pydantic!=1.8,!=1.8.1,!=2.0.0,!=2.0.1,!=2.1.0,<3.0.0,>=1.7.4->fastapi==0.115.7->isaacsim-kernel==5.1.0.0->isaacsim==5.1.0.0->isaacsim[all,extscache]==5.1.0.0)
+  Downloading typing_inspection-0.4.3-py3-none-any.whl.metadata (2.6 kB)
+  Downloading typing_inspection-0.4.2-py3-none-any.whl.metadata (2.6 kB)
+Downloading aiodns-3.1.1-py3-none-any.whl (5.4 kB)
+Downloading aiofiles-23.2.1-py3-none-any.whl (15 kB)
+Downloading aiohappyeyeballs-2.4.4-py3-none-any.whl (14 kB)
+Downloading aiohttp-3.11.11-cp311-cp311-manylinux_2_17_aarch64.manylinux2014_aarch64.whl (1.7 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 1.7/1.7 MB 14.4 MB/s  0:00:00
+
+Downloading multidict-6.1.0-cp311-cp311-manylinux_2_17_aarch64.manylinux2014_aarch64.whl (131 kB)
+Downloading yarl-1.18.3-cp311-cp311-manylinux_2_17_aarch64.manylinux2014_aarch64.whl (340 kB)
+Downloading aioitertools-0.11.0-py3-none-any.whl (23 kB)
+Downloading aiosignal-1.3.2-py2.py3-none-any.whl (7.6 kB)
+Downloading asteval-1.0.6-py3-none-any.whl (22 kB)
+Downloading async_timeout-5.0.1-py3-none-any.whl (6.2 kB)
+Downloading attrs-25.1.0-py3-none-any.whl (63 kB)
+Downloading charset_normalizer-3.3.2-cp311-cp311-manylinux_2_17_aarch64.manylinux2014_aarch64.whl (136 kB)
+Downloading click-8.1.7-py3-none-any.whl (97 kB)
+Downloading coverage-7.4.4-cp311-cp311-manylinux_2_17_aarch64.manylinux2014_aarch64.whl (238 kB)
+Downloading fastapi-0.115.7-py3-none-any.whl (94 kB)
+Downloading frozenlist-1.5.0-cp311-cp311-manylinux_2_17_aarch64.manylinux2014_aarch64.whl (276 kB)
+Downloading httptools-0.6.1-cp311-cp311-manylinux_2_17_aarch64.manylinux2014_aarch64.whl (324 kB)
+Downloading idna-3.10-py3-none-any.whl (70 kB)
+Downloading aioboto3-15.1.0-py3-none-any.whl (35 kB)
+Downloading aiobotocore-2.24.0-py3-none-any.whl (84 kB)
+Downloading botocore-1.39.11-py3-none-any.whl (13.9 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 13.9/13.9 MB 21.1 MB/s  0:00:00
+
+Downloading jmespath-1.0.1-py3-none-any.whl (20 kB)
+Downloading python_dateutil-2.9.0.post0-py2.py3-none-any.whl (229 kB)
+Downloading wrapt-1.16.0-cp311-cp311-manylinux_2_17_aarch64.manylinux2014_aarch64.whl (80 kB)
+Downloading boto3-1.39.11-py3-none-any.whl (139 kB)
+Downloading s3transfer-0.13.1-py3-none-any.whl (85 kB)
+Downloading awscrt-0.23.8-cp311-abi3-manylinux_2_17_aarch64.manylinux2014_aarch64.whl (8.5 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 8.5/8.5 MB 27.8 MB/s  0:00:00
+
+Downloading azure_core-1.28.0-py3-none-any.whl (185 kB)
+Downloading azure_identity-1.13.0-py3-none-any.whl (151 kB)
+Downloading msal-1.27.0-py2.py3-none-any.whl (101 kB)
+Downloading cryptography-44.0.0-cp39-abi3-manylinux_2_34_aarch64.whl (3.9 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 3.9/3.9 MB 27.5 MB/s  0:00:00
+
+Downloading msal_extensions-1.0.0-py2.py3-none-any.whl (19 kB)
+Downloading portalocker-2.7.0-py2.py3-none-any.whl (15 kB)
+Downloading requests-2.32.3-py3-none-any.whl (64 kB)
+Downloading azure_storage_blob-12.17.0-py3-none-any.whl (388 kB)
+Downloading contourpy-1.3.1-cp311-cp311-manylinux_2_17_aarch64.manylinux2014_aarch64.whl (313 kB)
+Downloading cycler-0.11.0-py3-none-any.whl (6.4 kB)
+Downloading filelock-3.15.4-py3-none-any.whl (16 kB)
+Downloading fonttools-4.55.3-cp311-cp311-manylinux_2_17_aarch64.manylinux2014_aarch64.whl (4.9 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 4.9/4.9 MB 8.8 MB/s  0:00:00
+
+Downloading fsspec-2024.10.0-py3-none-any.whl (179 kB)
+Downloading gunicorn-23.0.0-py3-none-any.whl (85 kB)
+Downloading imageio-2.37.0-py3-none-any.whl (315 kB)
+Downloading isodate-0.6.1-py2.py3-none-any.whl (41 kB)
+Downloading jinja2-3.1.6-py3-none-any.whl (134 kB)
+Downloading kiwisolver-1.4.4-cp311-cp311-manylinux_2_17_aarch64.manylinux2014_aarch64.whl (1.4 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 1.4/1.4 MB 2.8 MB/s  0:00:00
+
+Downloading llvmlite-0.42.0-cp311-cp311-manylinux_2_17_aarch64.manylinux2014_aarch64.whl (42.8 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 42.8/42.8 MB 21.6 MB/s  0:00:02
+
+Downloading MarkupSafe-2.1.3-cp311-cp311-manylinux_2_17_aarch64.manylinux2014_aarch64.whl (28 kB)
+Downloading matplotlib-3.10.3-cp311-cp311-manylinux_2_17_aarch64.manylinux2014_aarch64.whl (8.5 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 8.5/8.5 MB 36.5 MB/s  0:00:00
+
+Downloading mpmath-1.3.0-py3-none-any.whl (536 kB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 536.2/536.2 kB 15.5 MB/s  0:00:00
+
+Downloading nest_asyncio-1.5.6-py3-none-any.whl (5.2 kB)
+Downloading networkx-3.4.2-py3-none-any.whl (1.7 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 1.7/1.7 MB 30.0 MB/s  0:00:00
+
+Downloading numba-0.59.1-cp311-cp311-manylinux2014_aarch64.manylinux_2_17_aarch64.whl (3.4 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 3.4/3.4 MB 35.8 MB/s  0:00:00
+
+Downloading numpy-1.26.0-cp311-cp311-manylinux_2_17_aarch64.manylinux2014_aarch64.whl (14.2 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 14.2/14.2 MB 41.2 MB/s  0:00:00
+
+Downloading oauthlib-3.2.2-py3-none-any.whl (151 kB)
+Downloading opencv_python_headless-4.11.0.86-cp37-abi3-manylinux_2_17_aarch64.manylinux2014_aarch64.whl (29.5 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 29.5/29.5 MB 49.2 MB/s  0:00:00
+
+Downloading osqp-0.6.7.post3-cp311-cp311-manylinux_2_17_aarch64.manylinux2014_aarch64.whl (293 kB)
+Downloading packaging-23.0-py3-none-any.whl (42 kB)
+Downloading pillow-11.3.0-cp311-cp311-manylinux_2_27_aarch64.manylinux_2_28_aarch64.whl (6.0 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 6.0/6.0 MB 41.3 MB/s  0:00:00
+
+Downloading Pint-0.20.1-py3-none-any.whl (269 kB)
+Downloading propcache-0.2.1-cp311-cp311-manylinux_2_17_aarch64.manylinux2014_aarch64.whl (232 kB)
+Downloading pycares-4.8.0-cp311-cp311-manylinux_2_17_aarch64.manylinux2014_aarch64.whl (625 kB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 625.5/625.5 kB 15.3 MB/s  0:00:00
+
+Downloading pyparsing-3.0.9-py3-none-any.whl (98 kB)
+Downloading python_multipart-0.0.20-py3-none-any.whl (24 kB)
+Downloading pytz-2024.1-py2.py3-none-any.whl (505 kB)
+Downloading PyYAML-6.0.2-cp311-cp311-manylinux_2_17_aarch64.manylinux2014_aarch64.whl (736 kB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 736.8/736.8 kB 25.6 MB/s  0:00:00
+
+Downloading qdldl-0.1.7.post5-cp311-cp311-manylinux_2_17_aarch64.manylinux2014_aarch64.whl (1.2 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 1.2/1.2 MB 10.3 MB/s  0:00:00
+
+Downloading qrcode-7.4.2-py3-none-any.whl (46 kB)
+Downloading requests_oauthlib-1.3.1-py2.py3-none-any.whl (23 kB)
+Downloading Rtree-1.3.0-py3-none-manylinux2014_aarch64.manylinux_2_17_aarch64.whl (500 kB)
+Downloading scipy-1.15.3-cp311-cp311-manylinux_2_17_aarch64.manylinux2014_aarch64.whl (35.5 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 35.5/35.5 MB 59.9 MB/s  0:00:00
+
+Downloading sentry_sdk-2.29.1-py2.py3-none-any.whl (341 kB)
+Downloading six-1.17.0-py2.py3-none-any.whl (11 kB)
+Downloading sympy-1.13.3-py3-none-any.whl (6.2 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 6.2/6.2 MB 51.4 MB/s  0:00:00
+
+Downloading torch-2.7.0-cp311-cp311-manylinux_2_28_aarch64.whl (99.2 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 99.2/99.2 MB 11.4 MB/s  0:00:08
+
+Downloading torchaudio-2.7.0-cp311-cp311-manylinux_2_28_aarch64.whl (1.7 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 1.7/1.7 MB 23.7 MB/s  0:00:00
+
+Downloading torchvision-0.22.0-cp311-cp311-manylinux_2_28_aarch64.whl (2.5 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 2.5/2.5 MB 12.7 MB/s  0:00:00
+
+Downloading tornado-6.5.1-cp39-abi3-manylinux_2_17_aarch64.manylinux2014_aarch64.whl (443 kB)
+Downloading trimesh-4.5.1-py3-none-any.whl (703 kB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 703.7/703.7 kB 21.7 MB/s  0:00:00
+
+Downloading typing_extensions-4.12.2-py3-none-any.whl (37 kB)
+Downloading uvicorn-0.29.0-py3-none-any.whl (60 kB)
+Downloading watchdog-4.0.0-py3-none-manylinux2014_aarch64.whl (82 kB)
+Downloading websockets-12.0-cp311-cp311-manylinux_2_17_aarch64.manylinux2014_aarch64.whl (131 kB)
+Downloading pydantic-2.11.10-py3-none-any.whl (444 kB)
+Downloading pydantic_core-2.33.2-cp311-cp311-manylinux_2_17_aarch64.manylinux2014_aarch64.whl (1.9 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 1.9/1.9 MB 28.0 MB/s  0:00:00
+
+Downloading pyjwt-2.15.1-py3-none-any.whl (33 kB)
+Downloading starlette-0.45.3-py3-none-any.whl (71 kB)
+Downloading anyio-4.14.2-py3-none-any.whl (125 kB)
+Downloading urllib3-2.8.0-py3-none-any.whl (135 kB)
+Downloading annotated_types-0.8.0-py3-none-any.whl (13 kB)
+Downloading certifi-2026.10.19-py3-none-any.whl (136 kB)
+Downloading cffi-2.1.1-cp311-cp311-manylinux2014_aarch64.manylinux_2_17_aarch64.whl (218 kB)
+Downloading h11-0.16.0-py3-none-any.whl (37 kB)
+Downloading typing_inspection-0.4.2-py3-none-any.whl (14 kB)
+Downloading pycparser-3.11-py3-none-any.whl (51 kB)
+Downloading pypng-0.20220715.0-py3-none-any.whl (58 kB)
+Building wheels for collected packages: idna-ssl, psutil, pyperclip
+  Building wheel for idna-ssl (pyproject.toml): started
+  Building wheel for idna-ssl (pyproject.toml): finished with status 'done'
+  Created wheel for idna-ssl: filename=idna_ssl-1.1.0-py3-none-any.whl size=3233 sha256=225a26402513983398e7ebe195bbac10226dbaf311e3f20cfdaabaf5124de600
+  Stored in directory: /lus/lfs1aip2/projects/b6ac/go2-sumo/.cache/pip/wheels/a4/36/90/7ac6cc7f74a4a47f547d0cc68103dc69a0fc349485163ade8e
+  Building wheel for psutil (pyproject.toml): started
+  Building wheel for psutil (pyproject.toml): finished with status 'done'
+  Created wheel for psutil: filename=psutil-5.9.8-cp311-abi3-linux_aarch64.whl size=241568 sha256=36d0a4586d8fa96dd5e0739a67e928dc21a4cbf1420748e2230ad5727fe34b88
+  Stored in directory: /lus/lfs1aip2/projects/b6ac/go2-sumo/.cache/pip/wheels/a6/1e/65/fb0ad37886dca3f25a0aa8e50f4903c5bdbde4bb8a9b1e27de
+  Building wheel for pyperclip (pyproject.toml): started
+  Building wheel for pyperclip (pyproject.toml): finished with status 'done'
+  Created wheel for pyperclip: filename=pyperclip-1.8.0-py3-none-any.whl size=8725 sha256=6e372b44aaaac809b1c2a2469ca70199ff1b850e8cd23a8d6ca3b29f58b8973a
+  Stored in directory: /lus/lfs1aip2/projects/b6ac/go2-sumo/.cache/pip/wheels/7d/7e/39/8703ea5fc85f84ae0981af4eee1ed1d12a6cd7e1071fb3090c
+Successfully built idna-ssl psutil pyperclip
+Installing collected packages: pytz, pypng, pyperclip, mpmath, wrapt, websockets, watchdog, urllib3, typing_extensions, tornado, sympy, six, rtree, pyyaml, python-multipart, pyparsing, PyJWT, pycparser, psutil, propcache, portalocker, pint, Pillow, packaging, oauthlib, numpy, networkx, nest_asyncio, multidict, markupsafe, llvmlite, kiwisolver, jmespath, isaacsim-extscache-physics, isaacsim-extscache-kit-sdk, isaacsim-extscache-kit, idna, httptools, h11, fsspec, frozenlist, fonttools, filelock, cycler, coverage, click, charset_normalizer, certifi, awscrt, attrs, async_timeout, asteval, annotated-types, aioitertools, aiohappyeyeballs, aiofiles, yarl, uvicorn, typing-inspection, trimesh, sentry-sdk, scipy, requests, qrcode, python-dateutil, pydantic-core, opencv-python-headless, numba, Jinja2, isodate, imageio, idna-ssl, gunicorn, contourpy, cffi, anyio, aiosignal, torch, starlette, requests-oauthlib, qdldl, pydantic, pycares, matplotlib, cryptography, botocore, azure-core, aiohttp, torchvision, torchaudio, s3transfer, osqp, fastapi, azure-storage-blob, aiodns, aiobotocore, msal, isaacsim-kernel, boto3, msal-extensions, isaacsim-storage, isaacsim-code-editor, isaacsim-app, isaacsim, azure-identity, aioboto3, isaacsim-core, isaacsim-replicator, isaacsim-gui, isaacsim-utils, isaacsim-template, isaacsim-robot-motion, isaacsim-sensor, isaacsim-robot-setup, isaacsim-asset, isaacsim-ros2, isaacsim-ros1, isaacsim-robot, isaacsim-test, isaacsim-cortex, isaacsim-benchmark, isaacsim-rl, isaacsim-example
+  Attempting uninstall: packaging
+    Found existing installation: packaging 26.3
+    Uninstalling packaging-26.3:
+      Successfully uninstalled packaging-26.3
+
+
+Successfully installed Jinja2-3.1.6 Pillow-11.3.0 PyJWT-2.15.1 aioboto3-15.1.0 aiobotocore-2.24.0 aiodns-3.1.1 aiofiles-23.2.1 aiohappyeyeballs-2.4.4 aiohttp-3.11.11 aioitertools-0.11.0 aiosignal-1.3.2 annotated-types-0.8.0 anyio-4.14.2 asteval-1.0.6 async_timeout-5.0.1 attrs-25.1.0 awscrt-0.23.8 azure-core-1.28.0 azure-identity-1.13.0 azure-storage-blob-12.17.0 boto3-1.39.11 botocore-1.39.11 certifi-2026.10.19 cffi-2.1.1 charset_normalizer-3.3.2 click-8.1.7 contourpy-1.3.1 coverage-7.4.4 cryptography-44.0.0 cycler-0.11.0 fastapi-0.115.7 filelock-3.15.4 fonttools-4.55.3 frozenlist-1.5.0 fsspec-2024.10.0 gunicorn-23.0.0 h11-0.16.0 httptools-0.6.1 idna-3.10 idna-ssl-1.1.0 imageio-2.37.0 isaacsim-5.1.0.0 isaacsim-app-5.1.0.0 isaacsim-asset-5.1.0.0 isaacsim-benchmark-5.1.0.0 isaacsim-code-editor-5.1.0.0 isaacsim-core-5.1.0.0 isaacsim-cortex-5.1.0.0 isaacsim-example-5.1.0.0 isaacsim-extscache-kit-5.1.0.0 isaacsim-extscache-kit-sdk-5.1.0.0 isaacsim-extscache-physics-5.1.0.0 isaacsim-gui-5.1.0.0 isaacsim-kernel-5.1.0.0 isaacsim-replicator-5.1.0.0 isaacsim-rl-5.1.0.0 isaacsim-robot-5.1.0.0 isaacsim-robot-motion-5.1.0.0 isaacsim-robot-setup-5.1.0.0 isaacsim-ros1-5.1.0.0 isaacsim-ros2-5.1.0.0 isaacsim-sensor-5.1.0.0 isaacsim-storage-5.1.0.0 isaacsim-template-5.1.0.0 isaacsim-test-5.1.0.0 isaacsim-utils-5.1.0.0 isodate-0.6.1 jmespath-1.0.1 kiwisolver-1.4.4 llvmlite-0.42.0 markupsafe-2.1.3 matplotlib-3.10.3 mpmath-1.3.0 msal-1.27.0 msal-extensions-1.0.0 multidict-6.1.0 nest_asyncio-1.5.6 networkx-3.4.2 numba-0.59.1 numpy-1.26.0 oauthlib-3.2.2 opencv-python-headless-4.11.0.86 osqp-0.6.7.post3 packaging-23.0 pint-0.20.1 portalocker-2.7.0 propcache-0.2.1 psutil-5.9.8 pycares-4.8.0 pycparser-3.11 pydantic-2.11.10 pydantic-core-2.33.2 pyparsing-3.0.9 pyperclip-1.8.0 pypng-0.20220715.0 python-dateutil-2.9.0.post0 python-multipart-0.0.20 pytz-2024.1 pyyaml-6.0.2 qdldl-0.1.7.post5 qrcode-7.4.2 requests-2.32.3 requests-oauthlib-1.3.1 rtree-1.3.0 s3transfer-0.13.1 scipy-1.15.3 sentry-sdk-2.29.1 six-1.17.0 starlette-0.45.3 sympy-1.13.3 torch-2.7.0 torchaudio-2.7.0 torchvision-0.22.0 tornado-6.5.1 trimesh-4.5.1 typing-inspection-0.4.2 typing_extensions-4.12.2 urllib3-2.8.0 uvicorn-0.29.0 watchdog-4.0.0 websockets-12.0 wrapt-1.16.0 yarl-1.18.3
+[11:14:58] Installing torch 2.9.0+cu130
+Looking in indexes: https://download.pytorch.org/whl/cu130
+Collecting torch==2.9.0
+  Downloading torch-2.9.0%2Bcu130-cp311-cp311-manylinux_2_28_aarch64.whl.metadata (30 kB)
+Collecting torchvision==0.24.0
+  Downloading torchvision-0.24.0-cp311-cp311-manylinux_2_28_aarch64.whl.metadata (5.9 kB)
+Requirement already satisfied: filelock in /projects/b6ac/go2-sumo/env/lib/python3.11/site-packages (from torch==2.9.0) (3.15.4)
+Requirement already satisfied: typing-extensions>=4.10.0 in /projects/b6ac/go2-sumo/env/lib/python3.11/site-packages (from torch==2.9.0) (4.12.2)
+Requirement already satisfied: sympy>=1.13.3 in /projects/b6ac/go2-sumo/env/lib/python3.11/site-packages (from torch==2.9.0) (1.13.3)
+Requirement already satisfied: networkx>=2.5.1 in /projects/b6ac/go2-sumo/env/lib/python3.11/site-packages (from torch==2.9.0) (3.4.2)
+Requirement already satisfied: jinja2 in /projects/b6ac/go2-sumo/env/lib/python3.11/site-packages (from torch==2.9.0) (3.1.6)
+Requirement already satisfied: fsspec>=0.8.5 in /projects/b6ac/go2-sumo/env/lib/python3.11/site-packages (from torch==2.9.0) (2024.10.0)
+Collecting nvidia-cuda-nvrtc==13.0.48 (from torch==2.9.0)
+  Downloading nvidia_cuda_nvrtc-13.0.48-py3-none-manylinux2014_aarch64.manylinux_2_17_aarch64.whl (43.0 MB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 43.0/43.0 MB 119.1 MB/s  0:00:00
+
+Collecting nvidia-cuda-runtime==13.0.48 (from torch==2.9.0)
+  Downloading nvidia_cuda_runtime-13.0.48-py3-none-manylinux2014_aarch64.manylinux_2_17_aarch64.whl (2.3 MB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 2.3/2.3 MB 34.9 MB/s  0:00:00
+
+Collecting nvidia-cuda-cupti==13.0.48 (from torch==2.9.0)
+  Downloading nvidia_cuda_cupti-13.0.48-py3-none-manylinux_2_25_aarch64.whl (10.2 MB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 10.2/10.2 MB 15.8 MB/s  0:00:00
+
+Collecting nvidia-cudnn-cu13==9.13.0.50 (from torch==2.9.0)
+  Downloading nvidia_cudnn_cu13-9.13.0.50-py3-none-manylinux_2_27_aarch64.whl (412.3 MB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 412.3/412.3 MB 178.3 MB/s  0:00:03
+
+Collecting nvidia-cublas==13.0.0.19 (from torch==2.9.0)
+  Downloading nvidia_cublas-13.0.0.19-py3-none-manylinux_2_27_aarch64.whl (539.0 MB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 539.0/539.0 MB 200.8 MB/s  0:00:10
+
+Collecting nvidia-cufft==12.0.0.15 (from torch==2.9.0)
+  Downloading nvidia_cufft-12.0.0.15-py3-none-manylinux2014_aarch64.manylinux_2_17_aarch64.whl (214.1 MB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 214.1/214.1 MB 37.1 MB/s  0:00:05
+
+Collecting nvidia-curand==10.4.0.35 (from torch==2.9.0)
+  Downloading nvidia_curand-10.4.0.35-py3-none-manylinux_2_27_aarch64.whl (62.0 MB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 62.0/62.0 MB 33.5 MB/s  0:00:01
+
+Collecting nvidia-cusolver==12.0.3.29 (from torch==2.9.0)
+  Downloading nvidia_cusolver-12.0.3.29-py3-none-manylinux_2_27_aarch64.whl (193.1 MB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 193.1/193.1 MB 94.4 MB/s  0:00:02
+
+Collecting nvidia-cusparse==12.6.2.49 (from torch==2.9.0)
+  Downloading nvidia_cusparse-12.6.2.49-py3-none-manylinux2014_aarch64.manylinux_2_17_aarch64.whl (155.9 MB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 155.9/155.9 MB 42.6 MB/s  0:00:03
+
+Collecting nvidia-cusparselt-cu13==0.8.0 (from torch==2.9.0)
+  Downloading nvidia_cusparselt_cu13-0.8.0-py3-none-manylinux2014_aarch64.whl (220.8 MB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 220.8/220.8 MB 81.4 MB/s  0:00:02
+
+Collecting nvidia-nccl-cu13==2.27.7 (from torch==2.9.0)
+  Downloading nvidia_nccl_cu13-2.27.7-py3-none-manylinux2014_aarch64.manylinux_2_17_aarch64.whl (194.0 MB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 194.0/194.0 MB 44.7 MB/s  0:00:04
+
+Collecting nvidia-nvshmem-cu13==3.3.24 (from torch==2.9.0)
+  Downloading nvidia_nvshmem_cu13-3.3.24-py3-none-manylinux2014_aarch64.manylinux_2_17_aarch64.whl (60.2 MB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 60.2/60.2 MB 180.0 MB/s  0:00:00
+
+Collecting nvidia-nvtx==13.0.39 (from torch==2.9.0)
+  Downloading nvidia_nvtx-13.0.39-py3-none-manylinux2014_aarch64.manylinux_2_17_aarch64.whl (148 kB)
+Collecting nvidia-nvjitlink==13.0.39 (from torch==2.9.0)
+  Downloading nvidia_nvjitlink-13.0.39-py3-none-manylinux2014_aarch64.manylinux_2_17_aarch64.whl (38.8 MB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 38.8/38.8 MB 143.0 MB/s  0:00:00
+
+Collecting nvidia-cufile==1.15.0.42 (from torch==2.9.0)
+  Downloading nvidia_cufile-1.15.0.42-py3-none-manylinux_2_27_aarch64.whl (1.1 MB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 1.1/1.1 MB 179.3 MB/s  0:00:00
+
+Collecting triton==3.5.0 (from torch==2.9.0)
+  Downloading triton-3.5.0-cp311-cp311-manylinux_2_27_aarch64.manylinux_2_28_aarch64.whl.metadata (1.7 kB)
+Requirement already satisfied: numpy in /projects/b6ac/go2-sumo/env/lib/python3.11/site-packages (from torchvision==0.24.0) (1.26.0)
+Requirement already satisfied: pillow!=8.3.*,>=5.3.0 in /projects/b6ac/go2-sumo/env/lib/python3.11/site-packages (from torchvision==0.24.0) (11.3.0)
+Requirement already satisfied: mpmath<1.4,>=1.1.0 in /projects/b6ac/go2-sumo/env/lib/python3.11/site-packages (from sympy>=1.13.3->torch==2.9.0) (1.3.0)
+Requirement already satisfied: MarkupSafe>=2.0 in /projects/b6ac/go2-sumo/env/lib/python3.11/site-packages (from jinja2->torch==2.9.0) (2.1.3)
+Downloading torch-2.9.0%2Bcu130-cp311-cp311-manylinux_2_28_aarch64.whl (512.5 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 512.5/512.5 MB 126.4 MB/s  0:00:13
+
+Downloading torchvision-0.24.0-cp311-cp311-manylinux_2_28_aarch64.whl (7.9 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 7.9/7.9 MB 55.0 MB/s  0:00:00
+
+Downloading triton-3.5.0-cp311-cp311-manylinux_2_27_aarch64.manylinux_2_28_aarch64.whl (159.9 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 159.9/159.9 MB 17.8 MB/s  0:00:08
+
+Installing collected packages: nvidia-cusparselt-cu13, triton, nvidia-nvtx, nvidia-nvshmem-cu13, nvidia-nvjitlink, nvidia-nccl-cu13, nvidia-curand, nvidia-cufile, nvidia-cuda-runtime, nvidia-cuda-nvrtc, nvidia-cuda-cupti, nvidia-cublas, nvidia-cusparse, nvidia-cufft, nvidia-cudnn-cu13, nvidia-cusolver, torch, torchvision
+  Attempting uninstall: torch
+    Found existing installation: torch 2.7.0
+    Uninstalling torch-2.7.0:
+      Successfully uninstalled torch-2.7.0
+  Attempting uninstall: torchvision
+    Found existing installation: torchvision 0.22.0
+    Uninstalling torchvision-0.22.0:
+      Successfully uninstalled torchvision-0.22.0
+
+
+Successfully installed nvidia-cublas-13.0.0.19 nvidia-cuda-cupti-13.0.48 nvidia-cuda-nvrtc-13.0.48 nvidia-cuda-runtime-13.0.48 nvidia-cudnn-cu13-9.13.0.50 nvidia-cufft-12.0.0.15 nvidia-cufile-1.15.0.42 nvidia-curand-10.4.0.35 nvidia-cusolver-12.0.3.29 nvidia-cusparse-12.6.2.49 nvidia-cusparselt-cu13-0.8.0 nvidia-nccl-cu13-2.27.7 nvidia-nvjitlink-13.0.39 nvidia-nvshmem-cu13-3.3.24 nvidia-nvtx-13.0.39 torch-2.9.0+cu130 torchvision-0.24.0 triton-3.5.0
+[11:16:43] Installing this checkout editable, without letting setup.py replace Torch
+Obtaining file:///projects/b6ac/go2-sumo/source/isaaclab
+  Installing build dependencies: started
+  Installing build dependencies: finished with status 'done'
+  Checking if build backend supports build_editable: started
+  Checking if build backend supports build_editable: finished with status 'done'
+  Getting requirements to build editable: started
+  Getting requirements to build editable: finished with status 'done'
+  Preparing editable metadata (pyproject.toml): started
+  Preparing editable metadata (pyproject.toml): finished with status 'done'
+Obtaining file:///projects/b6ac/go2-sumo/source/isaaclab_assets
+  Installing build dependencies: started
+  Installing build dependencies: finished with status 'done'
+  Checking if build backend supports build_editable: started
+  Checking if build backend supports build_editable: finished with status 'done'
+  Getting requirements to build editable: started
+  Getting requirements to build editable: finished with status 'done'
+  Preparing editable metadata (pyproject.toml): started
+  Preparing editable metadata (pyproject.toml): finished with status 'done'
+Obtaining file:///projects/b6ac/go2-sumo/source/isaaclab_tasks
+  Installing build dependencies: started
+  Installing build dependencies: finished with status 'done'
+  Checking if build backend supports build_editable: started
+  Checking if build backend supports build_editable: finished with status 'done'
+  Getting requirements to build editable: started
+  Getting requirements to build editable: finished with status 'done'
+  Preparing editable metadata (pyproject.toml): started
+  Preparing editable metadata (pyproject.toml): finished with status 'done'
+Obtaining file:///projects/b6ac/go2-sumo/source/isaaclab_rl
+  Installing build dependencies: started
+  Installing build dependencies: finished with status 'done'
+  Checking if build backend supports build_editable: started
+  Checking if build backend supports build_editable: finished with status 'done'
+  Getting requirements to build editable: started
+  Getting requirements to build editable: finished with status 'done'
+  Preparing editable metadata (pyproject.toml): started
+  Preparing editable metadata (pyproject.toml): finished with status 'done'
+Building wheels for collected packages: isaaclab, isaaclab_assets, isaaclab_tasks, isaaclab_rl
+  Building editable for isaaclab (pyproject.toml): started
+  Building editable for isaaclab (pyproject.toml): finished with status 'done'
+  Created wheel for isaaclab: filename=isaaclab-0.36.23-0.editable-py3-none-any.whl size=3403 sha256=b6e8f99303e95c542d971772af09afb981627d85447b8264bf62c1ceed54f49e
+  Stored in directory: /lus/lfs1aip2/projects/b6ac/go2-sumo/.cache/tmp/pip-ephem-wheel-cache-_dtf7mos/wheels/d8/87/c7/e03cf02a6707e718401feac6fd46c2f5b7daed0771b42d487e
+  Building editable for isaaclab_assets (pyproject.toml): started
+  Building editable for isaaclab_assets (pyproject.toml): finished with status 'done'
+  Created wheel for isaaclab_assets: filename=isaaclab_assets-0.2.2-0.editable-py3-none-any.whl size=3030 sha256=fc1587f13a9bedc85f135136707dae0dff053f29cca932977832a3bdd50ba96d
+  Stored in directory: /lus/lfs1aip2/projects/b6ac/go2-sumo/.cache/tmp/pip-ephem-wheel-cache-_dtf7mos/wheels/db/44/b4/1659f4ee528261d8fd03b9b5bfa5ae4740682f8566cc7347cc
+  Building editable for isaaclab_tasks (pyproject.toml): started
+  Building editable for isaaclab_tasks (pyproject.toml): finished with status 'done'
+  Created wheel for isaaclab_tasks: filename=isaaclab_tasks-0.10.31-0.editable-py3-none-any.whl size=3384 sha256=f7e7474e04b0f906adb5cf766030f1dc65b04b3a8b83103ea0d2c2056b920bac
+  Stored in directory: /lus/lfs1aip2/projects/b6ac/go2-sumo/.cache/tmp/pip-ephem-wheel-cache-_dtf7mos/wheels/0f/fb/69/93dbb779875c1205f3bc29580e56834b30de84f30cf05d3e71
+  Building editable for isaaclab_rl (pyproject.toml): started
+  Building editable for isaaclab_rl (pyproject.toml): finished with status 'done'
+  Created wheel for isaaclab_rl: filename=isaaclab_rl-0.1.4-0.editable-py3-none-any.whl size=3525 sha256=fb3128f95b88a8db7c26b676b618be5ce405ded5682fd43b89da2d73522e2aad
+  Stored in directory: /lus/lfs1aip2/projects/b6ac/go2-sumo/.cache/tmp/pip-ephem-wheel-cache-_dtf7mos/wheels/31/1f/e1/2b66c5b6677eeaf67847e451a24f38781c5a7509955fda171b
+Successfully built isaaclab isaaclab_assets isaaclab_tasks isaaclab_rl
+Installing collected packages: isaaclab_tasks, isaaclab_rl, isaaclab_assets, isaaclab
+
+
+Successfully installed isaaclab-0.36.23 isaaclab_assets-0.2.2 isaaclab_rl-0.1.4 isaaclab_tasks-0.10.31
+need gymnasium==1.2.3: ModuleNotFoundError: No module named 'gymnasium'
+need imageio-ffmpeg==0.6.0: ModuleNotFoundError: No module named 'imageio_ffmpeg'
+need flatdict==4.0.1: ModuleNotFoundError: No module named 'flatdict'
+need warp-lang==1.5.0: ModuleNotFoundError: No module named 'warp'
+need rsl-rl-lib==2.3.1: ModuleNotFoundError: No module named 'rsl_rl'
+need hydra-core==1.3.2: ModuleNotFoundError: No module named 'hydra'
+need prettytable==3.3.0: ModuleNotFoundError: No module named 'prettytable'
+need einops: ModuleNotFoundError: No module named 'einops'
+need moviepy==2.2.1: ModuleNotFoundError: No module named 'moviepy'
+need h5py: ModuleNotFoundError: No module named 'h5py'
+need tensorboard: ModuleNotFoundError: No module named 'tensorboard'
+need onnx==1.16.1: ModuleNotFoundError: No module named 'onnx'
+need transformers==4.41.2: ModuleNotFoundError: No module named 'transformers'
+need huggingface-hub==0.23.4: ModuleNotFoundError: No module named 'huggingface_hub'
+Collecting gymnasium==1.2.3
+  Downloading gymnasium-1.2.3-py3-none-any.whl.metadata (10 kB)
+Collecting imageio-ffmpeg==0.6.0
+  Downloading imageio_ffmpeg-0.6.0-py3-none-manylinux2014_aarch64.whl.metadata (1.5 kB)
+Collecting flatdict==4.0.1
+  Downloading flatdict-4.0.1.tar.gz (8.3 kB)
+  Installing build dependencies: started
+  Installing build dependencies: finished with status 'done'
+  Getting requirements to build wheel: started
+  Getting requirements to build wheel: finished with status 'error'

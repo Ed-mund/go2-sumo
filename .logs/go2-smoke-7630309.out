@@ -1,0 +1,3 @@
+GPU 0: NVIDIA GH200 120GB (UUID: GPU-be88b447-77b5-d94d-c702-b59efb3d8020)
+2.9.0+cu130 True NVIDIA GH200 120GB
+Prepared /lus/lfs1aip2/projects/b6ac/go2-sumo/artifacts/isambard-smoke; no simulator, CUDA or training launched.

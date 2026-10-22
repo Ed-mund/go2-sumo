@@ -826,8 +826,10 @@ class AppLauncher:
         # set fabric update flag to disable updating transforms when rendering is disabled
         carb_settings_iface.set_bool("/physics/fabricUpdateTransformations", self._rendering_enabled())
 
-        # disable physics backwards compatibility check
-        carb_settings_iface.set_int(physx_impl.SETTING_BACKWARD_COMPATIBILITY, 0)
+        # Isaac Sim 4.5 exposes this flag. Isaac Sim 5.1 removed it; the check is gone there.
+        backward_compatibility = getattr(physx_impl, "SETTING_BACKWARD_COMPATIBILITY", None)
+        if backward_compatibility is not None:
+            carb_settings_iface.set_int(backward_compatibility, 0)
 
     def _hide_stop_button(self):
         """Hide the stop button in the toolbar.

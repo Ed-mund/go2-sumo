@@ -31,18 +31,32 @@ EXPECTED = {
 def diagnose(cpu_only=False):
     errors = []
     report = {"python": sys.version, "executable": sys.executable, "platform": platform.platform(), "packages": {}}
-    if sys.version_info[:2] != (3, 10):
+    if platform.machine() == "aarch64":
+        # Isambard-AI is aarch64. Isaac Sim 4.5 publishes no aarch64 wheel;
+        # the cluster jobs install Isaac Sim 5.1 / Python 3.11 / Torch 2.9 cu130.
+        if sys.version_info[:2] != (3, 11):
+            errors.append("Use Python 3.11 for the aarch64 Isaac Sim 5.1 stack")
+    elif sys.version_info[:2] != (3, 10):
         errors.append("Use Python 3.10 for this pinned Isaac Sim 4.5 stack")
     if site.ENABLE_USER_SITE:
         errors.append("Set PYTHONNOUSERSITE=1 before launching Python")
     if not cpu_only and sys.platform != "linux":
         errors.append("The campaign uses Linux process groups/flock; native Windows is unsupported")
-    expected = {k: v for k, v in EXPECTED.items() if not cpu_only or k in ("torch", "numpy")}
+    pins = dict(EXPECTED)
+    if platform.machine() == "aarch64":
+        pins["torch"] = "2.9.0"
+        pins["torchvision"] = "0.24.0"
+        pins["isaacsim"] = "5.1.0.0"
+    expected = {k: v for k, v in pins.items() if not cpu_only or k in ("torch", "numpy")}
     for name, version in expected.items():
         try:
             dist = metadata.distribution(name)
             report["packages"][name] = {"version": dist.version, "location": str(dist.locate_file(""))}
-            if dist.version.split("+")[0] != version:
+            found = dist.version.split("+")[0]
+            isaacsim_ok = (
+                platform.machine() == "aarch64" and name == "isaacsim" and found.startswith("5.1.0")
+            )
+            if found != version and not isaacsim_ok:
                 errors.append(f"{name}: expected {version}, found {dist.version}")
         except metadata.PackageNotFoundError:
             errors.append(f"Missing {name}")

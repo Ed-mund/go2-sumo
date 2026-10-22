@@ -376,6 +376,11 @@ def main():
         stats["metrics"] = {k: v / max(stats["episodes"], 1) for k, v in stats["metrics"].items()}
         stats["upright_by_robot"] = {k: v / max(stats["samples"], 1) for k, v in stats["upright_by_robot"].items()}
         write_json(args.output / "evaluation.json", stats)
+    except BaseException:
+        import traceback
+
+        traceback.print_exc()
+        raise
     finally:
         if writer is not None:
             writer.close()

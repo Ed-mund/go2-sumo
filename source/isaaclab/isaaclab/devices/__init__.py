@@ -24,4 +24,10 @@ from .gamepad import Se2Gamepad, Se3Gamepad
 from .keyboard import Se2Keyboard, Se3Keyboard
 from .openxr import OpenXRDevice
 from .retargeter_base import RetargeterBase
-from .spacemouse import Se2SpaceMouse, Se3SpaceMouse
+
+try:
+    from .spacemouse import Se2SpaceMouse, Se3SpaceMouse
+except ImportError:
+    # hidapi is only needed for a connected SpaceMouse. Headless training does not use one.
+    Se2SpaceMouse = None  # type: ignore[misc, assignment]
+    Se3SpaceMouse = None  # type: ignore[misc, assignment]

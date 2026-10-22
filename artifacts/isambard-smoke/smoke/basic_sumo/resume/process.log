@@ -1,0 +1,761 @@
+
+COMMAND: ["/projects/b6ac/go2-sumo/env/bin/python", "/lus/lfs1aip2/projects/b6ac/go2-sumo/scripts/reinforcement_learning/harl/tactics_train.py", "--config", "/lus/lfs1aip2/projects/b6ac/go2-sumo/artifacts/isambard-smoke/config.json", "--output", "/lus/lfs1aip2/projects/b6ac/go2-sumo/artifacts/isambard-smoke/smoke/basic_sumo/resume", "--phase", "basic_sumo", "--steps", "512", "--envs", "4", "--role", "1", "--seed", "101", "--view", "corner", "--source", "/lus/lfs1aip2/projects/b6ac/go2-sumo/artifacts/isambard-smoke/smoke/basic_sumo/update_000001.pt"]
+[INFO][AppLauncher]: Using device: cuda:0
+[INFO][AppLauncher]: Loading experience file: /lus/lfs1aip2/projects/b6ac/go2-sumo/apps/isaaclab.python.headless.rendering.kit
+Loading user config located at: '/lus/lfs1aip2/projects/b6ac/go2-sumo/env/lib/python3.11/site-packages/isaacsim/kit/data/Kit/Isaac-Sim/4.5/user.config.json'
+[Info] [carb] Logging to file: /lus/lfs1aip2/projects/b6ac/go2-sumo/env/lib/python3.11/site-packages/isaacsim/kit/logs/Kit/Isaac-Sim/4.5/kit_20261022_130718.log
+2026-10-22T13:07:18Z [12ms] [Warning] [omni.ext.plugin] [ext: rendering_modes] Extensions config 'extension.toml' doesn't exist '/lus/lfs1aip2/projects/b6ac/go2-sumo/apps/rendering_modes' or '/lus/lfs1aip2/projects/b6ac/go2-sumo/apps/rendering_modes/config'
+2026-10-22T13:07:19Z [1,168ms] [Warning] [carb.windowing-glfw.plugin] GLFW initialization failed.
+2026-10-22T13:07:19Z [1,168ms] [Warning] [carb] Failed to startup plugin carb.windowing-glfw.plugin (interfaces: [carb::windowing::IGLContext v1.0],[carb::windowing::IWindowing v1.5]) (impl: carb.windowing-glfw.plugin)
+2026-10-22T13:07:19Z [1,276ms] [Warning] [omni.platforminfo.plugin] failed to open the default display.  Can't verify X Server version.
+2026-10-22T13:07:19Z [1,280ms] [Warning] [carb.cudainterop.plugin] CUDA_VISIBLE_DEVICES environment variable is set.
+2026-10-22T13:07:19Z [1,280ms] [Warning] [carb.cudainterop.plugin] Note CUDA device enumeration and Omniverse device enumeration are different.
+2026-10-22T13:07:19Z [1,281ms] [Warning] [carb.cudainterop.plugin] Setting CUDA_VISIBLE_DEVICES can lead to undesired behavior or crashes.
+
+|---------------------------------------------------------------------------------------------|
+| Driver Version: 580.178.04    | Graphics API: Vulkan
+|=============================================================================================|
+| GPU | Name                             | Active | LDA | GPU Memory | Vendor-ID | LUID       |
+|     |                                  |        |     |            | Device-ID | UUID       |
+|     |                                  |        |     |            | Bus-ID    |            |
+|---------------------------------------------------------------------------------------------|
+| 0   | NVIDIA GH200 120GB               | Yes: 0 |     | 97871   MB | 10de      | 0          |
+|     |                                  |        |     |            | 2342      | d803e719.. |
+|     |                                  |        |     |            | 1         |            |
+|=============================================================================================|
+| OS: 15-SP7 sles, Version: 15.00.0, Kernel: 6.4.0-150700.53.81-64kb
+| Processor: Neoverse-V2
+| Cores: 288 | Logical Cores: 288
+|---------------------------------------------------------------------------------------------|
+| Total Memory (MB): 876882 | Free Memory: 663498
+| Total Page/Swap (MB): 0 | Free Page/Swap: 0
+|---------------------------------------------------------------------------------------------|
+2026-10-22T13:07:20Z [2,289ms] [Warning] [gpu.foundation.plugin] ECC is enabled on physical device 0
+2026-10-22T13:07:20Z [2,291ms] [Warning] [gpu.foundation.plugin] IOMMU is enabled.
+2026-10-22T13:07:21Z [2,966ms] [Warning] [carb.windowing-glfw.plugin] GLFW initialization failed.
+2026-10-22T13:07:21Z [2,966ms] [Warning] [carb] Failed to startup plugin carb.windowing-glfw.plugin (interfaces: [carb::windowing::IGLContext v1.0],[carb::windowing::IWindowing v1.5]) (impl: carb.windowing-glfw.plugin)
+2026-10-22T13:07:21Z [2,988ms] [Warning] [carb.windowing-glfw.plugin] GLFW initialization failed.
+2026-10-22T13:07:21Z [2,988ms] [Warning] [carb] Failed to startup plugin carb.windowing-glfw.plugin (interfaces: [carb::windowing::IGLContext v1.0],[carb::windowing::IWindowing v1.5]) (impl: carb.windowing-glfw.plugin)
+2026-10-22T13:07:21Z [2,993ms] [Warning] [carb.windowing-glfw.plugin] GLFW initialization failed.
+2026-10-22T13:07:21Z [2,993ms] [Warning] [carb] Failed to startup plugin carb.windowing-glfw.plugin (interfaces: [carb::windowing::IGLContext v1.0],[carb::windowing::IWindowing v1.5]) (impl: carb.windowing-glfw.plugin)
+2026-10-22T13:07:21Z [3,017ms] [Warning] [carb.windowing-glfw.plugin] GLFW initialization failed.
+2026-10-22T13:07:21Z [3,017ms] [Warning] [carb] Failed to startup plugin carb.windowing-glfw.plugin (interfaces: [carb::windowing::IGLContext v1.0],[carb::windowing::IWindowing v1.5]) (impl: carb.windowing-glfw.plugin)
+2026-10-22T13:07:21Z [3,018ms] [Warning] [carb.windowing-glfw.plugin] GLFW initialization failed.
+2026-10-22T13:07:21Z [3,018ms] [Warning] [carb] Failed to startup plugin carb.windowing-glfw.plugin (interfaces: [carb::windowing::IGLContext v1.0],[carb::windowing::IWindowing v1.5]) (impl: carb.windowing-glfw.plugin)
+2026-10-22T13:07:21Z [3,019ms] [Warning] [carb.windowing-glfw.plugin] GLFW initialization failed.
+2026-10-22T13:07:21Z [3,019ms] [Warning] [carb] Failed to startup plugin carb.windowing-glfw.plugin (interfaces: [carb::windowing::IGLContext v1.0],[carb::windowing::IWindowing v1.5]) (impl: carb.windowing-glfw.plugin)
+2026-10-22T13:07:21Z [3,175ms] [Warning] [carb] Acquiring non optional plugin interface which is not listed as dependency: [omni::physx::IPhysxBenchmarks v1.0] (plugin: <default plugin>), by client: omni.physics.physx.plugin. Add it to CARB_PLUGIN_IMPL_DEPS() macro of a client.
+2026-10-22T13:07:21Z [3,210ms] [Warning] [omni.isaac.dynamic_control] omni.isaac.dynamic_control is deprecated as of Isaac Sim 4.5. No action is needed from end-users.
+2026-10-22T13:07:22Z [3,873ms] [Warning] [omni.log] Source: omni.hydra was already registered.
+2026-10-22T13:07:22Z [4,406ms] [Warning] [pxr.Semantics] pxr.Semantics is deprecated - please use Semantics instead
+2026-10-22T13:07:22Z [4,536ms] [Warning] [omni.graph.core.plugin] Found duplicate of category 'Replicator' - was 'Annotators', adding 'Fabric Reader'
+2026-10-22T13:07:22Z [4,537ms] [Warning] [omni.graph.core.plugin] Category 'Replicator' not accepted on node type 'omni.replicator.core.FabricReader' in extension 'omni.replicator.core'
+2026-10-22T13:07:22Z [4,538ms] [Warning] [omni.replicator.core.scripts.extension] No material configuration file, adding configuration to material settings directly.
+/projects/b6ac/go2-sumo/env/lib/python3.11/site-packages/gymnasium/envs/registration.py:636: UserWarning: [33mWARN: Overriding environment Isaac-Humanoid-Direct-v0 already in registry.[0m
+  logger.warn(f"Overriding environment {new_spec.id} already in registry.")
+/projects/b6ac/go2-sumo/env/lib/python3.11/site-packages/gymnasium/envs/registration.py:636: UserWarning: [33mWARN: Overriding environment Isaac-H1-Velocity-Direct-v0 already in registry.[0m
+  logger.warn(f"Overriding environment {new_spec.id} already in registry.")
+2026-10-22T13:07:27Z [8,962ms] [Warning] [carb.graphics-vulkan.plugin] NGX DLSS Frame Generation Feature AdapterUnsupported
+Setting seed: 101
+2026-10-22T13:07:29Z [11,178ms] [Warning] [isaacsim.core.simulation_manager.impl.simulation_manager] CCD is not supported on GPU, ignoring request to enable it
+[INFO]: Base environment:
+	Environment device    : cuda:0
+	Environment seed      : 101
+	Physics step-size     : 0.005
+	Rendering step-size   : 0.04
+	Environment step-size : 0.02
+[sumo-go2-vs-go2] collision prims=216; rigid links=152; measured proxies added=28 {'Robot_0': 14, 'Robot_1': 14}; CCD enabled; contact_offset=0.012
+[sumo] created PhysX lidar /World/envs/env_0/Robot_0/base/reference_lidar
+[sumo] created PhysX lidar /World/envs/env_0/Robot_1/base/reference_lidar
+2026-10-22T13:07:31Z [12,959ms] [Warning] [isaaclab.scene.interactive_scene] Collision filtering can only be automatically enabled when replicate_physics=True. Please call scene.filter_collisions(global_prim_paths) to filter collisions across environments.
+[INFO]: Time taken for scene creation : 1.923236 seconds
+[INFO]: Scene manager:  <class InteractiveScene>
+	Number of environments: 4
+	Environment spacing   : 16.0
+	Source prim name      : /World/envs/env_0
+	Global prim paths     : []
+	Replicate physics     : False
+[INFO]: Starting the simulation. This may take a few seconds. Please wait...
+2026-10-22T13:07:31Z [13,316ms] [Warning] [omni.physx.tensors.plugin] DEPRECATED: Please use getDofFrictionProperties instead.
+2026-10-22T13:07:31Z [13,325ms] [Warning] [omni.physx.tensors.plugin] DEPRECATED: Please use setDofFrictionProperties instead.
+2026-10-22T13:07:31Z [13,335ms] [Warning] [omni.physx.tensors.plugin] DEPRECATED: Please use getDofFrictionProperties instead.
+2026-10-22T13:07:31Z [13,357ms] [Warning] [omni.physx.tensors.plugin] DEPRECATED: Please use getDofFrictionProperties instead.
+2026-10-22T13:07:31Z [13,359ms] [Warning] [omni.physx.tensors.plugin] DEPRECATED: Please use setDofFrictionProperties instead.
+2026-10-22T13:07:31Z [13,360ms] [Warning] [omni.physx.tensors.plugin] DEPRECATED: Please use getDofFrictionProperties instead.
+2026-10-22T13:07:31Z [13,491ms] [Warning] [omni.physx.tensors.plugin] GPU contact filter for collider '/World/ground' is not supported
+2026-10-22T13:07:31Z [13,492ms] [Warning] [omni.physx.tensors.plugin] GPU contact filter for collider '/World/ground' is not supported
+2026-10-22T13:07:31Z [13,492ms] [Warning] [omni.physx.tensors.plugin] GPU contact filter for collider '/World/ground' is not supported
+2026-10-22T13:07:31Z [13,492ms] [Warning] [omni.physx.tensors.plugin] GPU contact filter for collider '/World/ground' is not supported
+2026-10-22T13:07:31Z [13,494ms] [Warning] [omni.physx.tensors.plugin] GPU contact filter for collider '/World/ground' is not supported
+2026-10-22T13:07:31Z [13,494ms] [Warning] [omni.physx.tensors.plugin] GPU contact filter for collider '/World/ground' is not supported
+2026-10-22T13:07:31Z [13,494ms] [Warning] [omni.physx.tensors.plugin] GPU contact filter for collider '/World/ground' is not supported
+2026-10-22T13:07:31Z [13,494ms] [Warning] [omni.physx.tensors.plugin] GPU contact filter for collider '/World/ground' is not supported
+2026-10-22T13:07:31Z [13,496ms] [Warning] [omni.physx.tensors.plugin] GPU contact filter for collider '/World/ground' is not supported
+2026-10-22T13:07:31Z [13,496ms] [Warning] [omni.physx.tensors.plugin] GPU contact filter for collider '/World/ground' is not supported
+2026-10-22T13:07:31Z [13,496ms] [Warning] [omni.physx.tensors.plugin] GPU contact filter for collider '/World/ground' is not supported
+2026-10-22T13:07:31Z [13,496ms] [Warning] [omni.physx.tensors.plugin] GPU contact filter for collider '/World/ground' is not supported
+2026-10-22T13:07:31Z [13,498ms] [Warning] [omni.physx.tensors.plugin] GPU contact filter for collider '/World/ground' is not supported
+2026-10-22T13:07:31Z [13,498ms] [Warning] [omni.physx.tensors.plugin] GPU contact filter for collider '/World/ground' is not supported
+2026-10-22T13:07:31Z [13,498ms] [Warning] [omni.physx.tensors.plugin] GPU contact filter for collider '/World/ground' is not supported
+2026-10-22T13:07:31Z [13,498ms] [Warning] [omni.physx.tensors.plugin] GPU contact filter for collider '/World/ground' is not supported
+2026-10-22T13:07:31Z [13,500ms] [Warning] [omni.physx.tensors.plugin] GPU contact filter for collider '/World/ground' is not supported
+2026-10-22T13:07:31Z [13,500ms] [Warning] [omni.physx.tensors.plugin] GPU contact filter for collider '/World/ground' is not supported
+2026-10-22T13:07:31Z [13,500ms] [Warning] [omni.physx.tensors.plugin] GPU contact filter for collider '/World/ground' is not supported
+2026-10-22T13:07:31Z [13,500ms] [Warning] [omni.physx.tensors.plugin] GPU contact filter for collider '/World/ground' is not supported
+2026-10-22T13:07:31Z [13,503ms] [Warning] [omni.physx.tensors.plugin] GPU contact filter for collider '/World/ground' is not supported
+2026-10-22T13:07:31Z [13,503ms] [Warning] [omni.physx.tensors.plugin] GPU contact filter for collider '/World/ground' is not supported
+2026-10-22T13:07:31Z [13,503ms] [Warning] [omni.physx.tensors.plugin] GPU contact filter for collider '/World/ground' is not supported
+2026-10-22T13:07:31Z [13,503ms] [Warning] [omni.physx.tensors.plugin] GPU contact filter for collider '/World/ground' is not supported
+2026-10-22T13:07:31Z [13,505ms] [Warning] [omni.physx.tensors.plugin] GPU contact filter for collider '/World/ground' is not supported
+2026-10-22T13:07:31Z [13,505ms] [Warning] [omni.physx.tensors.plugin] GPU contact filter for collider '/World/ground' is not supported
+2026-10-22T13:07:31Z [13,505ms] [Warning] [omni.physx.tensors.plugin] GPU contact filter for collider '/World/ground' is not supported
+2026-10-22T13:07:31Z [13,505ms] [Warning] [omni.physx.tensors.plugin] GPU contact filter for collider '/World/ground' is not supported
+2026-10-22T13:07:31Z [13,507ms] [Warning] [omni.physx.tensors.plugin] GPU contact filter for collider '/World/ground' is not supported
+2026-10-22T13:07:31Z [13,507ms] [Warning] [omni.physx.tensors.plugin] GPU contact filter for collider '/World/ground' is not supported
+2026-10-22T13:07:31Z [13,507ms] [Warning] [omni.physx.tensors.plugin] GPU contact filter for collider '/World/ground' is not supported
+2026-10-22T13:07:31Z [13,507ms] [Warning] [omni.physx.tensors.plugin] GPU contact filter for collider '/World/ground' is not supported
+2026-10-22T13:07:31Z [13,509ms] [Warning] [omni.physx.tensors.plugin] GPU contact filter for collider '/World/ground' is not supported
+2026-10-22T13:07:31Z [13,509ms] [Warning] [omni.physx.tensors.plugin] GPU contact filter for collider '/World/ground' is not supported
+2026-10-22T13:07:31Z [13,509ms] [Warning] [omni.physx.tensors.plugin] GPU contact filter for collider '/World/ground' is not supported
+2026-10-22T13:07:31Z [13,509ms] [Warning] [omni.physx.tensors.plugin] GPU contact filter for collider '/World/ground' is not supported
+2026-10-22T13:07:31Z [13,511ms] [Warning] [omni.physx.tensors.plugin] GPU contact filter for collider '/World/ground' is not supported
+2026-10-22T13:07:31Z [13,511ms] [Warning] [omni.physx.tensors.plugin] GPU contact filter for collider '/World/ground' is not supported
+2026-10-22T13:07:31Z [13,511ms] [Warning] [omni.physx.tensors.plugin] GPU contact filter for collider '/World/ground' is not supported
+2026-10-22T13:07:31Z [13,511ms] [Warning] [omni.physx.tensors.plugin] GPU contact filter for collider '/World/ground' is not supported
+2026-10-22T13:07:33Z [14,873ms] [Warning] [omni.hydra] Mesh '/World/envs/env_2/Robot_1/RR_calf/visuals/mesh_0' has corrupted data in primvar 'st_1': buffer size 19536 doesn't match expected size 25806 in faceVarying primvars
+2026-10-22T13:07:33Z [14,873ms] [Warning] [omni.hydra] Mesh '/World/envs/env_0/Robot_1/RR_calf/visuals/mesh_0' has corrupted data in primvar 'st_1': buffer size 19536 doesn't match expected size 25806 in faceVarying primvars
+2026-10-22T13:07:33Z [14,873ms] [Warning] [omni.hydra] Mesh '/World/envs/env_2/Robot_1/RR_calf/visuals/mesh_0' has corrupted data in primvar 'st': buffer size 6270 doesn't match expected size 25806 in faceVarying primvars
+2026-10-22T13:07:33Z [14,873ms] [Warning] [omni.hydra] Mesh '/World/envs/env_0/Robot_1/RR_calf/visuals/mesh_0' has corrupted data in primvar 'st': buffer size 6270 doesn't match expected size 25806 in faceVarying primvars
+2026-10-22T13:07:33Z [14,873ms] [Warning] [omni.hydra] Mesh '/World/envs/env_3/Robot_1/FR_thigh/visuals/mesh_0' has corrupted data in primvar 'st_1': buffer size 55254 doesn't match expected size 90378 in faceVarying primvars
+2026-10-22T13:07:33Z [14,873ms] [Warning] [omni.hydra] Mesh '/World/envs/env_3/Robot_1/FR_hip/visuals/mesh_0' has corrupted data in primvar 'st_1': buffer size 54198 doesn't match expected size 111120 in faceVarying primvars
+2026-10-22T13:07:33Z [14,873ms] [Warning] [omni.hydra] Mesh '/World/envs/env_1/Robot_0/RR_thigh/visuals/mesh_0' has corrupted data in primvar 'st_1': buffer size 55254 doesn't match expected size 90378 in faceVarying primvars
+2026-10-22T13:07:33Z [14,873ms] [Warning] [omni.hydra] Mesh '/World/envs/env_3/Robot_1/FR_thigh/visuals/mesh_0' has corrupted data in primvar 'st': buffer size 35124 doesn't match expected size 90378 in faceVarying primvars
+2026-10-22T13:07:33Z [14,873ms] [Warning] [omni.hydra] Mesh '/World/envs/env_3/Robot_0/RL_thigh/visuals/mesh_0' has corrupted data in primvar 'st_1': buffer size 55278 doesn't match expected size 90402 in faceVarying primvars
+2026-10-22T13:07:33Z [14,873ms] [Warning] [omni.hydra] Mesh '/World/envs/env_0/Robot_0/FR_thigh/visuals/mesh_0' has corrupted data in primvar 'st_1': buffer size 55254 doesn't match expected size 90378 in faceVarying primvars
+2026-10-22T13:07:33Z [14,873ms] [Warning] [omni.hydra] Mesh '/World/envs/env_0/Robot_0/RL_thigh/visuals/mesh_0' has corrupted data in primvar 'st_1': buffer size 55278 doesn't match expected size 90402 in faceVarying primvars
+2026-10-22T13:07:33Z [14,873ms] [Warning] [omni.hydra] Mesh '/World/envs/env_1/Robot_1/FL_thigh/visuals/mesh_0' has corrupted data in primvar 'st_1': buffer size 55278 doesn't match expected size 90402 in faceVarying primvars
+2026-10-22T13:07:33Z [14,873ms] [Warning] [omni.hydra] Mesh '/World/envs/env_1/Robot_0/FL_hip/visuals/mesh_0' has corrupted data in primvar 'st_1': buffer size 54198 doesn't match expected size 111120 in faceVarying primvars
+2026-10-22T13:07:33Z [14,873ms] [Warning] [omni.hydra] Mesh '/World/envs/env_3/Robot_1/FR_hip/visuals/mesh_0' has corrupted data in primvar 'st': buffer size 56922 doesn't match expected size 111120 in faceVarying primvars
+2026-10-22T13:07:33Z [14,873ms] [Warning] [omni.hydra] Mesh '/World/envs/env_1/Robot_0/FL_hip/visuals/mesh_0' has corrupted data in primvar 'st': buffer size 56922 doesn't match expected size 111120 in faceVarying primvars
+2026-10-22T13:07:33Z [14,873ms] [Warning] [omni.hydra] Mesh '/World/envs/env_2/Robot_1/RR_hip/visuals/mesh_0' has corrupted data in primvar 'st_1': buffer size 54198 doesn't match expected size 111120 in faceVarying primvars
+2026-10-22T13:07:33Z [14,873ms] [Warning] [omni.hydra] Mesh '/World/envs/env_1/Robot_1/FL_hip/visuals/mesh_0' has corrupted data in primvar 'st_1': buffer size 54198 doesn't match expected size 111120 in faceVarying primvars
+2026-10-22T13:07:33Z [14,873ms] [Warning] [omni.hydra] Mesh '/World/envs/env_1/Robot_0/RR_thigh/visuals/mesh_0' has corrupted data in primvar 'st': buffer size 35124 doesn't match expected size 90378 in faceVarying primvars
+2026-10-22T13:07:33Z [14,873ms] [Warning] [omni.hydra] Mesh '/World/envs/env_3/Robot_1/RL_calf/visuals/mesh_0' has corrupted data in primvar 'st_1': buffer size 19536 doesn't match expected size 25806 in faceVarying primvars
+2026-10-22T13:07:33Z [14,873ms] [Warning] [omni.hydra] Mesh '/World/envs/env_3/Robot_0/FL_hip/visuals/mesh_0' has corrupted data in primvar 'st_1': buffer size 54198 doesn't match expected size 111120 in faceVarying primvars
+2026-10-22T13:07:33Z [14,873ms] [Warning] [omni.hydra] Mesh '/World/envs/env_0/Robot_0/RL_hip/visuals/mesh_0' has corrupted data in primvar 'st_1': buffer size 54198 doesn't match expected size 111120 in faceVarying primvars
+2026-10-22T13:07:33Z [14,873ms] [Warning] [omni.hydra] Mesh '/World/envs/env_3/Robot_1/RL_hip/visuals/mesh_0' has corrupted data in primvar 'st_1': buffer size 54198 doesn't match expected size 111120 in faceVarying primvars
+2026-10-22T13:07:33Z [14,873ms] [Warning] [omni.hydra] Mesh '/World/envs/env_1/Robot_0/RR_hip/visuals/mesh_0' has corrupted data in primvar 'st_1': buffer size 54198 doesn't match expected size 111120 in faceVarying primvars
+2026-10-22T13:07:33Z [14,873ms] [Warning] [omni.hydra] Mesh '/World/envs/env_3/Robot_0/RL_thigh/visuals/mesh_0' has corrupted data in primvar 'st': buffer size 35124 doesn't match expected size 90402 in faceVarying primvars
+2026-10-22T13:07:33Z [14,873ms] [Warning] [omni.hydra] Mesh '/World/envs/env_0/Robot_0/FR_thigh/visuals/mesh_0' has corrupted data in primvar 'st': buffer size 35124 doesn't match expected size 90378 in faceVarying primvars
+2026-10-22T13:07:33Z [14,873ms] [Warning] [omni.hydra] Mesh '/World/envs/env_0/Robot_0/RL_thigh/visuals/mesh_0' has corrupted data in primvar 'st': buffer size 35124 doesn't match expected size 90402 in faceVarying primvars
+2026-10-22T13:07:33Z [14,874ms] [Warning] [omni.hydra] Mesh '/World/envs/env_1/Robot_0/FR_thigh/visuals/mesh_0' has corrupted data in primvar 'st_1': buffer size 55254 doesn't match expected size 90378 in faceVarying primvars
+2026-10-22T13:07:33Z [14,873ms] [Warning] [omni.hydra] Mesh '/World/envs/env_1/Robot_1/FL_thigh/visuals/mesh_0' has corrupted data in primvar 'st': buffer size 35124 doesn't match expected size 90402 in faceVarying primvars
+2026-10-22T13:07:33Z [14,874ms] [Warning] [omni.hydra] Mesh '/World/envs/env_1/Robot_0/FR_thigh/visuals/mesh_0' has corrupted data in primvar 'st': buffer size 35124 doesn't match expected size 90378 in faceVarying primvars
+2026-10-22T13:07:33Z [14,873ms] [Warning] [omni.hydra] Mesh '/World/envs/env_3/Robot_0/RL_hip/visuals/mesh_0' has corrupted data in primvar 'st_1': buffer size 54198 doesn't match expected size 111120 in faceVarying primvars
+2026-10-22T13:07:33Z [14,873ms] [Warning] [omni.hydra] Mesh '/World/envs/env_2/Robot_0/base/visuals/mesh_0' has corrupted data in primvar 'st_4': buffer size 30390 doesn't match expected size 233784 in faceVarying primvars
+2026-10-22T13:07:33Z [14,873ms] [Warning] [omni.hydra] Mesh '/World/envs/env_0/Robot_1/base/visuals/mesh_0' has corrupted data in primvar 'st_4': buffer size 30390 doesn't match expected size 233784 in faceVarying primvars
+2026-10-22T13:07:33Z [14,873ms] [Warning] [omni.hydra] Mesh '/World/envs/env_2/Robot_1/RR_hip/visuals/mesh_0' has corrupted data in primvar 'st': buffer size 56922 doesn't match expected size 111120 in faceVarying primvars
+2026-10-22T13:07:33Z [14,874ms] [Warning] [omni.hydra] Mesh '/World/envs/env_0/Robot_1/base/visuals/mesh_0' has corrupted data in primvar 'st_2': buffer size 6015 doesn't match expected size 233784 in faceVarying primvars
+2026-10-22T13:07:33Z [14,873ms] [Warning] [omni.hydra] Mesh '/World/envs/env_1/Robot_1/FL_hip/visuals/mesh_0' has corrupted data in primvar 'st': buffer size 56922 doesn't match expected size 111120 in faceVarying primvars
+2026-10-22T13:07:33Z [14,874ms] [Warning] [omni.hydra] Mesh '/World/envs/env_1/Robot_1/base/visuals/mesh_0' has corrupted data in primvar 'st_4': buffer size 30390 doesn't match expected size 233784 in faceVarying primvars
+2026-10-22T13:07:33Z [14,874ms] [Warning] [omni.hydra] Mesh '/World/envs/env_3/Robot_1/RL_calf/visuals/mesh_0' has corrupted data in primvar 'st': buffer size 6270 doesn't match expected size 25806 in faceVarying primvars
+2026-10-22T13:07:33Z [14,874ms] [Warning] [omni.hydra] Mesh '/World/envs/env_2/Robot_1/base/visuals/mesh_0' has corrupted data in primvar 'st_4': buffer size 30390 doesn't match expected size 233784 in faceVarying primvars
+2026-10-22T13:07:33Z [14,874ms] [Warning] [omni.hydra] Mesh '/World/envs/env_0/Robot_1/FL_calf/visuals/mesh_0' has corrupted data in primvar 'st_1': buffer size 19536 doesn't match expected size 25806 in faceVarying primvars
+2026-10-22T13:07:33Z [14,874ms] [Warning] [omni.hydra] Mesh '/World/envs/env_3/Robot_0/FL_hip/visuals/mesh_0' has corrupted data in primvar 'st': buffer size 56922 doesn't match expected size 111120 in faceVarying primvars
+2026-10-22T13:07:33Z [14,874ms] [Warning] [omni.hydra] Mesh '/World/envs/env_0/Robot_1/FL_calf/visuals/mesh_0' has corrupted data in primvar 'st': buffer size 6270 doesn't match expected size 25806 in faceVarying primvars
+2026-10-22T13:07:33Z [14,874ms] [Warning] [omni.hydra] Mesh '/World/envs/env_1/Robot_0/base/visuals/mesh_0' has corrupted data in primvar 'st_4': buffer size 30390 doesn't match expected size 233784 in faceVarying primvars
+2026-10-22T13:07:33Z [14,874ms] [Warning] [omni.hydra] Mesh '/World/envs/env_0/Robot_0/RL_hip/visuals/mesh_0' has corrupted data in primvar 'st': buffer size 56922 doesn't match expected size 111120 in faceVarying primvars
+2026-10-22T13:07:33Z [14,874ms] [Warning] [omni.hydra] Mesh '/World/envs/env_1/Robot_0/base/visuals/mesh_0' has corrupted data in primvar 'st_2': buffer size 6015 doesn't match expected size 233784 in faceVarying primvars
+2026-10-22T13:07:33Z [14,874ms] [Warning] [omni.hydra] Mesh '/World/envs/env_1/Robot_0/RR_calf/visuals/mesh_0' has corrupted data in primvar 'st_1': buffer size 19536 doesn't match expected size 25806 in faceVarying primvars
+2026-10-22T13:07:33Z [14,874ms] [Warning] [omni.hydra] Mesh '/World/envs/env_1/Robot_0/RR_hip/visuals/mesh_0' has corrupted data in primvar 'st': buffer size 56922 doesn't match expected size 111120 in faceVarying primvars
+2026-10-22T13:07:33Z [14,873ms] [Warning] [omni.hydra] Mesh '/World/envs/env_3/Robot_1/base/visuals/mesh_0' has corrupted data in primvar 'st_4': buffer size 30390 doesn't match expected size 233784 in faceVarying primvars
+2026-10-22T13:07:33Z [14,873ms] [Warning] [omni.hydra] Mesh '/World/envs/env_0/Robot_0/RL_calf/visuals/mesh_0' has corrupted data in primvar 'st_1': buffer size 19536 doesn't match expected size 25806 in faceVarying primvars
+2026-10-22T13:07:33Z [14,874ms] [Warning] [omni.hydra] Mesh '/World/envs/env_0/Robot_1/FL_thigh/visuals/mesh_0' has corrupted data in primvar 'st_1': buffer size 55278 doesn't match expected size 90402 in faceVarying primvars
+2026-10-22T13:07:33Z [14,874ms] [Warning] [omni.hydra] Mesh '/World/envs/env_1/Robot_1/RR_hip/visuals/mesh_0' has corrupted data in primvar 'st_1': buffer size 54198 doesn't match expected size 111120 in faceVarying primvars
+2026-10-22T13:07:33Z [14,874ms] [Warning] [omni.hydra] Mesh '/World/envs/env_3/Robot_0/RL_hip/visuals/mesh_0' has corrupted data in primvar 'st': buffer size 56922 doesn't match expected size 111120 in faceVarying primvars
+2026-10-22T13:07:33Z [14,875ms] [Warning] [omni.hydra] Mesh '/World/envs/env_1/Robot_1/RR_hip/visuals/mesh_0' has corrupted data in primvar 'st': buffer size 56922 doesn't match expected size 111120 in faceVarying primvars
+2026-10-22T13:07:33Z [14,873ms] [Warning] [omni.hydra] Mesh '/World/envs/env_3/Robot_0/base/visuals/mesh_0' has corrupted data in primvar 'st_4': buffer size 30390 doesn't match expected size 233784 in faceVarying primvars
+2026-10-22T13:07:33Z [14,874ms] [Warning] [omni.hydra] Mesh '/World/envs/env_0/Robot_1/base/visuals/mesh_0' has corrupted data in primvar 'st_3': buffer size 11886 doesn't match expected size 233784 in faceVarying primvars
+2026-10-22T13:07:33Z [14,875ms] [Warning] [omni.hydra] Mesh '/World/envs/env_3/Robot_0/base/visuals/mesh_0' has corrupted data in primvar 'st_2': buffer size 6015 doesn't match expected size 233784 in faceVarying primvars
+2026-10-22T13:07:33Z [14,874ms] [Warning] [omni.hydra] Mesh '/World/envs/env_2/Robot_1/base/visuals/mesh_0' has corrupted data in primvar 'st_2': buffer size 6015 doesn't match expected size 233784 in faceVarying primvars
+2026-10-22T13:07:33Z [14,874ms] [Warning] [omni.hydra] Mesh '/World/envs/env_0/Robot_0/base/visuals/mesh_0' has corrupted data in primvar 'st_4': buffer size 30390 doesn't match expected size 233784 in faceVarying primvars
+2026-10-22T13:07:33Z [14,874ms] [Warning] [omni.hydra] Mesh '/World/envs/env_3/Robot_1/RL_hip/visuals/mesh_0' has corrupted data in primvar 'st': buffer size 56922 doesn't match expected size 111120 in faceVarying primvars
+2026-10-22T13:07:33Z [14,875ms] [Warning] [omni.hydra] Mesh '/World/envs/env_0/Robot_0/base/visuals/mesh_0' has corrupted data in primvar 'st_2': buffer size 6015 doesn't match expected size 233784 in faceVarying primvars
+2026-10-22T13:07:33Z [14,874ms] [Warning] [omni.hydra] Mesh '/World/envs/env_1/Robot_0/RR_calf/visuals/mesh_0' has corrupted data in primvar 'st': buffer size 6270 doesn't match expected size 25806 in faceVarying primvars
+2026-10-22T13:07:33Z [14,874ms] [Warning] [omni.hydra] Mesh '/World/envs/env_3/Robot_1/base/visuals/mesh_0' has corrupted data in primvar 'st_2': buffer size 6015 doesn't match expected size 233784 in faceVarying primvars
+2026-10-22T13:07:33Z [14,874ms] [Warning] [omni.hydra] Mesh '/World/envs/env_0/Robot_0/RL_calf/visuals/mesh_0' has corrupted data in primvar 'st': buffer size 6270 doesn't match expected size 25806 in faceVarying primvars
+2026-10-22T13:07:33Z [14,874ms] [Warning] [omni.hydra] Mesh '/World/envs/env_0/Robot_1/FL_thigh/visuals/mesh_0' has corrupted data in primvar 'st': buffer size 35124 doesn't match expected size 90402 in faceVarying primvars
+2026-10-22T13:07:33Z [14,874ms] [Warning] [omni.hydra] Mesh '/World/envs/env_2/Robot_0/base/visuals/mesh_0' has corrupted data in primvar 'st_2': buffer size 6015 doesn't match expected size 233784 in faceVarying primvars
+2026-10-22T13:07:33Z [14,874ms] [Warning] [omni.hydra] Mesh '/World/envs/env_1/Robot_1/base/visuals/mesh_0' has corrupted data in primvar 'st_2': buffer size 6015 doesn't match expected size 233784 in faceVarying primvars
+2026-10-22T13:07:33Z [14,875ms] [Warning] [omni.hydra] Mesh '/World/envs/env_0/Robot_1/base/visuals/mesh_0' has corrupted data in primvar 'st_1': buffer size 6960 doesn't match expected size 233784 in faceVarying primvars
+2026-10-22T13:07:33Z [14,875ms] [Warning] [omni.hydra] Mesh '/World/envs/env_1/Robot_1/base/visuals/mesh_0' has corrupted data in primvar 'st_3': buffer size 11886 doesn't match expected size 233784 in faceVarying primvars
+2026-10-22T13:07:33Z [14,875ms] [Warning] [omni.hydra] Mesh '/World/envs/env_2/Robot_1/base/visuals/mesh_0' has corrupted data in primvar 'st_3': buffer size 11886 doesn't match expected size 233784 in faceVarying primvars
+2026-10-22T13:07:33Z [14,874ms] [Warning] [omni.hydra] Mesh '/World/envs/env_1/Robot_0/base/visuals/mesh_0' has corrupted data in primvar 'st_3': buffer size 11886 doesn't match expected size 233784 in faceVarying primvars
+2026-10-22T13:07:33Z [14,875ms] [Warning] [omni.hydra] Mesh '/World/envs/env_0/Robot_0/base/visuals/mesh_0' has corrupted data in primvar 'st_3': buffer size 11886 doesn't match expected size 233784 in faceVarying primvars
+2026-10-22T13:07:33Z [14,875ms] [Warning] [omni.hydra] Mesh '/World/envs/env_3/Robot_1/base/visuals/mesh_0' has corrupted data in primvar 'st_3': buffer size 11886 doesn't match expected size 233784 in faceVarying primvars
+2026-10-22T13:07:33Z [14,875ms] [Warning] [omni.hydra] Mesh '/World/envs/env_2/Robot_0/RL_thigh/visuals/mesh_0' has corrupted data in primvar 'st_1': buffer size 55278 doesn't match expected size 90402 in faceVarying primvars
+2026-10-22T13:07:33Z [14,875ms] [Warning] [omni.hydra] Mesh '/World/envs/env_2/Robot_0/base/visuals/mesh_0' has corrupted data in primvar 'st_3': buffer size 11886 doesn't match expected size 233784 in faceVarying primvars
+2026-10-22T13:07:33Z [14,875ms] [Warning] [omni.hydra] Mesh '/World/envs/env_3/Robot_0/base/visuals/mesh_0' has corrupted data in primvar 'st_3': buffer size 11886 doesn't match expected size 233784 in faceVarying primvars
+2026-10-22T13:07:33Z [14,875ms] [Warning] [omni.hydra] Mesh '/World/envs/env_0/Robot_1/base/visuals/mesh_0' has corrupted data in primvar 'st': buffer size 178533 doesn't match expected size 233784 in faceVarying primvars
+2026-10-22T13:07:33Z [14,875ms] [Warning] [omni.hydra] Mesh '/World/envs/env_1/Robot_1/base/visuals/mesh_0' has corrupted data in primvar 'st_1': buffer size 6960 doesn't match expected size 233784 in faceVarying primvars
+2026-10-22T13:07:33Z [14,875ms] [Warning] [omni.hydra] Mesh '/World/envs/env_2/Robot_1/base/visuals/mesh_0' has corrupted data in primvar 'st_1': buffer size 6960 doesn't match expected size 233784 in faceVarying primvars
+2026-10-22T13:07:33Z [14,875ms] [Warning] [omni.hydra] Mesh '/World/envs/env_1/Robot_0/base/visuals/mesh_0' has corrupted data in primvar 'st_1': buffer size 6960 doesn't match expected size 233784 in faceVarying primvars
+2026-10-22T13:07:33Z [14,875ms] [Warning] [omni.hydra] Mesh '/World/envs/env_0/Robot_0/base/visuals/mesh_0' has corrupted data in primvar 'st_1': buffer size 6960 doesn't match expected size 233784 in faceVarying primvars
+2026-10-22T13:07:33Z [14,875ms] [Warning] [omni.hydra] Mesh '/World/envs/env_3/Robot_1/base/visuals/mesh_0' has corrupted data in primvar 'st_1': buffer size 6960 doesn't match expected size 233784 in faceVarying primvars
+2026-10-22T13:07:33Z [14,875ms] [Warning] [omni.hydra] Mesh '/World/envs/env_2/Robot_0/RL_thigh/visuals/mesh_0' has corrupted data in primvar 'st': buffer size 35124 doesn't match expected size 90402 in faceVarying primvars
+2026-10-22T13:07:33Z [14,875ms] [Warning] [omni.hydra] Mesh '/World/envs/env_2/Robot_0/base/visuals/mesh_0' has corrupted data in primvar 'st_1': buffer size 6960 doesn't match expected size 233784 in faceVarying primvars
+2026-10-22T13:07:33Z [14,875ms] [Warning] [omni.hydra] Mesh '/World/envs/env_3/Robot_0/RL_calf/visuals/mesh_0' has corrupted data in primvar 'st_1': buffer size 19536 doesn't match expected size 25806 in faceVarying primvars
+2026-10-22T13:07:33Z [14,875ms] [Warning] [omni.hydra] Mesh '/World/envs/env_2/Robot_1/RL_thigh/visuals/mesh_0' has corrupted data in primvar 'st_1': buffer size 55278 doesn't match expected size 90402 in faceVarying primvars
+2026-10-22T13:07:33Z [14,875ms] [Warning] [omni.hydra] Mesh '/World/envs/env_1/Robot_1/base/visuals/mesh_0' has corrupted data in primvar 'st': buffer size 178533 doesn't match expected size 233784 in faceVarying primvars
+2026-10-22T13:07:33Z [14,875ms] [Warning] [omni.hydra] Mesh '/World/envs/env_2/Robot_1/base/visuals/mesh_0' has corrupted data in primvar 'st': buffer size 178533 doesn't match expected size 233784 in faceVarying primvars
+2026-10-22T13:07:33Z [14,875ms] [Warning] [omni.hydra] Mesh '/World/envs/env_1/Robot_0/base/visuals/mesh_0' has corrupted data in primvar 'st': buffer size 178533 doesn't match expected size 233784 in faceVarying primvars
+2026-10-22T13:07:33Z [14,875ms] [Warning] [omni.hydra] Mesh '/World/envs/env_0/Robot_0/base/visuals/mesh_0' has corrupted data in primvar 'st': buffer size 178533 doesn't match expected size 233784 in faceVarying primvars
+2026-10-22T13:07:33Z [14,875ms] [Warning] [omni.hydra] Mesh '/World/envs/env_3/Robot_1/RR_hip/visuals/mesh_0' has corrupted data in primvar 'st_1': buffer size 54198 doesn't match expected size 111120 in faceVarying primvars
+2026-10-22T13:07:33Z [14,875ms] [Warning] [omni.hydra] Mesh '/World/envs/env_1/Robot_1/RR_calf/visuals/mesh_0' has corrupted data in primvar 'st_1': buffer size 19536 doesn't match expected size 25806 in faceVarying primvars
+2026-10-22T13:07:33Z [14,875ms] [Warning] [omni.hydra] Mesh '/World/envs/env_2/Robot_0/base/visuals/mesh_0' has corrupted data in primvar 'st': buffer size 178533 doesn't match expected size 233784 in faceVarying primvars
+2026-10-22T13:07:33Z [14,875ms] [Warning] [omni.hydra] Mesh '/World/envs/env_3/Robot_0/base/visuals/mesh_0' has corrupted data in primvar 'st_1': buffer size 6960 doesn't match expected size 233784 in faceVarying primvars
+2026-10-22T13:07:33Z [14,875ms] [Warning] [omni.hydra] Mesh '/World/envs/env_3/Robot_0/RL_calf/visuals/mesh_0' has corrupted data in primvar 'st': buffer size 6270 doesn't match expected size 25806 in faceVarying primvars
+2026-10-22T13:07:33Z [14,875ms] [Warning] [omni.hydra] Mesh '/World/envs/env_2/Robot_1/RL_thigh/visuals/mesh_0' has corrupted data in primvar 'st': buffer size 35124 doesn't match expected size 90402 in faceVarying primvars
+2026-10-22T13:07:33Z [14,875ms] [Warning] [omni.hydra] Mesh '/World/envs/env_2/Robot_1/FR_calf/visuals/mesh_0' has corrupted data in primvar 'st_1': buffer size 19536 doesn't match expected size 25806 in faceVarying primvars
+2026-10-22T13:07:33Z [14,875ms] [Warning] [omni.hydra] Mesh '/World/envs/env_3/Robot_1/RR_calf/visuals/mesh_0' has corrupted data in primvar 'st_1': buffer size 19536 doesn't match expected size 25806 in faceVarying primvars
+2026-10-22T13:07:33Z [14,875ms] [Warning] [omni.hydra] Mesh '/World/envs/env_3/Robot_1/base/visuals/mesh_0' has corrupted data in primvar 'st': buffer size 178533 doesn't match expected size 233784 in faceVarying primvars
+2026-10-22T13:07:33Z [14,876ms] [Warning] [omni.hydra] Mesh '/World/envs/env_3/Robot_1/RR_calf/visuals/mesh_0' has corrupted data in primvar 'st': buffer size 6270 doesn't match expected size 25806 in faceVarying primvars
+2026-10-22T13:07:33Z [14,876ms] [Warning] [omni.hydra] Mesh '/World/envs/env_1/Robot_1/RR_calf/visuals/mesh_0' has corrupted data in primvar 'st': buffer size 6270 doesn't match expected size 25806 in faceVarying primvars
+2026-10-22T13:07:33Z [14,876ms] [Warning] [omni.hydra] Mesh '/World/envs/env_3/Robot_0/base/visuals/mesh_0' has corrupted data in primvar 'st': buffer size 178533 doesn't match expected size 233784 in faceVarying primvars
+2026-10-22T13:07:33Z [14,876ms] [Warning] [omni.hydra] Mesh '/World/envs/env_1/Robot_0/RL_thigh/visuals/mesh_0' has corrupted data in primvar 'st_1': buffer size 55278 doesn't match expected size 90402 in faceVarying primvars
+2026-10-22T13:07:33Z [14,876ms] [Warning] [omni.hydra] Mesh '/World/envs/env_2/Robot_1/FR_calf/visuals/mesh_0' has corrupted data in primvar 'st': buffer size 6270 doesn't match expected size 25806 in faceVarying primvars
+2026-10-22T13:07:33Z [14,875ms] [Warning] [omni.hydra] Mesh '/World/envs/env_3/Robot_1/RR_hip/visuals/mesh_0' has corrupted data in primvar 'st': buffer size 56922 doesn't match expected size 111120 in faceVarying primvars
+2026-10-22T13:07:33Z [14,876ms] [Warning] [omni.hydra] Mesh '/World/envs/env_0/Robot_0/RR_thigh/visuals/mesh_0' has corrupted data in primvar 'st_1': buffer size 55254 doesn't match expected size 90378 in faceVarying primvars
+2026-10-22T13:07:33Z [14,876ms] [Warning] [omni.hydra] Mesh '/World/envs/env_2/Robot_1/FL_hip/visuals/mesh_0' has corrupted data in primvar 'st_1': buffer size 54198 doesn't match expected size 111120 in faceVarying primvars
+2026-10-22T13:07:33Z [14,876ms] [Warning] [omni.hydra] Mesh '/World/envs/env_0/Robot_0/FR_hip/visuals/mesh_0' has corrupted data in primvar 'st_1': buffer size 54198 doesn't match expected size 111120 in faceVarying primvars
+2026-10-22T13:07:33Z [14,876ms] [Warning] [omni.hydra] Mesh '/World/envs/env_0/Robot_1/FR_hip/visuals/mesh_0' has corrupted data in primvar 'st_1': buffer size 54198 doesn't match expected size 111120 in faceVarying primvars
+2026-10-22T13:07:33Z [14,876ms] [Warning] [omni.hydra] Mesh '/World/envs/env_1/Robot_0/RL_thigh/visuals/mesh_0' has corrupted data in primvar 'st': buffer size 35124 doesn't match expected size 90402 in faceVarying primvars
+2026-10-22T13:07:33Z [14,876ms] [Warning] [omni.hydra] Mesh '/World/envs/env_0/Robot_0/RR_thigh/visuals/mesh_0' has corrupted data in primvar 'st': buffer size 35124 doesn't match expected size 90378 in faceVarying primvars
+2026-10-22T13:07:33Z [14,876ms] [Warning] [omni.hydra] Mesh '/World/envs/env_0/Robot_1/FL_hip/visuals/mesh_0' has corrupted data in primvar 'st_1': buffer size 54198 doesn't match expected size 111120 in faceVarying primvars
+2026-10-22T13:07:33Z [14,876ms] [Warning] [omni.hydra] Mesh '/World/envs/env_2/Robot_1/FL_hip/visuals/mesh_0' has corrupted data in primvar 'st': buffer size 56922 doesn't match expected size 111120 in faceVarying primvars
+2026-10-22T13:07:33Z [14,876ms] [Warning] [omni.hydra] Mesh '/World/envs/env_0/Robot_0/FR_hip/visuals/mesh_0' has corrupted data in primvar 'st': buffer size 56922 doesn't match expected size 111120 in faceVarying primvars
+2026-10-22T13:07:33Z [14,876ms] [Warning] [omni.hydra] Mesh '/World/envs/env_0/Robot_1/FR_hip/visuals/mesh_0' has corrupted data in primvar 'st': buffer size 56922 doesn't match expected size 111120 in faceVarying primvars
+2026-10-22T13:07:33Z [14,876ms] [Warning] [omni.hydra] Mesh '/World/envs/env_0/Robot_1/FL_hip/visuals/mesh_0' has corrupted data in primvar 'st': buffer size 56922 doesn't match expected size 111120 in faceVarying primvars
+2026-10-22T13:07:33Z [14,876ms] [Warning] [omni.hydra] Mesh '/World/envs/env_1/Robot_1/RL_thigh/visuals/mesh_0' has corrupted data in primvar 'st_1': buffer size 55278 doesn't match expected size 90402 in faceVarying primvars
+2026-10-22T13:07:33Z [14,876ms] [Warning] [omni.hydra] Mesh '/World/envs/env_0/Robot_0/RR_calf/visuals/mesh_0' has corrupted data in primvar 'st_1': buffer size 19536 doesn't match expected size 25806 in faceVarying primvars
+2026-10-22T13:07:33Z [14,876ms] [Warning] [omni.hydra] Mesh '/World/envs/env_1/Robot_1/RL_thigh/visuals/mesh_0' has corrupted data in primvar 'st': buffer size 35124 doesn't match expected size 90402 in faceVarying primvars
+2026-10-22T13:07:33Z [14,876ms] [Warning] [omni.hydra] Mesh '/World/envs/env_0/Robot_0/RR_calf/visuals/mesh_0' has corrupted data in primvar 'st': buffer size 6270 doesn't match expected size 25806 in faceVarying primvars
+2026-10-22T13:07:33Z [14,876ms] [Warning] [omni.hydra] Mesh '/World/envs/env_0/Robot_1/FR_calf/visuals/mesh_0' has corrupted data in primvar 'st_1': buffer size 19536 doesn't match expected size 25806 in faceVarying primvars
+2026-10-22T13:07:33Z [14,876ms] [Warning] [omni.hydra] Mesh '/World/envs/env_0/Robot_1/RL_calf/visuals/mesh_0' has corrupted data in primvar 'st_1': buffer size 19536 doesn't match expected size 25806 in faceVarying primvars
+2026-10-22T13:07:33Z [14,876ms] [Warning] [omni.hydra] Mesh '/World/envs/env_0/Robot_1/FR_calf/visuals/mesh_0' has corrupted data in primvar 'st': buffer size 6270 doesn't match expected size 25806 in faceVarying primvars
+2026-10-22T13:07:33Z [14,876ms] [Warning] [omni.hydra] Mesh '/World/envs/env_0/Robot_1/RL_calf/visuals/mesh_0' has corrupted data in primvar 'st': buffer size 6270 doesn't match expected size 25806 in faceVarying primvars
+2026-10-22T13:07:33Z [14,877ms] [Warning] [omni.hydra] Mesh '/World/envs/env_0/Robot_1/RL_thigh/visuals/mesh_0' has corrupted data in primvar 'st_1': buffer size 55278 doesn't match expected size 90402 in faceVarying primvars
+2026-10-22T13:07:33Z [14,877ms] [Warning] [omni.hydra] Mesh '/World/envs/env_0/Robot_1/RL_thigh/visuals/mesh_0' has corrupted data in primvar 'st': buffer size 35124 doesn't match expected size 90402 in faceVarying primvars
+2026-10-22T13:07:33Z [14,877ms] [Warning] [omni.hydra] Mesh '/World/envs/env_2/Robot_0/RR_thigh/visuals/mesh_0' has corrupted data in primvar 'st_1': buffer size 55254 doesn't match expected size 90378 in faceVarying primvars
+2026-10-22T13:07:33Z [14,877ms] [Warning] [omni.hydra] Mesh '/World/envs/env_3/Robot_0/FR_thigh/visuals/mesh_0' has corrupted data in primvar 'st_1': buffer size 55254 doesn't match expected size 90378 in faceVarying primvars
+2026-10-22T13:07:33Z [14,877ms] [Warning] [omni.hydra] Mesh '/World/envs/env_2/Robot_0/RR_thigh/visuals/mesh_0' has corrupted data in primvar 'st': buffer size 35124 doesn't match expected size 90378 in faceVarying primvars
+2026-10-22T13:07:33Z [14,877ms] [Warning] [omni.hydra] Mesh '/World/envs/env_3/Robot_0/FR_thigh/visuals/mesh_0' has corrupted data in primvar 'st': buffer size 35124 doesn't match expected size 90378 in faceVarying primvars
+2026-10-22T13:07:33Z [14,877ms] [Warning] [omni.hydra] Mesh '/World/envs/env_3/Robot_0/FL_thigh/visuals/mesh_0' has corrupted data in primvar 'st_1': buffer size 55278 doesn't match expected size 90402 in faceVarying primvars
+2026-10-22T13:07:33Z [14,877ms] [Warning] [omni.hydra] Mesh '/World/envs/env_0/Robot_1/FR_thigh/visuals/mesh_0' has corrupted data in primvar 'st_1': buffer size 55254 doesn't match expected size 90378 in faceVarying primvars
+2026-10-22T13:07:33Z [14,877ms] [Warning] [omni.hydra] Mesh '/World/envs/env_3/Robot_1/FR_calf/visuals/mesh_0' has corrupted data in primvar 'st_1': buffer size 19536 doesn't match expected size 25806 in faceVarying primvars
+2026-10-22T13:07:33Z [14,877ms] [Warning] [omni.hydra] Mesh '/World/envs/env_3/Robot_0/FL_thigh/visuals/mesh_0' has corrupted data in primvar 'st': buffer size 35124 doesn't match expected size 90402 in faceVarying primvars
+2026-10-22T13:07:33Z [14,877ms] [Warning] [omni.hydra] Mesh '/World/envs/env_3/Robot_1/FR_calf/visuals/mesh_0' has corrupted data in primvar 'st': buffer size 6270 doesn't match expected size 25806 in faceVarying primvars
+2026-10-22T13:07:33Z [14,877ms] [Warning] [omni.hydra] Mesh '/World/envs/env_2/Robot_1/FL_thigh/visuals/mesh_0' has corrupted data in primvar 'st_1': buffer size 55278 doesn't match expected size 90402 in faceVarying primvars
+2026-10-22T13:07:33Z [14,877ms] [Warning] [omni.hydra] Mesh '/World/envs/env_0/Robot_1/FR_thigh/visuals/mesh_0' has corrupted data in primvar 'st': buffer size 35124 doesn't match expected size 90378 in faceVarying primvars
+2026-10-22T13:07:33Z [14,877ms] [Warning] [omni.hydra] Mesh '/World/envs/env_3/Robot_0/RR_hip/visuals/mesh_0' has corrupted data in primvar 'st_1': buffer size 54198 doesn't match expected size 111120 in faceVarying primvars
+2026-10-22T13:07:33Z [14,877ms] [Warning] [omni.hydra] Mesh '/World/envs/env_2/Robot_1/FL_thigh/visuals/mesh_0' has corrupted data in primvar 'st': buffer size 35124 doesn't match expected size 90402 in faceVarying primvars
+2026-10-22T13:07:33Z [14,877ms] [Warning] [omni.hydra] Mesh '/World/envs/env_3/Robot_0/RR_hip/visuals/mesh_0' has corrupted data in primvar 'st': buffer size 56922 doesn't match expected size 111120 in faceVarying primvars
+2026-10-22T13:07:33Z [14,877ms] [Warning] [omni.hydra] Mesh '/World/envs/env_1/Robot_1/FR_hip/visuals/mesh_0' has corrupted data in primvar 'st_1': buffer size 54198 doesn't match expected size 111120 in faceVarying primvars
+2026-10-22T13:07:33Z [14,877ms] [Warning] [omni.hydra] Mesh '/World/envs/env_1/Robot_1/FR_hip/visuals/mesh_0' has corrupted data in primvar 'st': buffer size 56922 doesn't match expected size 111120 in faceVarying primvars
+2026-10-22T13:07:33Z [14,877ms] [Warning] [omni.hydra] Mesh '/World/envs/env_2/Robot_1/RR_thigh/visuals/mesh_0' has corrupted data in primvar 'st_1': buffer size 55254 doesn't match expected size 90378 in faceVarying primvars
+2026-10-22T13:07:33Z [14,877ms] [Warning] [omni.hydra] Mesh '/World/envs/env_2/Robot_1/RR_thigh/visuals/mesh_0' has corrupted data in primvar 'st': buffer size 35124 doesn't match expected size 90378 in faceVarying primvars
+2026-10-22T13:07:33Z [14,878ms] [Warning] [omni.hydra] Mesh '/World/envs/env_3/Robot_0/FR_hip/visuals/mesh_0' has corrupted data in primvar 'st_1': buffer size 54198 doesn't match expected size 111120 in faceVarying primvars
+2026-10-22T13:07:33Z [14,878ms] [Warning] [omni.hydra] Mesh '/World/envs/env_0/Robot_1/RR_hip/visuals/mesh_0' has corrupted data in primvar 'st_1': buffer size 54198 doesn't match expected size 111120 in faceVarying primvars
+2026-10-22T13:07:33Z [14,878ms] [Warning] [omni.hydra] Mesh '/World/envs/env_3/Robot_0/FR_hip/visuals/mesh_0' has corrupted data in primvar 'st': buffer size 56922 doesn't match expected size 111120 in faceVarying primvars
+2026-10-22T13:07:33Z [14,878ms] [Warning] [omni.hydra] Mesh '/World/envs/env_0/Robot_1/RR_hip/visuals/mesh_0' has corrupted data in primvar 'st': buffer size 56922 doesn't match expected size 111120 in faceVarying primvars
+2026-10-22T13:07:33Z [14,878ms] [Warning] [omni.hydra] Mesh '/World/envs/env_2/Robot_1/RL_hip/visuals/mesh_0' has corrupted data in primvar 'st_1': buffer size 54198 doesn't match expected size 111120 in faceVarying primvars
+2026-10-22T13:07:33Z [14,878ms] [Warning] [omni.hydra] Mesh '/World/envs/env_1/Robot_0/FR_hip/visuals/mesh_0' has corrupted data in primvar 'st_1': buffer size 54198 doesn't match expected size 111120 in faceVarying primvars
+2026-10-22T13:07:33Z [14,878ms] [Warning] [omni.hydra] Mesh '/World/envs/env_2/Robot_1/RL_hip/visuals/mesh_0' has corrupted data in primvar 'st': buffer size 56922 doesn't match expected size 111120 in faceVarying primvars
+2026-10-22T13:07:33Z [14,878ms] [Warning] [omni.hydra] Mesh '/World/envs/env_2/Robot_0/RL_hip/visuals/mesh_0' has corrupted data in primvar 'st_1': buffer size 54198 doesn't match expected size 111120 in faceVarying primvars
+2026-10-22T13:07:33Z [14,878ms] [Warning] [omni.hydra] Mesh '/World/envs/env_1/Robot_0/FR_hip/visuals/mesh_0' has corrupted data in primvar 'st': buffer size 56922 doesn't match expected size 111120 in faceVarying primvars
+2026-10-22T13:07:33Z [14,878ms] [Warning] [omni.hydra] Mesh '/World/envs/env_2/Robot_0/RL_hip/visuals/mesh_0' has corrupted data in primvar 'st': buffer size 56922 doesn't match expected size 111120 in faceVarying primvars
+2026-10-22T13:07:33Z [14,878ms] [Warning] [omni.hydra] Mesh '/World/envs/env_0/Robot_0/FR_calf/visuals/mesh_0' has corrupted data in primvar 'st_1': buffer size 19536 doesn't match expected size 25806 in faceVarying primvars
+2026-10-22T13:07:33Z [14,878ms] [Warning] [omni.hydra] Mesh '/World/envs/env_0/Robot_0/FR_calf/visuals/mesh_0' has corrupted data in primvar 'st': buffer size 6270 doesn't match expected size 25806 in faceVarying primvars
+2026-10-22T13:07:33Z [14,878ms] [Warning] [omni.hydra] Mesh '/World/envs/env_2/Robot_1/FR_thigh/visuals/mesh_0' has corrupted data in primvar 'st_1': buffer size 55254 doesn't match expected size 90378 in faceVarying primvars
+2026-10-22T13:07:33Z [14,878ms] [Warning] [omni.hydra] Mesh '/World/envs/env_2/Robot_1/FR_thigh/visuals/mesh_0' has corrupted data in primvar 'st': buffer size 35124 doesn't match expected size 90378 in faceVarying primvars
+2026-10-22T13:07:33Z [14,878ms] [Warning] [omni.hydra] Mesh '/World/envs/env_1/Robot_1/FL_calf/visuals/mesh_0' has corrupted data in primvar 'st_1': buffer size 19536 doesn't match expected size 25806 in faceVarying primvars
+2026-10-22T13:07:33Z [14,878ms] [Warning] [omni.hydra] Mesh '/World/envs/env_1/Robot_1/FL_calf/visuals/mesh_0' has corrupted data in primvar 'st': buffer size 6270 doesn't match expected size 25806 in faceVarying primvars
+2026-10-22T13:07:33Z [14,878ms] [Warning] [omni.hydra] Mesh '/World/envs/env_2/Robot_0/FL_hip/visuals/mesh_0' has corrupted data in primvar 'st_1': buffer size 54198 doesn't match expected size 111120 in faceVarying primvars
+2026-10-22T13:07:33Z [14,878ms] [Warning] [omni.hydra] Mesh '/World/envs/env_2/Robot_0/FL_hip/visuals/mesh_0' has corrupted data in primvar 'st': buffer size 56922 doesn't match expected size 111120 in faceVarying primvars
+2026-10-22T13:07:33Z [14,878ms] [Warning] [omni.hydra] Mesh '/World/envs/env_2/Robot_1/FR_hip/visuals/mesh_0' has corrupted data in primvar 'st_1': buffer size 54198 doesn't match expected size 111120 in faceVarying primvars
+2026-10-22T13:07:33Z [14,879ms] [Warning] [omni.hydra] Mesh '/World/envs/env_3/Robot_0/FL_calf/visuals/mesh_0' has corrupted data in primvar 'st_1': buffer size 19536 doesn't match expected size 25806 in faceVarying primvars
+2026-10-22T13:07:33Z [14,879ms] [Warning] [omni.hydra] Mesh '/World/envs/env_2/Robot_1/FR_hip/visuals/mesh_0' has corrupted data in primvar 'st': buffer size 56922 doesn't match expected size 111120 in faceVarying primvars
+2026-10-22T13:07:33Z [14,879ms] [Warning] [omni.hydra] Mesh '/World/envs/env_3/Robot_0/FL_calf/visuals/mesh_0' has corrupted data in primvar 'st': buffer size 6270 doesn't match expected size 25806 in faceVarying primvars
+2026-10-22T13:07:33Z [14,879ms] [Warning] [omni.hydra] Mesh '/World/envs/env_1/Robot_0/RL_hip/visuals/mesh_0' has corrupted data in primvar 'st_1': buffer size 54198 doesn't match expected size 111120 in faceVarying primvars
+2026-10-22T13:07:33Z [14,879ms] [Warning] [omni.hydra] Mesh '/World/envs/env_1/Robot_0/RL_hip/visuals/mesh_0' has corrupted data in primvar 'st': buffer size 56922 doesn't match expected size 111120 in faceVarying primvars
+2026-10-22T13:07:33Z [14,879ms] [Warning] [omni.hydra] Mesh '/World/envs/env_0/Robot_0/RR_hip/visuals/mesh_0' has corrupted data in primvar 'st_1': buffer size 54198 doesn't match expected size 111120 in faceVarying primvars
+2026-10-22T13:07:33Z [14,879ms] [Warning] [omni.hydra] Mesh '/World/envs/env_0/Robot_0/RR_hip/visuals/mesh_0' has corrupted data in primvar 'st': buffer size 56922 doesn't match expected size 111120 in faceVarying primvars
+2026-10-22T13:07:33Z [14,879ms] [Warning] [omni.hydra] Mesh '/World/envs/env_2/Robot_0/FR_hip/visuals/mesh_0' has corrupted data in primvar 'st_1': buffer size 54198 doesn't match expected size 111120 in faceVarying primvars
+2026-10-22T13:07:33Z [14,879ms] [Warning] [omni.hydra] Mesh '/World/envs/env_2/Robot_0/FL_thigh/visuals/mesh_0' has corrupted data in primvar 'st_1': buffer size 55278 doesn't match expected size 90402 in faceVarying primvars
+2026-10-22T13:07:33Z [14,879ms] [Warning] [omni.hydra] Mesh '/World/envs/env_3/Robot_1/FL_hip/visuals/mesh_0' has corrupted data in primvar 'st_1': buffer size 54198 doesn't match expected size 111120 in faceVarying primvars
+2026-10-22T13:07:33Z [14,879ms] [Warning] [omni.hydra] Mesh '/World/envs/env_2/Robot_0/FR_hip/visuals/mesh_0' has corrupted data in primvar 'st': buffer size 56922 doesn't match expected size 111120 in faceVarying primvars
+2026-10-22T13:07:33Z [14,879ms] [Warning] [omni.hydra] Mesh '/World/envs/env_3/Robot_1/FL_hip/visuals/mesh_0' has corrupted data in primvar 'st': buffer size 56922 doesn't match expected size 111120 in faceVarying primvars
+2026-10-22T13:07:33Z [14,879ms] [Warning] [omni.hydra] Mesh '/World/envs/env_3/Robot_1/RR_thigh/visuals/mesh_0' has corrupted data in primvar 'st_1': buffer size 55254 doesn't match expected size 90378 in faceVarying primvars
+2026-10-22T13:07:33Z [14,879ms] [Warning] [omni.hydra] Mesh '/World/envs/env_0/Robot_0/FL_hip/visuals/mesh_0' has corrupted data in primvar 'st_1': buffer size 54198 doesn't match expected size 111120 in faceVarying primvars
+2026-10-22T13:07:33Z [14,879ms] [Warning] [omni.hydra] Mesh '/World/envs/env_1/Robot_1/FR_thigh/visuals/mesh_0' has corrupted data in primvar 'st_1': buffer size 55254 doesn't match expected size 90378 in faceVarying primvars
+2026-10-22T13:07:33Z [14,879ms] [Warning] [omni.hydra] Mesh '/World/envs/env_2/Robot_0/FL_thigh/visuals/mesh_0' has corrupted data in primvar 'st': buffer size 35124 doesn't match expected size 90402 in faceVarying primvars
+2026-10-22T13:07:33Z [14,879ms] [Warning] [omni.hydra] Mesh '/World/envs/env_1/Robot_1/FR_thigh/visuals/mesh_0' has corrupted data in primvar 'st': buffer size 35124 doesn't match expected size 90378 in faceVarying primvars
+2026-10-22T13:07:33Z [14,879ms] [Warning] [omni.hydra] Mesh '/World/envs/env_0/Robot_1/RL_hip/visuals/mesh_0' has corrupted data in primvar 'st_1': buffer size 54198 doesn't match expected size 111120 in faceVarying primvars
+2026-10-22T13:07:33Z [14,879ms] [Warning] [omni.hydra] Mesh '/World/envs/env_3/Robot_0/RR_thigh/visuals/mesh_0' has corrupted data in primvar 'st_1': buffer size 55254 doesn't match expected size 90378 in faceVarying primvars
+2026-10-22T13:07:33Z [14,879ms] [Warning] [omni.hydra] Mesh '/World/envs/env_1/Robot_1/RR_thigh/visuals/mesh_0' has corrupted data in primvar 'st_1': buffer size 55254 doesn't match expected size 90378 in faceVarying primvars
+2026-10-22T13:07:33Z [14,879ms] [Warning] [omni.hydra] Mesh '/World/envs/env_0/Robot_0/FL_hip/visuals/mesh_0' has corrupted data in primvar 'st': buffer size 56922 doesn't match expected size 111120 in faceVarying primvars
+2026-10-22T13:07:33Z [14,879ms] [Warning] [omni.hydra] Mesh '/World/envs/env_1/Robot_1/RR_thigh/visuals/mesh_0' has corrupted data in primvar 'st': buffer size 35124 doesn't match expected size 90378 in faceVarying primvars
+2026-10-22T13:07:33Z [14,879ms] [Warning] [omni.hydra] Mesh '/World/envs/env_2/Robot_0/FR_thigh/visuals/mesh_0' has corrupted data in primvar 'st_1': buffer size 55254 doesn't match expected size 90378 in faceVarying primvars
+2026-10-22T13:07:33Z [14,879ms] [Warning] [omni.hydra] Mesh '/World/envs/env_3/Robot_1/RR_thigh/visuals/mesh_0' has corrupted data in primvar 'st': buffer size 35124 doesn't match expected size 90378 in faceVarying primvars
+2026-10-22T13:07:33Z [14,879ms] [Warning] [omni.hydra] Mesh '/World/envs/env_1/Robot_1/RL_calf/visuals/mesh_0' has corrupted data in primvar 'st_1': buffer size 19536 doesn't match expected size 25806 in faceVarying primvars
+2026-10-22T13:07:33Z [14,879ms] [Warning] [omni.hydra] Mesh '/World/envs/env_0/Robot_1/RL_hip/visuals/mesh_0' has corrupted data in primvar 'st': buffer size 56922 doesn't match expected size 111120 in faceVarying primvars
+2026-10-22T13:07:33Z [14,879ms] [Warning] [omni.hydra] Mesh '/World/envs/env_1/Robot_1/RL_calf/visuals/mesh_0' has corrupted data in primvar 'st': buffer size 6270 doesn't match expected size 25806 in faceVarying primvars
+2026-10-22T13:07:33Z [14,879ms] [Warning] [omni.hydra] Mesh '/World/envs/env_1/Robot_1/RL_hip/visuals/mesh_0' has corrupted data in primvar 'st_1': buffer size 54198 doesn't match expected size 111120 in faceVarying primvars
+2026-10-22T13:07:33Z [14,879ms] [Warning] [omni.hydra] Mesh '/World/envs/env_2/Robot_0/FR_thigh/visuals/mesh_0' has corrupted data in primvar 'st': buffer size 35124 doesn't match expected size 90378 in faceVarying primvars
+2026-10-22T13:07:33Z [14,879ms] [Warning] [omni.hydra] Mesh '/World/envs/env_3/Robot_0/RR_thigh/visuals/mesh_0' has corrupted data in primvar 'st': buffer size 35124 doesn't match expected size 90378 in faceVarying primvars
+2026-10-22T13:07:33Z [14,879ms] [Warning] [omni.hydra] Mesh '/World/envs/env_0/Robot_1/RR_thigh/visuals/mesh_0' has corrupted data in primvar 'st_1': buffer size 55254 doesn't match expected size 90378 in faceVarying primvars
+2026-10-22T13:07:33Z [14,880ms] [Warning] [omni.hydra] Mesh '/World/envs/env_1/Robot_1/RL_hip/visuals/mesh_0' has corrupted data in primvar 'st': buffer size 56922 doesn't match expected size 111120 in faceVarying primvars
+2026-10-22T13:07:33Z [14,880ms] [Warning] [omni.hydra] Mesh '/World/envs/env_0/Robot_0/FL_thigh/visuals/mesh_0' has corrupted data in primvar 'st_1': buffer size 55278 doesn't match expected size 90402 in faceVarying primvars
+2026-10-22T13:07:33Z [14,880ms] [Warning] [omni.hydra] Mesh '/World/envs/env_2/Robot_0/RR_hip/visuals/mesh_0' has corrupted data in primvar 'st_1': buffer size 54198 doesn't match expected size 111120 in faceVarying primvars
+2026-10-22T13:07:33Z [14,880ms] [Warning] [omni.hydra] Mesh '/World/envs/env_0/Robot_1/RR_thigh/visuals/mesh_0' has corrupted data in primvar 'st': buffer size 35124 doesn't match expected size 90378 in faceVarying primvars
+2026-10-22T13:07:33Z [14,880ms] [Warning] [omni.hydra] Mesh '/World/envs/env_3/Robot_1/FL_thigh/visuals/mesh_0' has corrupted data in primvar 'st_1': buffer size 55278 doesn't match expected size 90402 in faceVarying primvars
+2026-10-22T13:07:33Z [14,880ms] [Warning] [omni.hydra] Mesh '/World/envs/env_0/Robot_0/FL_thigh/visuals/mesh_0' has corrupted data in primvar 'st': buffer size 35124 doesn't match expected size 90402 in faceVarying primvars
+2026-10-22T13:07:33Z [14,880ms] [Warning] [omni.hydra] Mesh '/World/envs/env_1/Robot_0/FL_thigh/visuals/mesh_0' has corrupted data in primvar 'st_1': buffer size 55278 doesn't match expected size 90402 in faceVarying primvars
+2026-10-22T13:07:33Z [14,880ms] [Warning] [omni.hydra] Mesh '/World/envs/env_2/Robot_1/RL_calf/visuals/mesh_0' has corrupted data in primvar 'st_1': buffer size 19536 doesn't match expected size 25806 in faceVarying primvars
+2026-10-22T13:07:33Z [14,880ms] [Warning] [omni.hydra] Mesh '/World/envs/env_1/Robot_0/FR_calf/visuals/mesh_0' has corrupted data in primvar 'st_1': buffer size 19536 doesn't match expected size 25806 in faceVarying primvars
+2026-10-22T13:07:33Z [14,880ms] [Warning] [omni.hydra] Mesh '/World/envs/env_2/Robot_0/RR_hip/visuals/mesh_0' has corrupted data in primvar 'st': buffer size 56922 doesn't match expected size 111120 in faceVarying primvars
+2026-10-22T13:07:33Z [14,880ms] [Warning] [omni.hydra] Mesh '/World/envs/env_3/Robot_1/FL_thigh/visuals/mesh_0' has corrupted data in primvar 'st': buffer size 35124 doesn't match expected size 90402 in faceVarying primvars
+2026-10-22T13:07:33Z [14,880ms] [Warning] [omni.hydra] Mesh '/World/envs/env_1/Robot_0/FL_thigh/visuals/mesh_0' has corrupted data in primvar 'st': buffer size 35124 doesn't match expected size 90402 in faceVarying primvars
+2026-10-22T13:07:33Z [14,880ms] [Warning] [omni.hydra] Mesh '/World/envs/env_1/Robot_1/FR_calf/visuals/mesh_0' has corrupted data in primvar 'st_1': buffer size 19536 doesn't match expected size 25806 in faceVarying primvars
+2026-10-22T13:07:33Z [14,880ms] [Warning] [omni.hydra] Mesh '/World/envs/env_2/Robot_1/RL_calf/visuals/mesh_0' has corrupted data in primvar 'st': buffer size 6270 doesn't match expected size 25806 in faceVarying primvars
+2026-10-22T13:07:33Z [14,880ms] [Warning] [omni.hydra] Mesh '/World/envs/env_1/Robot_1/FR_calf/visuals/mesh_0' has corrupted data in primvar 'st': buffer size 6270 doesn't match expected size 25806 in faceVarying primvars
+2026-10-22T13:07:33Z [14,880ms] [Warning] [omni.hydra] Mesh '/World/envs/env_3/Robot_0/FR_calf/visuals/mesh_0' has corrupted data in primvar 'st_1': buffer size 19536 doesn't match expected size 25806 in faceVarying primvars
+2026-10-22T13:07:33Z [14,880ms] [Warning] [omni.hydra] Mesh '/World/envs/env_2/Robot_0/FR_calf/visuals/mesh_0' has corrupted data in primvar 'st_1': buffer size 19536 doesn't match expected size 25806 in faceVarying primvars
+2026-10-22T13:07:33Z [14,880ms] [Warning] [omni.hydra] Mesh '/World/envs/env_3/Robot_1/RL_thigh/visuals/mesh_0' has corrupted data in primvar 'st_1': buffer size 55278 doesn't match expected size 90402 in faceVarying primvars
+2026-10-22T13:07:33Z [14,880ms] [Warning] [omni.hydra] Mesh '/World/envs/env_1/Robot_0/FR_calf/visuals/mesh_0' has corrupted data in primvar 'st': buffer size 6270 doesn't match expected size 25806 in faceVarying primvars
+2026-10-22T13:07:33Z [14,880ms] [Warning] [omni.hydra] Mesh '/World/envs/env_3/Robot_1/RL_thigh/visuals/mesh_0' has corrupted data in primvar 'st': buffer size 35124 doesn't match expected size 90402 in faceVarying primvars
+2026-10-22T13:07:33Z [14,880ms] [Warning] [omni.hydra] Mesh '/World/envs/env_2/Robot_0/FR_calf/visuals/mesh_0' has corrupted data in primvar 'st': buffer size 6270 doesn't match expected size 25806 in faceVarying primvars
+2026-10-22T13:07:33Z [14,880ms] [Warning] [omni.hydra] Mesh '/World/envs/env_3/Robot_0/FR_calf/visuals/mesh_0' has corrupted data in primvar 'st': buffer size 6270 doesn't match expected size 25806 in faceVarying primvars
+2026-10-22T13:07:33Z [14,880ms] [Warning] [omni.hydra] Mesh '/World/envs/env_0/Robot_0/FL_calf/visuals/mesh_0' has corrupted data in primvar 'st_1': buffer size 19536 doesn't match expected size 25806 in faceVarying primvars
+2026-10-22T13:07:33Z [14,880ms] [Warning] [omni.hydra] Mesh '/World/envs/env_3/Robot_0/RR_calf/visuals/mesh_0' has corrupted data in primvar 'st_1': buffer size 19536 doesn't match expected size 25806 in faceVarying primvars
+2026-10-22T13:07:33Z [14,880ms] [Warning] [omni.hydra] Mesh '/World/envs/env_0/Robot_0/FL_calf/visuals/mesh_0' has corrupted data in primvar 'st': buffer size 6270 doesn't match expected size 25806 in faceVarying primvars
+2026-10-22T13:07:33Z [14,880ms] [Warning] [omni.hydra] Mesh '/World/envs/env_3/Robot_0/RR_calf/visuals/mesh_0' has corrupted data in primvar 'st': buffer size 6270 doesn't match expected size 25806 in faceVarying primvars
+2026-10-22T13:07:33Z [14,880ms] [Warning] [omni.hydra] Mesh '/World/envs/env_2/Robot_0/RR_calf/visuals/mesh_0' has corrupted data in primvar 'st_1': buffer size 19536 doesn't match expected size 25806 in faceVarying primvars
+2026-10-22T13:07:33Z [14,880ms] [Warning] [omni.hydra] Mesh '/World/envs/env_2/Robot_0/RR_calf/visuals/mesh_0' has corrupted data in primvar 'st': buffer size 6270 doesn't match expected size 25806 in faceVarying primvars
+2026-10-22T13:07:33Z [14,881ms] [Warning] [omni.hydra] Mesh '/World/envs/env_2/Robot_0/RL_calf/visuals/mesh_0' has corrupted data in primvar 'st_1': buffer size 19536 doesn't match expected size 25806 in faceVarying primvars
+2026-10-22T13:07:33Z [14,881ms] [Warning] [omni.hydra] Mesh '/World/envs/env_1/Robot_0/RL_calf/visuals/mesh_0' has corrupted data in primvar 'st_1': buffer size 19536 doesn't match expected size 25806 in faceVarying primvars
+2026-10-22T13:07:33Z [14,881ms] [Warning] [omni.hydra] Mesh '/World/envs/env_2/Robot_1/FL_calf/visuals/mesh_0' has corrupted data in primvar 'st_1': buffer size 19536 doesn't match expected size 25806 in faceVarying primvars
+2026-10-22T13:07:33Z [14,881ms] [Warning] [omni.hydra] Mesh '/World/envs/env_2/Robot_0/RL_calf/visuals/mesh_0' has corrupted data in primvar 'st': buffer size 6270 doesn't match expected size 25806 in faceVarying primvars
+2026-10-22T13:07:33Z [14,881ms] [Warning] [omni.hydra] Mesh '/World/envs/env_2/Robot_1/FL_calf/visuals/mesh_0' has corrupted data in primvar 'st': buffer size 6270 doesn't match expected size 25806 in faceVarying primvars
+2026-10-22T13:07:33Z [14,881ms] [Warning] [omni.hydra] Mesh '/World/envs/env_2/Robot_0/FL_calf/visuals/mesh_0' has corrupted data in primvar 'st_1': buffer size 19536 doesn't match expected size 25806 in faceVarying primvars
+2026-10-22T13:07:33Z [14,881ms] [Warning] [omni.hydra] Mesh '/World/envs/env_1/Robot_0/RL_calf/visuals/mesh_0' has corrupted data in primvar 'st': buffer size 6270 doesn't match expected size 25806 in faceVarying primvars
+2026-10-22T13:07:33Z [14,881ms] [Warning] [omni.hydra] Mesh '/World/envs/env_1/Robot_0/FL_calf/visuals/mesh_0' has corrupted data in primvar 'st_1': buffer size 19536 doesn't match expected size 25806 in faceVarying primvars
+2026-10-22T13:07:33Z [14,881ms] [Warning] [omni.hydra] Mesh '/World/envs/env_3/Robot_1/FL_calf/visuals/mesh_0' has corrupted data in primvar 'st_1': buffer size 19536 doesn't match expected size 25806 in faceVarying primvars
+2026-10-22T13:07:33Z [14,881ms] [Warning] [omni.hydra] Mesh '/World/envs/env_2/Robot_0/FL_calf/visuals/mesh_0' has corrupted data in primvar 'st': buffer size 6270 doesn't match expected size 25806 in faceVarying primvars
+2026-10-22T13:07:33Z [14,881ms] [Warning] [omni.hydra] Mesh '/World/envs/env_3/Robot_1/FL_calf/visuals/mesh_0' has corrupted data in primvar 'st': buffer size 6270 doesn't match expected size 25806 in faceVarying primvars
+2026-10-22T13:07:33Z [14,881ms] [Warning] [omni.hydra] Mesh '/World/envs/env_1/Robot_0/FL_calf/visuals/mesh_0' has corrupted data in primvar 'st': buffer size 6270 doesn't match expected size 25806 in faceVarying primvars
+2026-10-22T13:07:33Z [14,900ms] [Error] [gpu.foundation.plugin] Cannot load shader file 'rtx/nrd/PackForNRD.cs.hlsl'.
+2026-10-22T13:07:33Z [14,900ms] [Error] [gpu.foundation.plugin] buildShaderAsync() failed: rtx/nrd/PackForNRD.cs.hlsl
+2026-10-22T13:07:33Z [14,900ms] [Error] [rtx.denoising.plugin] Failed to async compile compute shader: rtx/nrd/PackForNRD.cs.hlsl
+2026-10-22T13:07:33Z [14,904ms] [Error] [rtx.denoising.plugin] Failed to compile compute shader: rtx/nrd/PackForNRD.cs.hlsl
+2026-10-22T13:07:33Z [15,068ms] [Error] [rtx.denoising.plugin] Failed to compile compute shader: rtx/nrd/PackForNRD.cs.hlsl
+2026-10-22T13:07:33Z [15,069ms] [Error] [rtx.denoising.plugin] Failed to compile compute shader: rtx/nrd/PackForNRD.cs.hlsl
+2026-10-22T13:07:33Z [15,148ms] [Error] [rtx.denoising.plugin] Failed to compile compute shader: rtx/nrd/PackForNRD.cs.hlsl
+2026-10-22T13:07:33Z [15,150ms] [Error] [rtx.denoising.plugin] Failed to compile compute shader: rtx/nrd/PackForNRD.cs.hlsl
+[INFO]: Time taken for simulation start : 2.247750 seconds
+[INFO] Event Manager:  <EventManager> contains 1 active terms.
++---------------------------------------+
+| Active Event Terms in Mode: 'startup' |
++----------+----------------------------+
+|  Index   | Name                       |
++----------+----------------------------+
+|    0     | physics_material_0         |
+|    1     | add_base_mass_0            |
+|    2     | physics_material_1         |
+|    3     | add_base_mass_1            |
++----------+----------------------------+
+
+[INFO]: Completed setting up the environment...
+2026-10-22T13:07:35Z [17,542ms] [Error] [rtx.denoising.plugin] Failed to compile compute shader: rtx/nrd/PackForNRD.cs.hlsl
+2026-10-22T13:07:35Z [17,544ms] [Error] [rtx.denoising.plugin] Failed to compile compute shader: rtx/nrd/PackForNRD.cs.hlsl
+2026-10-22T13:07:36Z [17,742ms] [Error] [rtx.denoising.plugin] Failed to compile compute shader: rtx/nrd/PackForNRD.cs.hlsl
+2026-10-22T13:07:36Z [17,744ms] [Error] [rtx.denoising.plugin] Failed to compile compute shader: rtx/nrd/PackForNRD.cs.hlsl
+2026-10-22T13:07:36Z [17,904ms] [Error] [isaacsim.sensors.physx.plugin] Lidar Sensor does not exist
+2026-10-22T13:07:36Z [17,904ms] [Error] [isaacsim.sensors.physx.plugin] Lidar Sensor does not exist
+2026-10-22T13:07:36Z [17,904ms] [Error] [isaacsim.sensors.physx.plugin] Lidar Sensor does not exist
+2026-10-22T13:07:36Z [17,904ms] [Error] [isaacsim.sensors.physx.plugin] Lidar Sensor does not exist
+2026-10-22T13:07:36Z [17,904ms] [Error] [isaacsim.sensors.physx.plugin] Lidar Sensor does not exist
+[sumo] lidar not registered yet: ['/World/envs/env_0/Robot_0/base/reference_lidar', '/World/envs/env_1/Robot_0/base/reference_lidar', '/World/envs/env_2/Robot_0/base/reference_lidar', '/World/envs/env_3/Robot_0/base/reference_lidar']
+2026-10-22T13:07:36Z [17,907ms] [Error] [isaacsim.sensors.physx.plugin] Lidar Sensor does not exist
+2026-10-22T13:07:36Z [17,907ms] [Error] [isaacsim.sensors.physx.plugin] Lidar Sensor does not exist
+2026-10-22T13:07:36Z [17,907ms] [Error] [isaacsim.sensors.physx.plugin] Lidar Sensor does not exist
+2026-10-22T13:07:36Z [17,907ms] [Error] [isaacsim.sensors.physx.plugin] Lidar Sensor does not exist
+2026-10-22T13:07:36Z [17,908ms] [Error] [isaacsim.sensors.physx.plugin] Lidar Sensor does not exist
+2026-10-22T13:07:36Z [17,971ms] [Error] [rtx.denoising.plugin] Failed to compile compute shader: rtx/nrd/PackForNRD.cs.hlsl
+2026-10-22T13:07:36Z [17,973ms] [Error] [rtx.denoising.plugin] Failed to compile compute shader: rtx/nrd/PackForNRD.cs.hlsl
+2026-10-22T13:07:36Z [18,201ms] [Error] [rtx.denoising.plugin] Failed to compile compute shader: rtx/nrd/PackForNRD.cs.hlsl
+2026-10-22T13:07:36Z [18,203ms] [Error] [rtx.denoising.plugin] Failed to compile compute shader: rtx/nrd/PackForNRD.cs.hlsl
+2026-10-22T13:07:36Z [18,428ms] [Error] [rtx.denoising.plugin] Failed to compile compute shader: rtx/nrd/PackForNRD.cs.hlsl
+2026-10-22T13:07:36Z [18,430ms] [Error] [rtx.denoising.plugin] Failed to compile compute shader: rtx/nrd/PackForNRD.cs.hlsl
+2026-10-22T13:07:36Z [18,492ms] [Error] [isaacsim.sensors.physx.plugin] Lidar Sensor does not exist
+2026-10-22T13:07:36Z [18,492ms] [Error] [isaacsim.sensors.physx.plugin] Lidar Sensor does not exist
+2026-10-22T13:07:36Z [18,492ms] [Error] [isaacsim.sensors.physx.plugin] Lidar Sensor does not exist
+2026-10-22T13:07:36Z [18,492ms] [Error] [isaacsim.sensors.physx.plugin] Lidar Sensor does not exist
+2026-10-22T13:07:36Z [18,492ms] [Error] [isaacsim.sensors.physx.plugin] Lidar Sensor does not exist
+2026-10-22T13:07:36Z [18,500ms] [Error] [isaacsim.sensors.physx.plugin] Lidar Sensor does not exist
+2026-10-22T13:07:36Z [18,501ms] [Error] [isaacsim.sensors.physx.plugin] Lidar Sensor does not exist
+2026-10-22T13:07:36Z [18,501ms] [Error] [isaacsim.sensors.physx.plugin] Lidar Sensor does not exist
+2026-10-22T13:07:36Z [18,501ms] [Error] [isaacsim.sensors.physx.plugin] Lidar Sensor does not exist
+2026-10-22T13:07:36Z [18,501ms] [Error] [isaacsim.sensors.physx.plugin] Lidar Sensor does not exist
+2026-10-22T13:07:37Z [18,659ms] [Error] [rtx.denoising.plugin] Failed to compile compute shader: rtx/nrd/PackForNRD.cs.hlsl
+2026-10-22T13:07:37Z [18,661ms] [Error] [rtx.denoising.plugin] Failed to compile compute shader: rtx/nrd/PackForNRD.cs.hlsl
+2026-10-22T13:07:37Z [18,886ms] [Error] [rtx.denoising.plugin] Failed to compile compute shader: rtx/nrd/PackForNRD.cs.hlsl
+2026-10-22T13:07:37Z [18,889ms] [Error] [rtx.denoising.plugin] Failed to compile compute shader: rtx/nrd/PackForNRD.cs.hlsl
+2026-10-22T13:07:37Z [19,055ms] [Error] [isaacsim.sensors.physx.plugin] Lidar Sensor does not exist
+2026-10-22T13:07:37Z [19,055ms] [Error] [isaacsim.sensors.physx.plugin] Lidar Sensor does not exist
+2026-10-22T13:07:37Z [19,055ms] [Error] [isaacsim.sensors.physx.plugin] Lidar Sensor does not exist
+2026-10-22T13:07:37Z [19,055ms] [Error] [isaacsim.sensors.physx.plugin] Lidar Sensor does not exist
+2026-10-22T13:07:37Z [19,055ms] [Error] [isaacsim.sensors.physx.plugin] Lidar Sensor does not exist
+2026-10-22T13:07:37Z [19,058ms] [Error] [isaacsim.sensors.physx.plugin] Lidar Sensor does not exist
+2026-10-22T13:07:37Z [19,058ms] [Error] [isaacsim.sensors.physx.plugin] Lidar Sensor does not exist
+2026-10-22T13:07:37Z [19,058ms] [Error] [isaacsim.sensors.physx.plugin] Lidar Sensor does not exist
+2026-10-22T13:07:37Z [19,058ms] [Error] [isaacsim.sensors.physx.plugin] Lidar Sensor does not exist
+2026-10-22T13:07:37Z [19,058ms] [Error] [isaacsim.sensors.physx.plugin] Lidar Sensor does not exist
+2026-10-22T13:07:37Z [19,124ms] [Error] [rtx.denoising.plugin] Failed to compile compute shader: rtx/nrd/PackForNRD.cs.hlsl
+2026-10-22T13:07:37Z [19,126ms] [Error] [rtx.denoising.plugin] Failed to compile compute shader: rtx/nrd/PackForNRD.cs.hlsl
+2026-10-22T13:07:37Z [19,352ms] [Error] [rtx.denoising.plugin] Failed to compile compute shader: rtx/nrd/PackForNRD.cs.hlsl
+2026-10-22T13:07:37Z [19,356ms] [Error] [rtx.denoising.plugin] Failed to compile compute shader: rtx/nrd/PackForNRD.cs.hlsl
+2026-10-22T13:07:38Z [19,579ms] [Error] [rtx.denoising.plugin] Failed to compile compute shader: rtx/nrd/PackForNRD.cs.hlsl
+2026-10-22T13:07:38Z [19,581ms] [Error] [rtx.denoising.plugin] Failed to compile compute shader: rtx/nrd/PackForNRD.cs.hlsl
+2026-10-22T13:07:38Z [19,644ms] [Error] [isaacsim.sensors.physx.plugin] Lidar Sensor does not exist
+2026-10-22T13:07:38Z [19,644ms] [Error] [isaacsim.sensors.physx.plugin] Lidar Sensor does not exist
+2026-10-22T13:07:38Z [19,644ms] [Error] [isaacsim.sensors.physx.plugin] Lidar Sensor does not exist
+2026-10-22T13:07:38Z [19,644ms] [Error] [isaacsim.sensors.physx.plugin] Lidar Sensor does not exist
+2026-10-22T13:07:38Z [19,644ms] [Error] [isaacsim.sensors.physx.plugin] Lidar Sensor does not exist
+2026-10-22T13:07:38Z [19,653ms] [Error] [isaacsim.sensors.physx.plugin] Lidar Sensor does not exist
+2026-10-22T13:07:38Z [19,653ms] [Error] [isaacsim.sensors.physx.plugin] Lidar Sensor does not exist
+2026-10-22T13:07:38Z [19,653ms] [Error] [isaacsim.sensors.physx.plugin] Lidar Sensor does not exist
+2026-10-22T13:07:38Z [19,653ms] [Error] [isaacsim.sensors.physx.plugin] Lidar Sensor does not exist
+2026-10-22T13:07:38Z [19,653ms] [Error] [isaacsim.sensors.physx.plugin] Lidar Sensor does not exist
+2026-10-22T13:07:38Z [19,811ms] [Error] [rtx.denoising.plugin] Failed to compile compute shader: rtx/nrd/PackForNRD.cs.hlsl
+2026-10-22T13:07:38Z [19,815ms] [Error] [rtx.denoising.plugin] Failed to compile compute shader: rtx/nrd/PackForNRD.cs.hlsl
+2026-10-22T13:07:38Z [20,121ms] [Error] [rtx.denoising.plugin] Failed to compile compute shader: rtx/nrd/PackForNRD.cs.hlsl
+2026-10-22T13:07:38Z [20,123ms] [Error] [rtx.denoising.plugin] Failed to compile compute shader: rtx/nrd/PackForNRD.cs.hlsl
+2026-10-22T13:07:38Z [20,254ms] [Error] [isaacsim.sensors.physx.plugin] Lidar Sensor does not exist
+2026-10-22T13:07:38Z [20,255ms] [Error] [isaacsim.sensors.physx.plugin] Lidar Sensor does not exist
+2026-10-22T13:07:38Z [20,255ms] [Error] [isaacsim.sensors.physx.plugin] Lidar Sensor does not exist
+2026-10-22T13:07:38Z [20,255ms] [Error] [isaacsim.sensors.physx.plugin] Lidar Sensor does not exist
+2026-10-22T13:07:38Z [20,255ms] [Error] [isaacsim.sensors.physx.plugin] Lidar Sensor does not exist
+2026-10-22T13:07:38Z [20,257ms] [Error] [isaacsim.sensors.physx.plugin] Lidar Sensor does not exist
+2026-10-22T13:07:38Z [20,257ms] [Error] [isaacsim.sensors.physx.plugin] Lidar Sensor does not exist
+2026-10-22T13:07:38Z [20,257ms] [Error] [isaacsim.sensors.physx.plugin] Lidar Sensor does not exist
+2026-10-22T13:07:38Z [20,258ms] [Error] [isaacsim.sensors.physx.plugin] Lidar Sensor does not exist
+2026-10-22T13:07:38Z [20,258ms] [Error] [isaacsim.sensors.physx.plugin] Lidar Sensor does not exist
+2026-10-22T13:07:38Z [20,321ms] [Error] [rtx.denoising.plugin] Failed to compile compute shader: rtx/nrd/PackForNRD.cs.hlsl
+2026-10-22T13:07:38Z [20,323ms] [Error] [rtx.denoising.plugin] Failed to compile compute shader: rtx/nrd/PackForNRD.cs.hlsl
+2026-10-22T13:07:38Z [20,545ms] [Error] [rtx.denoising.plugin] Failed to compile compute shader: rtx/nrd/PackForNRD.cs.hlsl
+2026-10-22T13:07:38Z [20,547ms] [Error] [rtx.denoising.plugin] Failed to compile compute shader: rtx/nrd/PackForNRD.cs.hlsl
+2026-10-22T13:07:39Z [20,771ms] [Error] [rtx.denoising.plugin] Failed to compile compute shader: rtx/nrd/PackForNRD.cs.hlsl
+2026-10-22T13:07:39Z [20,773ms] [Error] [rtx.denoising.plugin] Failed to compile compute shader: rtx/nrd/PackForNRD.cs.hlsl
+2026-10-22T13:07:39Z [20,835ms] [Error] [isaacsim.sensors.physx.plugin] Lidar Sensor does not exist
+2026-10-22T13:07:39Z [20,835ms] [Error] [isaacsim.sensors.physx.plugin] Lidar Sensor does not exist
+2026-10-22T13:07:39Z [20,835ms] [Error] [isaacsim.sensors.physx.plugin] Lidar Sensor does not exist
+2026-10-22T13:07:39Z [20,835ms] [Error] [isaacsim.sensors.physx.plugin] Lidar Sensor does not exist
+2026-10-22T13:07:39Z [20,835ms] [Error] [isaacsim.sensors.physx.plugin] Lidar Sensor does not exist
+2026-10-22T13:07:39Z [20,845ms] [Error] [isaacsim.sensors.physx.plugin] Lidar Sensor does not exist
+2026-10-22T13:07:39Z [20,845ms] [Error] [isaacsim.sensors.physx.plugin] Lidar Sensor does not exist
+2026-10-22T13:07:39Z [20,845ms] [Error] [isaacsim.sensors.physx.plugin] Lidar Sensor does not exist
+2026-10-22T13:07:39Z [20,845ms] [Error] [isaacsim.sensors.physx.plugin] Lidar Sensor does not exist
+2026-10-22T13:07:39Z [20,845ms] [Error] [isaacsim.sensors.physx.plugin] Lidar Sensor does not exist
+2026-10-22T13:07:39Z [21,004ms] [Error] [rtx.denoising.plugin] Failed to compile compute shader: rtx/nrd/PackForNRD.cs.hlsl
+2026-10-22T13:07:39Z [21,006ms] [Error] [rtx.denoising.plugin] Failed to compile compute shader: rtx/nrd/PackForNRD.cs.hlsl
+2026-10-22T13:07:39Z [21,231ms] [Error] [rtx.denoising.plugin] Failed to compile compute shader: rtx/nrd/PackForNRD.cs.hlsl
+2026-10-22T13:07:39Z [21,234ms] [Error] [rtx.denoising.plugin] Failed to compile compute shader: rtx/nrd/PackForNRD.cs.hlsl
+2026-10-22T13:07:39Z [21,395ms] [Error] [isaacsim.sensors.physx.plugin] Lidar Sensor does not exist
+2026-10-22T13:07:39Z [21,395ms] [Error] [isaacsim.sensors.physx.plugin] Lidar Sensor does not exist
+2026-10-22T13:07:39Z [21,395ms] [Error] [isaacsim.sensors.physx.plugin] Lidar Sensor does not exist
+2026-10-22T13:07:39Z [21,395ms] [Error] [isaacsim.sensors.physx.plugin] Lidar Sensor does not exist
+2026-10-22T13:07:39Z [21,395ms] [Error] [isaacsim.sensors.physx.plugin] Lidar Sensor does not exist
+2026-10-22T13:07:39Z [21,398ms] [Error] [isaacsim.sensors.physx.plugin] Lidar Sensor does not exist
+2026-10-22T13:07:39Z [21,398ms] [Error] [isaacsim.sensors.physx.plugin] Lidar Sensor does not exist
+2026-10-22T13:07:39Z [21,398ms] [Error] [isaacsim.sensors.physx.plugin] Lidar Sensor does not exist
+2026-10-22T13:07:39Z [21,398ms] [Error] [isaacsim.sensors.physx.plugin] Lidar Sensor does not exist
+2026-10-22T13:07:39Z [21,398ms] [Error] [isaacsim.sensors.physx.plugin] Lidar Sensor does not exist
+2026-10-22T13:07:39Z [21,464ms] [Error] [rtx.denoising.plugin] Failed to compile compute shader: rtx/nrd/PackForNRD.cs.hlsl
+2026-10-22T13:07:39Z [21,466ms] [Error] [rtx.denoising.plugin] Failed to compile compute shader: rtx/nrd/PackForNRD.cs.hlsl
+2026-10-22T13:07:40Z [21,688ms] [Error] [rtx.denoising.plugin] Failed to compile compute shader: rtx/nrd/PackForNRD.cs.hlsl
+2026-10-22T13:07:40Z [21,690ms] [Error] [rtx.denoising.plugin] Failed to compile compute shader: rtx/nrd/PackForNRD.cs.hlsl
+2026-10-22T13:07:40Z [21,918ms] [Error] [rtx.denoising.plugin] Failed to compile compute shader: rtx/nrd/PackForNRD.cs.hlsl
+2026-10-22T13:07:40Z [21,920ms] [Error] [rtx.denoising.plugin] Failed to compile compute shader: rtx/nrd/PackForNRD.cs.hlsl
+2026-10-22T13:07:40Z [21,984ms] [Error] [isaacsim.sensors.physx.plugin] Lidar Sensor does not exist
+2026-10-22T13:07:40Z [21,984ms] [Error] [isaacsim.sensors.physx.plugin] Lidar Sensor does not exist
+2026-10-22T13:07:40Z [21,984ms] [Error] [isaacsim.sensors.physx.plugin] Lidar Sensor does not exist
+2026-10-22T13:07:40Z [21,984ms] [Error] [isaacsim.sensors.physx.plugin] Lidar Sensor does not exist
+2026-10-22T13:07:40Z [21,984ms] [Error] [isaacsim.sensors.physx.plugin] Lidar Sensor does not exist
+2026-10-22T13:07:40Z [21,992ms] [Error] [isaacsim.sensors.physx.plugin] Lidar Sensor does not exist
+2026-10-22T13:07:40Z [21,993ms] [Error] [isaacsim.sensors.physx.plugin] Lidar Sensor does not exist
+2026-10-22T13:07:40Z [21,993ms] [Error] [isaacsim.sensors.physx.plugin] Lidar Sensor does not exist
+2026-10-22T13:07:40Z [21,993ms] [Error] [isaacsim.sensors.physx.plugin] Lidar Sensor does not exist
+2026-10-22T13:07:40Z [21,993ms] [Error] [isaacsim.sensors.physx.plugin] Lidar Sensor does not exist
+2026-10-22T13:07:40Z [22,151ms] [Error] [rtx.denoising.plugin] Failed to compile compute shader: rtx/nrd/PackForNRD.cs.hlsl
+2026-10-22T13:07:40Z [22,153ms] [Error] [rtx.denoising.plugin] Failed to compile compute shader: rtx/nrd/PackForNRD.cs.hlsl
+2026-10-22T13:07:40Z [22,379ms] [Error] [rtx.denoising.plugin] Failed to compile compute shader: rtx/nrd/PackForNRD.cs.hlsl
+2026-10-22T13:07:40Z [22,381ms] [Error] [rtx.denoising.plugin] Failed to compile compute shader: rtx/nrd/PackForNRD.cs.hlsl
+2026-10-22T13:07:40Z [22,540ms] [Error] [isaacsim.sensors.physx.plugin] Lidar Sensor does not exist
+2026-10-22T13:07:40Z [22,541ms] [Error] [isaacsim.sensors.physx.plugin] Lidar Sensor does not exist
+2026-10-22T13:07:40Z [22,541ms] [Error] [isaacsim.sensors.physx.plugin] Lidar Sensor does not exist
+2026-10-22T13:07:40Z [22,541ms] [Error] [isaacsim.sensors.physx.plugin] Lidar Sensor does not exist
+2026-10-22T13:07:40Z [22,541ms] [Error] [isaacsim.sensors.physx.plugin] Lidar Sensor does not exist
+2026-10-22T13:07:40Z [22,543ms] [Error] [isaacsim.sensors.physx.plugin] Lidar Sensor does not exist
+2026-10-22T13:07:40Z [22,543ms] [Error] [isaacsim.sensors.physx.plugin] Lidar Sensor does not exist
+2026-10-22T13:07:40Z [22,543ms] [Error] [isaacsim.sensors.physx.plugin] Lidar Sensor does not exist
+2026-10-22T13:07:40Z [22,544ms] [Error] [isaacsim.sensors.physx.plugin] Lidar Sensor does not exist
+2026-10-22T13:07:40Z [22,544ms] [Error] [isaacsim.sensors.physx.plugin] Lidar Sensor does not exist
+2026-10-22T13:07:41Z [22,609ms] [Error] [rtx.denoising.plugin] Failed to compile compute shader: rtx/nrd/PackForNRD.cs.hlsl
+2026-10-22T13:07:41Z [22,611ms] [Error] [rtx.denoising.plugin] Failed to compile compute shader: rtx/nrd/PackForNRD.cs.hlsl
+2026-10-22T13:07:41Z [22,841ms] [Error] [rtx.denoising.plugin] Failed to compile compute shader: rtx/nrd/PackForNRD.cs.hlsl
+2026-10-22T13:07:41Z [22,843ms] [Error] [rtx.denoising.plugin] Failed to compile compute shader: rtx/nrd/PackForNRD.cs.hlsl
+2026-10-22T13:07:41Z [23,076ms] [Error] [rtx.denoising.plugin] Failed to compile compute shader: rtx/nrd/PackForNRD.cs.hlsl
+2026-10-22T13:07:41Z [23,078ms] [Error] [rtx.denoising.plugin] Failed to compile compute shader: rtx/nrd/PackForNRD.cs.hlsl
+2026-10-22T13:07:41Z [23,141ms] [Error] [isaacsim.sensors.physx.plugin] Lidar Sensor does not exist
+2026-10-22T13:07:41Z [23,141ms] [Error] [isaacsim.sensors.physx.plugin] Lidar Sensor does not exist
+2026-10-22T13:07:41Z [23,141ms] [Error] [isaacsim.sensors.physx.plugin] Lidar Sensor does not exist
+2026-10-22T13:07:41Z [23,141ms] [Error] [isaacsim.sensors.physx.plugin] Lidar Sensor does not exist
+2026-10-22T13:07:41Z [23,141ms] [Error] [isaacsim.sensors.physx.plugin] Lidar Sensor does not exist
+2026-10-22T13:07:41Z [23,150ms] [Error] [isaacsim.sensors.physx.plugin] Lidar Sensor does not exist
+2026-10-22T13:07:41Z [23,150ms] [Error] [isaacsim.sensors.physx.plugin] Lidar Sensor does not exist
+2026-10-22T13:07:41Z [23,150ms] [Error] [isaacsim.sensors.physx.plugin] Lidar Sensor does not exist
+2026-10-22T13:07:41Z [23,150ms] [Error] [isaacsim.sensors.physx.plugin] Lidar Sensor does not exist
+2026-10-22T13:07:41Z [23,151ms] [Error] [isaacsim.sensors.physx.plugin] Lidar Sensor does not exist
+2026-10-22T13:07:41Z [23,321ms] [Error] [rtx.denoising.plugin] Failed to compile compute shader: rtx/nrd/PackForNRD.cs.hlsl
+2026-10-22T13:07:41Z [23,323ms] [Error] [rtx.denoising.plugin] Failed to compile compute shader: rtx/nrd/PackForNRD.cs.hlsl
+2026-10-22T13:07:42Z [23,571ms] [Error] [rtx.denoising.plugin] Failed to compile compute shader: rtx/nrd/PackForNRD.cs.hlsl
+2026-10-22T13:07:42Z [23,573ms] [Error] [rtx.denoising.plugin] Failed to compile compute shader: rtx/nrd/PackForNRD.cs.hlsl
+2026-10-22T13:07:42Z [23,749ms] [Error] [isaacsim.sensors.physx.plugin] Lidar Sensor does not exist
+2026-10-22T13:07:42Z [23,749ms] [Error] [isaacsim.sensors.physx.plugin] Lidar Sensor does not exist
+2026-10-22T13:07:42Z [23,749ms] [Error] [isaacsim.sensors.physx.plugin] Lidar Sensor does not exist
+2026-10-22T13:07:42Z [23,749ms] [Error] [isaacsim.sensors.physx.plugin] Lidar Sensor does not exist
+2026-10-22T13:07:42Z [23,749ms] [Error] [isaacsim.sensors.physx.plugin] Lidar Sensor does not exist
+2026-10-22T13:07:42Z [23,752ms] [Error] [isaacsim.sensors.physx.plugin] Lidar Sensor does not exist
+2026-10-22T13:07:42Z [23,752ms] [Error] [isaacsim.sensors.physx.plugin] Lidar Sensor does not exist
+2026-10-22T13:07:42Z [23,752ms] [Error] [isaacsim.sensors.physx.plugin] Lidar Sensor does not exist
+2026-10-22T13:07:42Z [23,752ms] [Error] [isaacsim.sensors.physx.plugin] Lidar Sensor does not exist
+2026-10-22T13:07:42Z [23,752ms] [Error] [isaacsim.sensors.physx.plugin] Lidar Sensor does not exist
+2026-10-22T13:07:42Z [23,830ms] [Error] [rtx.denoising.plugin] Failed to compile compute shader: rtx/nrd/PackForNRD.cs.hlsl
+2026-10-22T13:07:42Z [23,832ms] [Error] [rtx.denoising.plugin] Failed to compile compute shader: rtx/nrd/PackForNRD.cs.hlsl
+2026-10-22T13:07:42Z [24,083ms] [Error] [rtx.denoising.plugin] Failed to compile compute shader: rtx/nrd/PackForNRD.cs.hlsl
+2026-10-22T13:07:42Z [24,085ms] [Error] [rtx.denoising.plugin] Failed to compile compute shader: rtx/nrd/PackForNRD.cs.hlsl
+2026-10-22T13:07:42Z [24,335ms] [Error] [rtx.denoising.plugin] Failed to compile compute shader: rtx/nrd/PackForNRD.cs.hlsl
+2026-10-22T13:07:42Z [24,337ms] [Error] [rtx.denoising.plugin] Failed to compile compute shader: rtx/nrd/PackForNRD.cs.hlsl
+2026-10-22T13:07:42Z [24,399ms] [Error] [isaacsim.sensors.physx.plugin] Lidar Sensor does not exist
+2026-10-22T13:07:42Z [24,399ms] [Error] [isaacsim.sensors.physx.plugin] Lidar Sensor does not exist
+2026-10-22T13:07:42Z [24,399ms] [Error] [isaacsim.sensors.physx.plugin] Lidar Sensor does not exist
+2026-10-22T13:07:42Z [24,399ms] [Error] [isaacsim.sensors.physx.plugin] Lidar Sensor does not exist
+2026-10-22T13:07:42Z [24,399ms] [Error] [isaacsim.sensors.physx.plugin] Lidar Sensor does not exist
+2026-10-22T13:07:42Z [24,408ms] [Error] [isaacsim.sensors.physx.plugin] Lidar Sensor does not exist
+2026-10-22T13:07:42Z [24,408ms] [Error] [isaacsim.sensors.physx.plugin] Lidar Sensor does not exist
+2026-10-22T13:07:42Z [24,408ms] [Error] [isaacsim.sensors.physx.plugin] Lidar Sensor does not exist
+2026-10-22T13:07:42Z [24,408ms] [Error] [isaacsim.sensors.physx.plugin] Lidar Sensor does not exist
+2026-10-22T13:07:42Z [24,408ms] [Error] [isaacsim.sensors.physx.plugin] Lidar Sensor does not exist
+2026-10-22T13:07:43Z [24,598ms] [Error] [rtx.denoising.plugin] Failed to compile compute shader: rtx/nrd/PackForNRD.cs.hlsl
+2026-10-22T13:07:43Z [24,600ms] [Error] [rtx.denoising.plugin] Failed to compile compute shader: rtx/nrd/PackForNRD.cs.hlsl
+2026-10-22T13:07:43Z [24,862ms] [Error] [rtx.denoising.plugin] Failed to compile compute shader: rtx/nrd/PackForNRD.cs.hlsl
+2026-10-22T13:07:43Z [24,864ms] [Error] [rtx.denoising.plugin] Failed to compile compute shader: rtx/nrd/PackForNRD.cs.hlsl
+2026-10-22T13:07:43Z [25,044ms] [Error] [isaacsim.sensors.physx.plugin] Lidar Sensor does not exist
+2026-10-22T13:07:43Z [25,044ms] [Error] [isaacsim.sensors.physx.plugin] Lidar Sensor does not exist
+2026-10-22T13:07:43Z [25,045ms] [Error] [isaacsim.sensors.physx.plugin] Lidar Sensor does not exist
+2026-10-22T13:07:43Z [25,045ms] [Error] [isaacsim.sensors.physx.plugin] Lidar Sensor does not exist
+2026-10-22T13:07:43Z [25,045ms] [Error] [isaacsim.sensors.physx.plugin] Lidar Sensor does not exist
+2026-10-22T13:07:43Z [25,047ms] [Error] [isaacsim.sensors.physx.plugin] Lidar Sensor does not exist
+2026-10-22T13:07:43Z [25,047ms] [Error] [isaacsim.sensors.physx.plugin] Lidar Sensor does not exist
+2026-10-22T13:07:43Z [25,047ms] [Error] [isaacsim.sensors.physx.plugin] Lidar Sensor does not exist
+2026-10-22T13:07:43Z [25,048ms] [Error] [isaacsim.sensors.physx.plugin] Lidar Sensor does not exist
+2026-10-22T13:07:43Z [25,048ms] [Error] [isaacsim.sensors.physx.plugin] Lidar Sensor does not exist
+2026-10-22T13:07:43Z [25,131ms] [Error] [rtx.denoising.plugin] Failed to compile compute shader: rtx/nrd/PackForNRD.cs.hlsl
+2026-10-22T13:07:43Z [25,133ms] [Error] [rtx.denoising.plugin] Failed to compile compute shader: rtx/nrd/PackForNRD.cs.hlsl
+2026-10-22T13:07:43Z [25,392ms] [Error] [rtx.denoising.plugin] Failed to compile compute shader: rtx/nrd/PackForNRD.cs.hlsl
+2026-10-22T13:07:43Z [25,395ms] [Error] [rtx.denoising.plugin] Failed to compile compute shader: rtx/nrd/PackForNRD.cs.hlsl
+2026-10-22T13:07:44Z [25,644ms] [Error] [rtx.denoising.plugin] Failed to compile compute shader: rtx/nrd/PackForNRD.cs.hlsl
+2026-10-22T13:07:44Z [25,646ms] [Error] [rtx.denoising.plugin] Failed to compile compute shader: rtx/nrd/PackForNRD.cs.hlsl
+2026-10-22T13:07:44Z [25,709ms] [Error] [isaacsim.sensors.physx.plugin] Lidar Sensor does not exist
+2026-10-22T13:07:44Z [25,709ms] [Error] [isaacsim.sensors.physx.plugin] Lidar Sensor does not exist
+2026-10-22T13:07:44Z [25,709ms] [Error] [isaacsim.sensors.physx.plugin] Lidar Sensor does not exist
+2026-10-22T13:07:44Z [25,709ms] [Error] [isaacsim.sensors.physx.plugin] Lidar Sensor does not exist
+2026-10-22T13:07:44Z [25,710ms] [Error] [isaacsim.sensors.physx.plugin] Lidar Sensor does not exist
+2026-10-22T13:07:44Z [25,718ms] [Error] [isaacsim.sensors.physx.plugin] Lidar Sensor does not exist
+2026-10-22T13:07:44Z [25,718ms] [Error] [isaacsim.sensors.physx.plugin] Lidar Sensor does not exist
+2026-10-22T13:07:44Z [25,718ms] [Error] [isaacsim.sensors.physx.plugin] Lidar Sensor does not exist
+2026-10-22T13:07:44Z [25,718ms] [Error] [isaacsim.sensors.physx.plugin] Lidar Sensor does not exist
+2026-10-22T13:07:44Z [25,718ms] [Error] [isaacsim.sensors.physx.plugin] Lidar Sensor does not exist
+2026-10-22T13:07:44Z [25,887ms] [Error] [rtx.denoising.plugin] Failed to compile compute shader: rtx/nrd/PackForNRD.cs.hlsl
+2026-10-22T13:07:44Z [25,889ms] [Error] [rtx.denoising.plugin] Failed to compile compute shader: rtx/nrd/PackForNRD.cs.hlsl
+2026-10-22T13:07:44Z [26,121ms] [Error] [rtx.denoising.plugin] Failed to compile compute shader: rtx/nrd/PackForNRD.cs.hlsl
+2026-10-22T13:07:44Z [26,123ms] [Error] [rtx.denoising.plugin] Failed to compile compute shader: rtx/nrd/PackForNRD.cs.hlsl
+2026-10-22T13:07:44Z [26,287ms] [Error] [isaacsim.sensors.physx.plugin] Lidar Sensor does not exist
+2026-10-22T13:07:44Z [26,287ms] [Error] [isaacsim.sensors.physx.plugin] Lidar Sensor does not exist
+2026-10-22T13:07:44Z [26,287ms] [Error] [isaacsim.sensors.physx.plugin] Lidar Sensor does not exist
+2026-10-22T13:07:44Z [26,287ms] [Error] [isaacsim.sensors.physx.plugin] Lidar Sensor does not exist
+2026-10-22T13:07:44Z [26,287ms] [Error] [isaacsim.sensors.physx.plugin] Lidar Sensor does not exist
+2026-10-22T13:07:44Z [26,289ms] [Error] [isaacsim.sensors.physx.plugin] Lidar Sensor does not exist
+2026-10-22T13:07:44Z [26,290ms] [Error] [isaacsim.sensors.physx.plugin] Lidar Sensor does not exist
+2026-10-22T13:07:44Z [26,290ms] [Error] [isaacsim.sensors.physx.plugin] Lidar Sensor does not exist
+2026-10-22T13:07:44Z [26,290ms] [Error] [isaacsim.sensors.physx.plugin] Lidar Sensor does not exist
+2026-10-22T13:07:44Z [26,290ms] [Error] [isaacsim.sensors.physx.plugin] Lidar Sensor does not exist
+2026-10-22T13:07:44Z [26,357ms] [Error] [rtx.denoising.plugin] Failed to compile compute shader: rtx/nrd/PackForNRD.cs.hlsl
+2026-10-22T13:07:44Z [26,359ms] [Error] [rtx.denoising.plugin] Failed to compile compute shader: rtx/nrd/PackForNRD.cs.hlsl
+2026-10-22T13:07:45Z [26,587ms] [Error] [rtx.denoising.plugin] Failed to compile compute shader: rtx/nrd/PackForNRD.cs.hlsl
+2026-10-22T13:07:45Z [26,589ms] [Error] [rtx.denoising.plugin] Failed to compile compute shader: rtx/nrd/PackForNRD.cs.hlsl
+2026-10-22T13:07:45Z [26,818ms] [Error] [rtx.denoising.plugin] Failed to compile compute shader: rtx/nrd/PackForNRD.cs.hlsl
+2026-10-22T13:07:45Z [26,820ms] [Error] [rtx.denoising.plugin] Failed to compile compute shader: rtx/nrd/PackForNRD.cs.hlsl
+2026-10-22T13:07:45Z [26,881ms] [Error] [isaacsim.sensors.physx.plugin] Lidar Sensor does not exist
+2026-10-22T13:07:45Z [26,881ms] [Error] [isaacsim.sensors.physx.plugin] Lidar Sensor does not exist
+2026-10-22T13:07:45Z [26,881ms] [Error] [isaacsim.sensors.physx.plugin] Lidar Sensor does not exist
+2026-10-22T13:07:45Z [26,881ms] [Error] [isaacsim.sensors.physx.plugin] Lidar Sensor does not exist
+2026-10-22T13:07:45Z [26,881ms] [Error] [isaacsim.sensors.physx.plugin] Lidar Sensor does not exist
+2026-10-22T13:07:45Z [26,889ms] [Error] [isaacsim.sensors.physx.plugin] Lidar Sensor does not exist
+2026-10-22T13:07:45Z [26,889ms] [Error] [isaacsim.sensors.physx.plugin] Lidar Sensor does not exist
+2026-10-22T13:07:45Z [26,890ms] [Error] [isaacsim.sensors.physx.plugin] Lidar Sensor does not exist
+2026-10-22T13:07:45Z [26,890ms] [Error] [isaacsim.sensors.physx.plugin] Lidar Sensor does not exist
+2026-10-22T13:07:45Z [26,890ms] [Error] [isaacsim.sensors.physx.plugin] Lidar Sensor does not exist
+2026-10-22T13:07:45Z [27,051ms] [Error] [rtx.denoising.plugin] Failed to compile compute shader: rtx/nrd/PackForNRD.cs.hlsl
+2026-10-22T13:07:45Z [27,053ms] [Error] [rtx.denoising.plugin] Failed to compile compute shader: rtx/nrd/PackForNRD.cs.hlsl
+2026-10-22T13:07:45Z [27,282ms] [Error] [rtx.denoising.plugin] Failed to compile compute shader: rtx/nrd/PackForNRD.cs.hlsl
+2026-10-22T13:07:45Z [27,284ms] [Error] [rtx.denoising.plugin] Failed to compile compute shader: rtx/nrd/PackForNRD.cs.hlsl
+2026-10-22T13:07:45Z [27,448ms] [Error] [isaacsim.sensors.physx.plugin] Lidar Sensor does not exist
+2026-10-22T13:07:45Z [27,448ms] [Error] [isaacsim.sensors.physx.plugin] Lidar Sensor does not exist
+2026-10-22T13:07:45Z [27,448ms] [Error] [isaacsim.sensors.physx.plugin] Lidar Sensor does not exist
+2026-10-22T13:07:45Z [27,448ms] [Error] [isaacsim.sensors.physx.plugin] Lidar Sensor does not exist
+2026-10-22T13:07:45Z [27,449ms] [Error] [isaacsim.sensors.physx.plugin] Lidar Sensor does not exist
+2026-10-22T13:07:45Z [27,451ms] [Error] [isaacsim.sensors.physx.plugin] Lidar Sensor does not exist
+2026-10-22T13:07:45Z [27,451ms] [Error] [isaacsim.sensors.physx.plugin] Lidar Sensor does not exist
+2026-10-22T13:07:45Z [27,451ms] [Error] [isaacsim.sensors.physx.plugin] Lidar Sensor does not exist
+2026-10-22T13:07:45Z [27,451ms] [Error] [isaacsim.sensors.physx.plugin] Lidar Sensor does not exist
+2026-10-22T13:07:45Z [27,451ms] [Error] [isaacsim.sensors.physx.plugin] Lidar Sensor does not exist
+2026-10-22T13:07:45Z [27,516ms] [Error] [rtx.denoising.plugin] Failed to compile compute shader: rtx/nrd/PackForNRD.cs.hlsl
+2026-10-22T13:07:45Z [27,518ms] [Error] [rtx.denoising.plugin] Failed to compile compute shader: rtx/nrd/PackForNRD.cs.hlsl
+2026-10-22T13:07:46Z [27,745ms] [Error] [rtx.denoising.plugin] Failed to compile compute shader: rtx/nrd/PackForNRD.cs.hlsl
+2026-10-22T13:07:46Z [27,747ms] [Error] [rtx.denoising.plugin] Failed to compile compute shader: rtx/nrd/PackForNRD.cs.hlsl
+2026-10-22T13:07:46Z [27,971ms] [Error] [rtx.denoising.plugin] Failed to compile compute shader: rtx/nrd/PackForNRD.cs.hlsl
+2026-10-22T13:07:46Z [27,973ms] [Error] [rtx.denoising.plugin] Failed to compile compute shader: rtx/nrd/PackForNRD.cs.hlsl
+2026-10-22T13:07:46Z [28,036ms] [Error] [isaacsim.sensors.physx.plugin] Lidar Sensor does not exist
+2026-10-22T13:07:46Z [28,036ms] [Error] [isaacsim.sensors.physx.plugin] Lidar Sensor does not exist
+2026-10-22T13:07:46Z [28,036ms] [Error] [isaacsim.sensors.physx.plugin] Lidar Sensor does not exist
+2026-10-22T13:07:46Z [28,036ms] [Error] [isaacsim.sensors.physx.plugin] Lidar Sensor does not exist
+2026-10-22T13:07:46Z [28,036ms] [Error] [isaacsim.sensors.physx.plugin] Lidar Sensor does not exist
+2026-10-22T13:07:46Z [28,044ms] [Error] [isaacsim.sensors.physx.plugin] Lidar Sensor does not exist
+2026-10-22T13:07:46Z [28,044ms] [Error] [isaacsim.sensors.physx.plugin] Lidar Sensor does not exist
+2026-10-22T13:07:46Z [28,045ms] [Error] [isaacsim.sensors.physx.plugin] Lidar Sensor does not exist
+2026-10-22T13:07:46Z [28,045ms] [Error] [isaacsim.sensors.physx.plugin] Lidar Sensor does not exist
+2026-10-22T13:07:46Z [28,045ms] [Error] [isaacsim.sensors.physx.plugin] Lidar Sensor does not exist
+2026-10-22T13:07:46Z [28,203ms] [Error] [rtx.denoising.plugin] Failed to compile compute shader: rtx/nrd/PackForNRD.cs.hlsl
+2026-10-22T13:07:46Z [28,206ms] [Error] [rtx.denoising.plugin] Failed to compile compute shader: rtx/nrd/PackForNRD.cs.hlsl
+2026-10-22T13:07:46Z [28,430ms] [Error] [rtx.denoising.plugin] Failed to compile compute shader: rtx/nrd/PackForNRD.cs.hlsl
+2026-10-22T13:07:46Z [28,432ms] [Error] [rtx.denoising.plugin] Failed to compile compute shader: rtx/nrd/PackForNRD.cs.hlsl
+2026-10-22T13:07:47Z [28,593ms] [Error] [isaacsim.sensors.physx.plugin] Lidar Sensor does not exist
+2026-10-22T13:07:47Z [28,593ms] [Error] [isaacsim.sensors.physx.plugin] Lidar Sensor does not exist
+2026-10-22T13:07:47Z [28,593ms] [Error] [isaacsim.sensors.physx.plugin] Lidar Sensor does not exist
+2026-10-22T13:07:47Z [28,593ms] [Error] [isaacsim.sensors.physx.plugin] Lidar Sensor does not exist
+2026-10-22T13:07:47Z [28,593ms] [Error] [isaacsim.sensors.physx.plugin] Lidar Sensor does not exist
+2026-10-22T13:07:47Z [28,596ms] [Error] [isaacsim.sensors.physx.plugin] Lidar Sensor does not exist
+2026-10-22T13:07:47Z [28,596ms] [Error] [isaacsim.sensors.physx.plugin] Lidar Sensor does not exist
+2026-10-22T13:07:47Z [28,596ms] [Error] [isaacsim.sensors.physx.plugin] Lidar Sensor does not exist
+2026-10-22T13:07:47Z [28,596ms] [Error] [isaacsim.sensors.physx.plugin] Lidar Sensor does not exist
+2026-10-22T13:07:47Z [28,596ms] [Error] [isaacsim.sensors.physx.plugin] Lidar Sensor does not exist
+2026-10-22T13:07:47Z [28,661ms] [Error] [rtx.denoising.plugin] Failed to compile compute shader: rtx/nrd/PackForNRD.cs.hlsl
+2026-10-22T13:07:47Z [28,663ms] [Error] [rtx.denoising.plugin] Failed to compile compute shader: rtx/nrd/PackForNRD.cs.hlsl
+2026-10-22T13:07:47Z [28,889ms] [Error] [rtx.denoising.plugin] Failed to compile compute shader: rtx/nrd/PackForNRD.cs.hlsl
+2026-10-22T13:07:47Z [28,891ms] [Error] [rtx.denoising.plugin] Failed to compile compute shader: rtx/nrd/PackForNRD.cs.hlsl
+2026-10-22T13:07:47Z [29,115ms] [Error] [rtx.denoising.plugin] Failed to compile compute shader: rtx/nrd/PackForNRD.cs.hlsl
+2026-10-22T13:07:47Z [29,117ms] [Error] [rtx.denoising.plugin] Failed to compile compute shader: rtx/nrd/PackForNRD.cs.hlsl
+2026-10-22T13:07:47Z [29,179ms] [Error] [isaacsim.sensors.physx.plugin] Lidar Sensor does not exist
+2026-10-22T13:07:47Z [29,179ms] [Error] [isaacsim.sensors.physx.plugin] Lidar Sensor does not exist
+2026-10-22T13:07:47Z [29,179ms] [Error] [isaacsim.sensors.physx.plugin] Lidar Sensor does not exist
+2026-10-22T13:07:47Z [29,179ms] [Error] [isaacsim.sensors.physx.plugin] Lidar Sensor does not exist
+2026-10-22T13:07:47Z [29,179ms] [Error] [isaacsim.sensors.physx.plugin] Lidar Sensor does not exist
+2026-10-22T13:07:47Z [29,188ms] [Error] [isaacsim.sensors.physx.plugin] Lidar Sensor does not exist
+2026-10-22T13:07:47Z [29,188ms] [Error] [isaacsim.sensors.physx.plugin] Lidar Sensor does not exist
+2026-10-22T13:07:47Z [29,188ms] [Error] [isaacsim.sensors.physx.plugin] Lidar Sensor does not exist
+2026-10-22T13:07:47Z [29,188ms] [Error] [isaacsim.sensors.physx.plugin] Lidar Sensor does not exist
+2026-10-22T13:07:47Z [29,189ms] [Error] [isaacsim.sensors.physx.plugin] Lidar Sensor does not exist
+2026-10-22T13:07:47Z [29,349ms] [Error] [rtx.denoising.plugin] Failed to compile compute shader: rtx/nrd/PackForNRD.cs.hlsl
+2026-10-22T13:07:47Z [29,351ms] [Error] [rtx.denoising.plugin] Failed to compile compute shader: rtx/nrd/PackForNRD.cs.hlsl
+2026-10-22T13:07:47Z [29,353ms] [Warning] [carb] Client gpu.foundation.plugin has acquired [gpu::unstable::IMemoryBudgetManagerFactory v0.1] 100 times. Consider accessing this interface with carb::getCachedInterface() (Performance warning)
+2026-10-22T13:07:48Z [29,576ms] [Error] [rtx.denoising.plugin] Failed to compile compute shader: rtx/nrd/PackForNRD.cs.hlsl
+2026-10-22T13:07:48Z [29,578ms] [Error] [rtx.denoising.plugin] Failed to compile compute shader: rtx/nrd/PackForNRD.cs.hlsl
+2026-10-22T13:07:48Z [29,742ms] [Error] [isaacsim.sensors.physx.plugin] Lidar Sensor does not exist
+2026-10-22T13:07:48Z [29,742ms] [Error] [isaacsim.sensors.physx.plugin] Lidar Sensor does not exist
+2026-10-22T13:07:48Z [29,742ms] [Error] [isaacsim.sensors.physx.plugin] Lidar Sensor does not exist
+2026-10-22T13:07:48Z [29,742ms] [Error] [isaacsim.sensors.physx.plugin] Lidar Sensor does not exist
+2026-10-22T13:07:48Z [29,742ms] [Error] [isaacsim.sensors.physx.plugin] Lidar Sensor does not exist
+2026-10-22T13:07:48Z [29,745ms] [Error] [isaacsim.sensors.physx.plugin] Lidar Sensor does not exist
+2026-10-22T13:07:48Z [29,745ms] [Error] [isaacsim.sensors.physx.plugin] Lidar Sensor does not exist
+2026-10-22T13:07:48Z [29,745ms] [Error] [isaacsim.sensors.physx.plugin] Lidar Sensor does not exist
+2026-10-22T13:07:48Z [29,745ms] [Error] [isaacsim.sensors.physx.plugin] Lidar Sensor does not exist
+2026-10-22T13:07:48Z [29,745ms] [Error] [isaacsim.sensors.physx.plugin] Lidar Sensor does not exist
+2026-10-22T13:07:48Z [29,809ms] [Error] [rtx.denoising.plugin] Failed to compile compute shader: rtx/nrd/PackForNRD.cs.hlsl
+2026-10-22T13:07:48Z [29,811ms] [Error] [rtx.denoising.plugin] Failed to compile compute shader: rtx/nrd/PackForNRD.cs.hlsl
+2026-10-22T13:07:48Z [30,037ms] [Error] [rtx.denoising.plugin] Failed to compile compute shader: rtx/nrd/PackForNRD.cs.hlsl
+2026-10-22T13:07:48Z [30,039ms] [Error] [rtx.denoising.plugin] Failed to compile compute shader: rtx/nrd/PackForNRD.cs.hlsl
+2026-10-22T13:07:48Z [30,358ms] [Error] [rtx.denoising.plugin] Failed to compile compute shader: rtx/nrd/PackForNRD.cs.hlsl
+2026-10-22T13:07:48Z [30,360ms] [Error] [rtx.denoising.plugin] Failed to compile compute shader: rtx/nrd/PackForNRD.cs.hlsl
+2026-10-22T13:07:48Z [30,394ms] [Error] [isaacsim.sensors.physx.plugin] Lidar Sensor does not exist
+2026-10-22T13:07:48Z [30,394ms] [Error] [isaacsim.sensors.physx.plugin] Lidar Sensor does not exist
+2026-10-22T13:07:48Z [30,394ms] [Error] [isaacsim.sensors.physx.plugin] Lidar Sensor does not exist
+2026-10-22T13:07:48Z [30,394ms] [Error] [isaacsim.sensors.physx.plugin] Lidar Sensor does not exist
+2026-10-22T13:07:48Z [30,394ms] [Error] [isaacsim.sensors.physx.plugin] Lidar Sensor does not exist
+2026-10-22T13:07:48Z [30,403ms] [Error] [isaacsim.sensors.physx.plugin] Lidar Sensor does not exist
+2026-10-22T13:07:48Z [30,403ms] [Error] [isaacsim.sensors.physx.plugin] Lidar Sensor does not exist
+2026-10-22T13:07:48Z [30,403ms] [Error] [isaacsim.sensors.physx.plugin] Lidar Sensor does not exist
+2026-10-22T13:07:48Z [30,403ms] [Error] [isaacsim.sensors.physx.plugin] Lidar Sensor does not exist
+2026-10-22T13:07:48Z [30,403ms] [Error] [isaacsim.sensors.physx.plugin] Lidar Sensor does not exist
+2026-10-22T13:07:48Z [30,561ms] [Error] [rtx.denoising.plugin] Failed to compile compute shader: rtx/nrd/PackForNRD.cs.hlsl
+2026-10-22T13:07:48Z [30,563ms] [Error] [rtx.denoising.plugin] Failed to compile compute shader: rtx/nrd/PackForNRD.cs.hlsl
+2026-10-22T13:07:49Z [30,787ms] [Error] [rtx.denoising.plugin] Failed to compile compute shader: rtx/nrd/PackForNRD.cs.hlsl
+2026-10-22T13:07:49Z [30,789ms] [Error] [rtx.denoising.plugin] Failed to compile compute shader: rtx/nrd/PackForNRD.cs.hlsl
+2026-10-22T13:07:49Z [30,953ms] [Error] [isaacsim.sensors.physx.plugin] Lidar Sensor does not exist
+2026-10-22T13:07:49Z [30,953ms] [Error] [isaacsim.sensors.physx.plugin] Lidar Sensor does not exist
+2026-10-22T13:07:49Z [30,953ms] [Error] [isaacsim.sensors.physx.plugin] Lidar Sensor does not exist
+2026-10-22T13:07:49Z [30,953ms] [Error] [isaacsim.sensors.physx.plugin] Lidar Sensor does not exist
+2026-10-22T13:07:49Z [30,953ms] [Error] [isaacsim.sensors.physx.plugin] Lidar Sensor does not exist
+2026-10-22T13:07:49Z [30,956ms] [Error] [isaacsim.sensors.physx.plugin] Lidar Sensor does not exist
+2026-10-22T13:07:49Z [30,956ms] [Error] [isaacsim.sensors.physx.plugin] Lidar Sensor does not exist
+2026-10-22T13:07:49Z [30,956ms] [Error] [isaacsim.sensors.physx.plugin] Lidar Sensor does not exist
+2026-10-22T13:07:49Z [30,956ms] [Error] [isaacsim.sensors.physx.plugin] Lidar Sensor does not exist
+2026-10-22T13:07:49Z [30,956ms] [Error] [isaacsim.sensors.physx.plugin] Lidar Sensor does not exist
+2026-10-22T13:07:49Z [31,020ms] [Error] [rtx.denoising.plugin] Failed to compile compute shader: rtx/nrd/PackForNRD.cs.hlsl
+2026-10-22T13:07:49Z [31,023ms] [Error] [rtx.denoising.plugin] Failed to compile compute shader: rtx/nrd/PackForNRD.cs.hlsl
+2026-10-22T13:07:49Z [31,246ms] [Error] [rtx.denoising.plugin] Failed to compile compute shader: rtx/nrd/PackForNRD.cs.hlsl
+2026-10-22T13:07:49Z [31,249ms] [Error] [rtx.denoising.plugin] Failed to compile compute shader: rtx/nrd/PackForNRD.cs.hlsl
+2026-10-22T13:07:49Z [31,472ms] [Error] [rtx.denoising.plugin] Failed to compile compute shader: rtx/nrd/PackForNRD.cs.hlsl
+2026-10-22T13:07:49Z [31,474ms] [Error] [rtx.denoising.plugin] Failed to compile compute shader: rtx/nrd/PackForNRD.cs.hlsl
+2026-10-22T13:07:49Z [31,536ms] [Error] [isaacsim.sensors.physx.plugin] Lidar Sensor does not exist
+2026-10-22T13:07:49Z [31,536ms] [Error] [isaacsim.sensors.physx.plugin] Lidar Sensor does not exist
+2026-10-22T13:07:49Z [31,536ms] [Error] [isaacsim.sensors.physx.plugin] Lidar Sensor does not exist
+2026-10-22T13:07:49Z [31,536ms] [Error] [isaacsim.sensors.physx.plugin] Lidar Sensor does not exist
+2026-10-22T13:07:49Z [31,536ms] [Error] [isaacsim.sensors.physx.plugin] Lidar Sensor does not exist
+2026-10-22T13:07:49Z [31,545ms] [Error] [isaacsim.sensors.physx.plugin] Lidar Sensor does not exist
+2026-10-22T13:07:49Z [31,545ms] [Error] [isaacsim.sensors.physx.plugin] Lidar Sensor does not exist
+2026-10-22T13:07:49Z [31,545ms] [Error] [isaacsim.sensors.physx.plugin] Lidar Sensor does not exist
+2026-10-22T13:07:49Z [31,545ms] [Error] [isaacsim.sensors.physx.plugin] Lidar Sensor does not exist
+2026-10-22T13:07:49Z [31,545ms] [Error] [isaacsim.sensors.physx.plugin] Lidar Sensor does not exist
+2026-10-22T13:07:50Z [31,702ms] [Error] [rtx.denoising.plugin] Failed to compile compute shader: rtx/nrd/PackForNRD.cs.hlsl
+2026-10-22T13:07:50Z [31,705ms] [Error] [rtx.denoising.plugin] Failed to compile compute shader: rtx/nrd/PackForNRD.cs.hlsl
+2026-10-22T13:07:50Z [31,930ms] [Error] [rtx.denoising.plugin] Failed to compile compute shader: rtx/nrd/PackForNRD.cs.hlsl
+2026-10-22T13:07:50Z [31,932ms] [Error] [rtx.denoising.plugin] Failed to compile compute shader: rtx/nrd/PackForNRD.cs.hlsl
+2026-10-22T13:07:50Z [32,095ms] [Error] [isaacsim.sensors.physx.plugin] Lidar Sensor does not exist
+2026-10-22T13:07:50Z [32,095ms] [Error] [isaacsim.sensors.physx.plugin] Lidar Sensor does not exist
+2026-10-22T13:07:50Z [32,095ms] [Error] [isaacsim.sensors.physx.plugin] Lidar Sensor does not exist
+2026-10-22T13:07:50Z [32,095ms] [Error] [isaacsim.sensors.physx.plugin] Lidar Sensor does not exist
+2026-10-22T13:07:50Z [32,095ms] [Error] [isaacsim.sensors.physx.plugin] Lidar Sensor does not exist
+2026-10-22T13:07:50Z [32,099ms] [Error] [isaacsim.sensors.physx.plugin] Lidar Sensor does not exist
+2026-10-22T13:07:50Z [32,099ms] [Error] [isaacsim.sensors.physx.plugin] Lidar Sensor does not exist
+2026-10-22T13:07:50Z [32,099ms] [Error] [isaacsim.sensors.physx.plugin] Lidar Sensor does not exist
+2026-10-22T13:07:50Z [32,099ms] [Error] [isaacsim.sensors.physx.plugin] Lidar Sensor does not exist
+2026-10-22T13:07:50Z [32,099ms] [Error] [isaacsim.sensors.physx.plugin] Lidar Sensor does not exist
+2026-10-22T13:07:50Z [32,163ms] [Error] [rtx.denoising.plugin] Failed to compile compute shader: rtx/nrd/PackForNRD.cs.hlsl
+2026-10-22T13:07:50Z [32,165ms] [Error] [rtx.denoising.plugin] Failed to compile compute shader: rtx/nrd/PackForNRD.cs.hlsl
+2026-10-22T13:07:50Z [32,390ms] [Error] [rtx.denoising.plugin] Failed to compile compute shader: rtx/nrd/PackForNRD.cs.hlsl
+2026-10-22T13:07:50Z [32,392ms] [Error] [rtx.denoising.plugin] Failed to compile compute shader: rtx/nrd/PackForNRD.cs.hlsl
+{"steps": 512, "fps": 32.2519065039322, "loss": 0.0038716308190487325, "grad_norm": 1.144946575164795}
+2026-10-22T13:07:51Z [33,321ms] [Error] [rtx.denoising.plugin] Failed to compile compute shader: rtx/nrd/PackForNRD.cs.hlsl
+2026-10-22T13:07:51Z [33,323ms] [Error] [rtx.denoising.plugin] Failed to compile compute shader: rtx/nrd/PackForNRD.cs.hlsl

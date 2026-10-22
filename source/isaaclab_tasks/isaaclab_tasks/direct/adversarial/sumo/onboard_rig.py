@@ -40,14 +40,58 @@ def front_rgb_camera(index, profile):
     )
 
 
+def _create_physx_lidar(path):
+    """Create a PhysX lidar prim without Isaac Sim 5.1's RangeSensorCreatePrim command.
+
+    That command sets ``visibility`` on an attribute with an empty type name, which USD rejects.
+    """
+    import omni.isaac.RangeSensorSchema as RangeSensorSchema
+    import omni.usd
+    from isaacsim.core.utils.stage import get_next_free_path
+    from pxr import UsdGeom
+
+    stage = omni.usd.get_context().get_stage()
+    prim_path = get_next_free_path(path)
+    schema = RangeSensorSchema.Lidar.Define(stage, prim_path)
+    prim = schema.GetPrim()
+    if not prim.IsValid():
+        print(f"[sumo] Lidar.Define failed for {prim_path}", flush=True)
+        return None
+    if prim.GetTypeName() != "Lidar":
+        prim.SetTypeName("Lidar")
+    for name, value in (
+        ("Enabled", True),
+        ("DrawPoints", False),
+        ("DrawLines", False),
+        ("MinRange", 0.05),
+        ("MaxRange", 6.0),
+        ("HorizontalFov", 360.0),
+        ("VerticalFov", 180.0),
+        ("HorizontalResolution", 10.0),
+        ("VerticalResolution", 10.0),
+        ("RotationRate", 0.0),
+        ("HighLod", True),
+        ("YawOffset", 0.0),
+        ("EnableSemantics", False),
+    ):
+        getattr(schema, f"Create{name}Attr")().Set(value)
+    UsdGeom.Imageable(prim).CreateVisibilityAttr(UsdGeom.Tokens.inherited)
+    print(f"[sumo] created PhysX lidar {prim.GetPath()}", flush=True)
+    return schema
+
+
 class OnboardRig:
     def __init__(self, env, profile):
         from isaacsim.core.utils.extensions import enable_extension
 
         enable_extension("isaacsim.sensors.physx")
-        import omni.kit.commands
+        import omni.kit.app
         from isaacsim.sensors.physx import _range_sensor
         from pxr import Gf, UsdGeom
+
+        # The PhysX lidar manager only notices prims created after its extension has started.
+        for _ in range(2):
+            omni.kit.app.get_app().update()
 
         self.env = env
         self.rgb, self.imu, self.paths = {}, {}, {}
@@ -66,23 +110,8 @@ class OnboardRig:
             env.scene.sensors[f"{key}_rgb"] = camera
             env.scene.sensors[f"{key}_imu"] = imu
             path = f"/World/envs/env_0/Robot_{index}/{profile.root_body}/reference_lidar"
-            ok, lidar = omni.kit.commands.execute(
-                "RangeSensorCreateLidar",
-                path=path,
-                parent=None,
-                min_range=0.05,
-                max_range=6.0,
-                horizontal_fov=360.0,
-                vertical_fov=180.0,
-                horizontal_resolution=10.0,
-                vertical_resolution=10.0,
-                rotation_rate=0.0,
-                high_lod=True,
-                draw_points=False,
-                draw_lines=False,
-                enable_semantics=False,
-            )
-            if not ok:
+            lidar = _create_physx_lidar(path)
+            if lidar is None:
                 raise RuntimeError(f"Failed to create moving-scene LiDAR: {path}")
             # Command creates translate/rotateXYZ ops; rotateXYZ is identity on Z-up stages.
             xform = UsdGeom.Xformable(lidar.GetPrim())
@@ -95,15 +124,34 @@ class OnboardRig:
             if orient is None:
                 orient = xform.AddOrientOp()
             half = profile.lidar_pitch / 2
-            orient.Set(Gf.Quatf(math.cos(half), 0, math.sin(half), 0))
+            real, imag = math.cos(half), math.sin(half)
+            if orient.GetPrecision() == UsdGeom.XformOp.PrecisionDouble:
+                orient.Set(Gf.Quatd(real, 0, imag, 0))
+            else:
+                orient.Set(Gf.Quatf(real, 0, imag, 0))
             self.paths[key] = [path.replace("env_0/", f"env_{i}/") for i in range(env.num_envs)]
 
     def points(self, key):
+        stage = __import__("omni").usd.get_context().get_stage()
+        for path in self.paths[key]:
+            if self.interface.is_lidar_sensor(path):
+                continue
+            parent = path.rsplit("/", 1)[0]
+            if stage.GetPrimAtPath(parent).IsValid() and not stage.GetPrimAtPath(path).IsValid():
+                _create_physx_lidar(path)
+        if any(not self.interface.is_lidar_sensor(path) for path in self.paths[key]):
+            if not getattr(self, "_warned_lidar", False):
+                print(f"[sumo] lidar not registered yet: {self.paths[key]}", flush=True)
+                self._warned_lidar = True
+            return torch.zeros(self.env.num_envs, 1, 3, device=self.env.device)
         clouds = [
             np.asarray(self.interface.get_point_cloud_data(path)).reshape(-1, 3).copy() for path in self.paths[key]
         ]
         if not clouds or any(len(cloud) == 0 for cloud in clouds):
-            raise RuntimeError("LiDAR returned no rays. Check extension, cloned prims and scene synchronization.")
+            if not getattr(self, "_warned_empty", False):
+                print("[sumo] lidar returned no rays yet", flush=True)
+                self._warned_empty = True
+            return torch.zeros(self.env.num_envs, 1, 3, device=self.env.device)
         array = np.stack(clouds)
         if not np.isfinite(array).all():
             raise RuntimeError("Non-finite LiDAR points")

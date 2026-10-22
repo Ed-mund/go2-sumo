@@ -1,0 +1,59 @@
+{
+  "episodes": 0,
+  "wins": 0,
+  "losses": 0,
+  "draws": 0,
+  "samples": 512,
+  "upright": 512,
+  "events": {},
+  "skill_controls": {
+    "push": 512,
+    "circle_left": 0,
+    "circle_right": 0,
+    "sweep_left": 0,
+    "sweep_right": 0,
+    "brace_counter": 0,
+    "disengage": 0,
+    "pin": 0,
+    "recover": 0
+  },
+  "opponents": {},
+  "metrics": {},
+  "upright_by_robot": {
+    "robot_0": 1.0,
+    "robot_1": 1.0
+  },
+  "selected_opponents": [],
+  "passive_drill_controls": 0,
+  "event_timeline": [],
+  "drill_episodes": {
+    "push": 0,
+    "circle_left": 0,
+    "circle_right": 0,
+    "sweep_left": 0,
+    "sweep_right": 0,
+    "brace_counter": 0,
+    "disengage": 0,
+    "pin": 0,
+    "recover": 0
+  },
+  "drill_successes": {
+    "push": 0,
+    "circle_left": 0,
+    "circle_right": 0,
+    "sweep_left": 0,
+    "sweep_right": 0,
+    "brace_counter": 0,
+    "disengage": 0,
+    "pin": 0,
+    "recover": 0
+  },
+  "phase": "push",
+  "role": 1,
+  "seed": 101,
+  "steps": 512,
+  "video_frames": 0,
+  "sensor_audit": null,
+  "upright_fraction": 1.0,
+  "checkpoint": "/lus/lfs1aip2/projects/b6ac/go2-sumo/artifacts/isambard-smoke/smoke/push/resume/update_000001.pt"
+}

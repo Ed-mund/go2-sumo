@@ -1,0 +1,2 @@
+bash: /opt/cray/pe/lmod/lmod/init/bash: Input/output error
+/var/spool/slurmd/job7630629/slurm_script: line 22: 41501 Bus error               nvidia-smi --list-gpus

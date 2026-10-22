@@ -1,0 +1,18 @@
+Traceback (most recent call last):
+  File "/lus/lfs1aip2/projects/b6ac/go2-sumo/scripts/reinforcement_learning/harl/tactics_campaign.py", line 440, in <module>
+    main()
+  File "/lus/lfs1aip2/projects/b6ac/go2-sumo/scripts/reinforcement_learning/harl/tactics_campaign.py", line 428, in main
+    run_campaign(cfg, run, state, state_path, smoke_only=args.smoke_only)
+  File "/lus/lfs1aip2/projects/b6ac/go2-sumo/scripts/reinforcement_learning/harl/tactics_campaign.py", line 206, in run_campaign
+    report = invoke(
+             ^^^^^^^
+  File "/lus/lfs1aip2/projects/b6ac/go2-sumo/scripts/reinforcement_learning/harl/tactics_campaign.py", line 173, in invoke
+    return json.loads((output / "evaluation.json").read_text())
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/projects/b6ac/go2-sumo/env/lib/python3.11/pathlib.py", line 1058, in read_text
+    with self.open(mode='r', encoding=encoding, errors=errors) as f:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/projects/b6ac/go2-sumo/env/lib/python3.11/pathlib.py", line 1044, in open
+    return io.open(self, mode, buffering, encoding, errors, newline)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: '/lus/lfs1aip2/projects/b6ac/go2-sumo/artifacts/isambard-smoke/videos/smoke/basic_sumo/evaluation.json'

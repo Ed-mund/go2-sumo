@@ -1,0 +1,13 @@
+{
+  "state": "failed",
+  "stage_index": 0,
+  "steps": 0,
+  "chunks": 0,
+  "checkpoint": null,
+  "pid": 274971,
+  "updated": 1792674529.784253,
+  "log": "/lus/lfs1aip2/projects/b6ac/go2-sumo/artifacts/isambard-smoke/videos/smoke/basic_sumo/process.log",
+  "gpu_free_mb": 89811,
+  "gpu_temp_c": 38,
+  "error": "[Errno 2] No such file or directory: '/lus/lfs1aip2/projects/b6ac/go2-sumo/artifacts/isambard-smoke/videos/smoke/basic_sumo/evaluation.json'"
+}

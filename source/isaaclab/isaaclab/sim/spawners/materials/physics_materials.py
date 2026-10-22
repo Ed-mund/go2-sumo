@@ -67,7 +67,10 @@ def spawn_rigid_body_material(prim_path: str, cfg: physics_materials_cfg.RigidBo
         value = cfg.pop(attr_name, None)
         safe_set_attribute_on_usd_schema(usd_physics_material_api, attr_name, value, camel_case=True)
     # set into PhysX API
+    # Isaac Sim 5.1 removed ImprovePatchFriction and always applies that friction model.
     for attr_name, value in cfg.items():
+        if attr_name == "improve_patch_friction" and not hasattr(physx_material_api, "CreateImprovePatchFrictionAttr"):
+            continue
         safe_set_attribute_on_usd_schema(physx_material_api, attr_name, value, camel_case=True)
     # return the prim
     return prim

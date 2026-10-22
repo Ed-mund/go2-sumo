@@ -1,0 +1,25 @@
+{
+  "version": 3,
+  "contract": "go2-tactics-v3-rgb4x36x64-options9",
+  "python": "@current",
+  "seed": 23,
+  "minimum_free_vram_mb": 14000,
+  "minimum_free_disk_gb": 25,
+  "temperature_limit_c": 83,
+  "stall_minutes": 180,
+  "chunk_steps": 2000000,
+  "rollout_steps": 128,
+  "minibatch": 128,
+  "evaluation_envs": 16,
+  "evaluation_controls": 2400,
+  "video_controls": 1200,
+  "minimum_episodes": 16,
+  "stages": [
+    {"name":"locomotion", "task":"Locomotion", "envs":64, "steps":200000000, "lr":0.0003, "drill_fraction":0.0, "manager":false},
+    {"name":"push", "task":"Push", "envs":32, "steps":150000000, "lr":0.00025, "drill_fraction":0.0, "manager":false},
+    {"name":"basic_sumo", "task":"Fight", "envs":32, "steps":80000000, "lr":0.0002, "drill_fraction":0.0, "manager":false},
+    {"name":"drills", "task":"Fight", "envs":32, "steps":120000000, "lr":0.0002, "drill_fraction":1.0, "manager":true},
+    {"name":"tactics", "task":"Fight", "envs":32, "steps":200000000, "lr":0.00015, "drill_fraction":0.25, "manager":true},
+    {"name":"league", "task":"Fight", "envs":32, "steps":400000000, "lr":0.0001, "drill_fraction":0.10, "manager":true}
+  ]
+}

@@ -1,0 +1,49 @@
+{
+  "source": {
+    "scripts/reinforcement_learning/harl/train.py": "37d75290e14a38a45d8cea884fde05bba262c7a34a916ecffbce7cdc0dca1e32",
+    "scripts/reinforcement_learning/harl/play.py": "525b435f480e698eced7afc78f7197652e7bbbf49d88fb4fc39c98abef14b4b3",
+    "scripts/reinforcement_learning/harl/sumo_campaign.py": "5ed208de065afbf9d12dc7a165f7ad368774caf61f532445ac9760b3cdf5dd42",
+    "scripts/reinforcement_learning/harl/sumo_checkpoint.py": "a3c242f1234859f39b3418b45ea355ebc3de28f9c4222461433b4025950e6ffd",
+    "scripts/reinforcement_learning/harl/sensor_audit.py": "416bfae89671bcf47de6fd461bb54194d4e179cd72be8c96b5c3fefa116e93d2",
+    "source/isaaclab_tasks/isaaclab_tasks/direct/adversarial/sumo/anymal_c/anymal_c_go_to_point_sumo.py": "3f8c46fca49ace8f693e0ad5b0a4245f31264c7c2952ded3bdebb9ff3bde4ca7",
+    "source/isaaclab_tasks/isaaclab_tasks/direct/adversarial/sumo/anymal_c/flip_detection.py": "a5c38e573c82e63ad1eeebeb40dae929c8f098217658ec43e4412f758e6cb33c",
+    "source/isaaclab_tasks/isaaclab_tasks/direct/adversarial/sumo/anymal_c/sumo_stage_1_blocks_push.py": "8d137d1aeddc115a1aeec37f377b13c8260e3bd2b8c487a3d9d6854436d7156f",
+    "source/isaaclab_tasks/isaaclab_tasks/direct/adversarial/sumo/anymal_c/sumo_stage_2_anymal_1v1.py": "8121cee529110d3155e7ff1b75b29f8ab977b78cc342aaa43ed16c4fa673e111",
+    "source/isaaclab_tasks/isaaclab_tasks/direct/adversarial/sumo/arena_surface.py": "c8243aea0f15cdd8adc1f40c31cd15bb8a1872a71d09410cb288015e67705ed3",
+    "source/isaaclab_tasks/isaaclab_tasks/direct/adversarial/sumo/go2_sensor_curriculum.py": "72376f8a44405051b5a64c458678f7ea07800d7ebdb4207add0e73f1e89912f1",
+    "source/isaaclab_tasks/isaaclab_tasks/direct/adversarial/sumo/heading.py": "e263a7e5cdf43ff75b74ca3a832ee9576e03a43c1111f1f252f946d417ae2763",
+    "source/isaaclab_tasks/isaaclab_tasks/direct/adversarial/sumo/heterogeneous/sumo_stage_2_hetero_by_team.py": "e0165235f30b082d2ad03a7beaacab0c21aea4576a7681afa374ef791d31c6d0",
+    "source/isaaclab_tasks/isaaclab_tasks/direct/adversarial/sumo/heterogeneous/sumo_stage_2_hetero_by_team_same_critic.py": "18adbbd3ca4447f0f797c8c27fbda2f0fdffcf9fe279268234fe8f11469297e4",
+    "source/isaaclab_tasks/isaaclab_tasks/direct/adversarial/sumo/heterogeneous/sumo_stage_2_hetero_by_team_same_critic_no_negative.py": "2db349df9d9df1bbe7b17152fbe05704c5ab7da6e18833bc47d0ecdd31266c28",
+    "source/isaaclab_tasks/isaaclab_tasks/direct/adversarial/sumo/heterogeneous/sumo_stage_2_hetero_within_team.py": "c5f6322e5bafa5529a113ad173d14422662f3921635b6d39db41696366c0c3c1",
+    "source/isaaclab_tasks/isaaclab_tasks/direct/adversarial/sumo/leatherback/leatherback_sumo_ma_stage1.py": "be96df1c9df851eb48ffd326fdaa248577503dae06cc517019052a9805204b5a",
+    "source/isaaclab_tasks/isaaclab_tasks/direct/adversarial/sumo/onboard_rig.py": "c9aee9e0280ae08e636de06ffbfd68052e5aa720795a42cda3e3c5a2f4eec681",
+    "source/isaaclab_tasks/isaaclab_tasks/direct/adversarial/sumo/quadruped_colliders.py": "dd6179a6bc04724ceb35ed4c572410ff5bdd9d731367912fc1688555c2430b94",
+    "source/isaaclab_tasks/isaaclab_tasks/direct/adversarial/sumo/quadruped_curriculum.py": "41e649912abc250a1c4d7d5369d09a2ca50bda089acb5e325795af38c3f83c0d",
+    "source/isaaclab_tasks/isaaclab_tasks/direct/adversarial/sumo/quadruped_stage2.py": "0371a43d8e853ce9724a521c612c4650464eed7b6bdf94d5b8a409187cedb465",
+    "source/isaaclab_tasks/isaaclab_tasks/direct/adversarial/sumo/robot_profiles.py": "a90c9392e14cd89aece38ada78e6fd761b3b2aecab0d05c3de3cdf4e247cc00f",
+    "source/isaaclab_tasks/isaaclab_tasks/direct/adversarial/sumo/sensor_history.py": "33b62409aeee415d36c9ac999f07f43445f4d9df80faef20b543310f5155431f",
+    "source/isaaclab_tasks/isaaclab_tasks/direct/adversarial/sumo/sumo_v2.py": "70ec1e35469e57da7bcb66c1d6282287794d5a95ebd83903e9b307747ca1f157",
+    "source/isaaclab_tasks/isaaclab_tasks/direct/adversarial/sumo/sumo_v3.py": "9997002abcc123676f6d02a9dc907440bb5f98c47320f994ca211c94c84e1308",
+    "source/isaaclab_tasks/isaaclab_tasks/direct/adversarial/sumo/tactics_events.py": "6f03487376887661cc266eaeaf7ac7eaaa7e6ad8fe6cbe2b2e2f9d3a59ccdd8b",
+    "source/isaaclab_tasks/isaaclab_tasks/direct/adversarial/agents/harl_happo_adv_sensor_cfg.yaml": "e8a73573c6f4fd9813b4cd5a71f8bbbca847de35da6465d94228262314a269d7",
+    "source/isaaclab_tasks/isaaclab_tasks/direct/adversarial/__init__.py": "e84c33d71b6a85b8c90e8df5ac0c2ea0588b8c2014373d09ded6132737f67e99",
+    "scripts/reinforcement_learning/harl/tactics_campaign.py": "3724e6f1fb8c2725352804963430eab563c601df4307613b3c8d71022596d7ad",
+    "scripts/reinforcement_learning/harl/tactics_contract.py": "520cc131a1123b8797d65ec5c0f74bb1a92a7866bf2ca92546c0fb863d53492c",
+    "scripts/reinforcement_learning/harl/tactics_league.py": "673392374bcd53142ce83c1dcd89dd8978b428997efbf611587e8187813f443c",
+    "scripts/reinforcement_learning/harl/tactics_model.py": "87979b588f0853651090988162a20b8603932805332eaf5989039c8cb9576838",
+    "scripts/reinforcement_learning/harl/tactics_train.py": "337bc52dd7372fd61309e298e241a707ec1030fdf99ae381167182217a25dcb2"
+  },
+  "runtime": {
+    "python": "3.11.17 (main, Oct 13 2026, 16:47:03) [GCC 15.3.0]",
+    "packages": {
+      "torch": "2.9.0+cu130",
+      "isaacsim": "5.1.0.0",
+      "isaaclab": "0.36.23",
+      "harl": null,
+      "gymnasium": "1.2.3",
+      "numpy": "1.26.0"
+    },
+    "harl_adapter_hashes": {}
+  }
+}

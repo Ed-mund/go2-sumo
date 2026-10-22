@@ -74,6 +74,9 @@ datasets
 /artifacts/
 /.venv*/
 /.local-config/
+/env/
+/.cache/
+/.logs/
 **/*.pt
 **/*.pth
 **/*.ckpt
