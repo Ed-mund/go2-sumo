@@ -1,0 +1,3 @@
+# Install torch==2.5.1 from https://download.pytorch.org/whl/cpu first.
+numpy==1.26.4
+packaging>=23

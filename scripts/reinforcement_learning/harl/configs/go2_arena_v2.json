@@ -1,0 +1,26 @@
+{
+  "version": 2,
+  "robot": "go2",
+  "opponent": "go2",
+  "observation_contract": "dog-arena-v2-airpro-1295",
+  "hardware_reference": "Go2 AIR/PRO, published URDF mounts, L1 hemisphere approximation; hardware calibration pending",
+  "python": "/home/ed/miniforge3/envs/HARL/bin/python",
+  "seed": 23,
+  "minimum_free_vram_mb": 14000,
+  "minimum_free_disk_gb": 25,
+  "temperature_limit_c": 83,
+  "stall_minutes": 20,
+  "chunk_steps": 2000000,
+  "rollout_steps": 200,
+  "video_control_steps": 1200,
+  "video_stride": 2,
+  "evaluation_envs": 32,
+  "evaluation_control_steps": 2400,
+  "minimum_evaluation_episodes": 32,
+  "stages": [
+    {"name": "locomotion", "task": "Dog-Sumo-Go2-Locomotion-v2", "envs": 128, "steps": 200000000, "lr": 0.0003, "mode": "parallel", "gate": {"Metrics/goal_success_percentage": 0.8}},
+    {"name": "push", "task": "Dog-Sumo-Go2-Push-v2", "envs": 64, "steps": 150000000, "lr": 0.00025, "mode": "parallel", "gate": {"Metrics/team_0_push_success": 0.3, "Metrics/team_1_push_success": 0.3, "Metrics/push_success": 0.8}},
+    {"name": "fight", "task": "Dog-Sumo-Go2-Fight-v2", "envs": 64, "steps": 200000000, "lr": 0.0002, "mode": "parallel", "gate": {}},
+    {"name": "selfplay", "task": "Dog-Sumo-Go2-Fight-v2", "envs": 64, "steps": 400000000, "lr": 0.00015, "mode": "leapfrog", "gate": {}}
+  ]
+}

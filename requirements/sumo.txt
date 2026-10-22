@@ -1,0 +1,14 @@
+# Install from the repository root, in a fresh Python 3.10 environment.
+# Install the CUDA 12.4 Torch wheels first (see docs/GETTING_STARTED.md).
+-c constraints-sumo.txt
+isaacsim[all,extscache]==4.5.0.0
+torch==2.5.1
+torchvision==0.20.1
+numpy==1.26.4
+imageio==2.37.3
+imageio-ffmpeg==0.6.0
+packaging
+-e ./source/isaaclab
+-e ./source/isaaclab_assets
+-e ./source/isaaclab_tasks
+-e ./source/isaaclab_rl[rsl-rl-lib]
